@@ -56,6 +56,18 @@
 @black: #000;
 @gray: #0a1b39;
 
+// @sensoro-design/antd theme colors
+@color-neutral-bg-1: fade(@gray, 2%);
+@color-neutral-bg-2: fade(@gray, 4%);
+@color-neutral-bg-3: fade(@gray, 6%);
+@color-neutral-line: fade(@gray, 8%);
+@color-neutral-bg-4: fade(@gray, 15%);
+@color-neutral-bg-5: fade(@gray, 25%);
+@color-neutral-text-4: fade(@gray, 35%);
+@color-neutral-text-3: fade(@gray, 60%);
+@color-neutral-text-2: fade(@gray, 80%);
+@color-neutral-text-1: fade(@gray, 100%);
+
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
 @primary-1: color(~`colorPalette('@{primary-color}', 1) `); // replace tint(@primary-color, 90%)
@@ -818,8 +830,11 @@
 @avatar-font-size-base: 18px;
 @avatar-font-size-lg: 24px;
 @avatar-font-size-sm: 14px;
-@avatar-bg: #ccc;
-@avatar-color: #fff;
+@avatar-bg: fade(@text-color, 4%);
+@avatar-color: @color-neutral-bg-4;
+@avatar-border-width: @border-width-base;
+@avatar-border-style: @border-style-base;
+@avatar-border-color: @avatar-bg;
 @avatar-border-radius: @border-radius-base;
 @avatar-group-overlapping: -8px;
 @avatar-group-space: 3px;
