@@ -43,9 +43,10 @@
 @warning-color-deprecated-border: color(~`colorPalette('@{warning-color}', 3) `);
 
 // >>> Error
-@error-color: @red-5;
+@error-color: @red-6;
 @error-color-hover: color(~`colorPalette('@{error-color}', 5) `);
 @error-color-active: color(~`colorPalette('@{error-color}', 7) `);
+@error-color-disabled: color(~`colorPalette('@{error-color}', 3) `);
 @error-color-outline: fade(@error-color, @outline-fade);
 @error-color-deprecated-bg: color(~`colorPalette('@{error-color}', 1) `);
 @error-color-deprecated-border: color(~`colorPalette('@{error-color}', 3) `);
@@ -54,7 +55,7 @@
 @normal-color: #d9d9d9;
 @white: #fff;
 @black: #000;
-@gray: #0a1b39;
+@gray: #0a1c39;
 
 // @sensoro-design/antd theme colors
 @color-neutral-bg-1: fade(@gray, 2%);
@@ -97,6 +98,7 @@
   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
   'Noto Color Emoji';
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+@text-color-primary: @gray;
 @text-color: fade(@gray, 80%);
 @text-color-secondary: fade(@gray, 35%);
 @text-color-inverse: @white;
@@ -233,16 +235,36 @@
 @btn-primary-color: #fff;
 @btn-primary-bg: @primary-color;
 
-@btn-default-color: @text-color;
-@btn-default-bg: @component-background;
-@btn-default-border: @border-color-base;
+@btn-default-color: @text-color-primary;
+@btn-default-bg: @color-neutral-bg-2;
+@btn-default-hover-bg: @color-neutral-line;
+@btn-default-active-bg: @color-neutral-bg-4;
+@btn-default-border: transparent;
 
 @btn-danger-color: #fff;
 @btn-danger-bg: @error-color;
 @btn-danger-border: @error-color;
 
-@btn-disable-color: @disabled-color;
+@btn-dashed-color: @primary-color;
+@btn-dashed-bg: @color-neutral-bg-2;
+@btn-dashed-hover-bg: @color-neutral-line;
+@btn-dashed-active-bg: @color-neutral-bg-4;
+@btn-dashed-border: @color-neutral-bg-4;
+
 @btn-disable-bg: @disabled-bg;
+@btn-disable-primary-bg: @primary-3;
+@btn-disable-default-bg: @color-neutral-bg-2;
+@btn-disable-dashed-bg: @color-neutral-bg-2;
+@btn-disable-link-bg: @disabled-color;
+@btn-disabled-danger-primary-bg: @error-color-disabled;
+@btn-disabled-danger-default-bg: @color-neutral-bg-2;
+
+@btn-disable-primary-color: @white;
+@btn-disable-default-color: @color-neutral-text-4;
+@btn-disable-dashed-color: @primary-3;
+@btn-disable-link-color: @primary-3;
+@btn-disable-icon-link-color: @color-neutral-text-4;
+@btn-disable-color: @disabled-color;
 @btn-disable-border: @border-color-base;
 
 @btn-default-ghost-color: @component-background;
@@ -250,7 +272,7 @@
 @btn-default-ghost-border: @component-background;
 
 @btn-font-size-lg: @font-size-lg;
-@btn-font-size-sm: @font-size-base;
+@btn-font-size-sm: @font-size-sm;
 @btn-padding-horizontal-base: @padding-md - 1px;
 @btn-padding-horizontal-lg: @btn-padding-horizontal-base;
 @btn-padding-horizontal-sm: @padding-xs - 1px;
@@ -275,6 +297,11 @@
 @btn-group-border: @primary-5;
 
 @btn-link-hover-bg: transparent;
+@btn-link-hover-color: @primary-5;
+@btn-link-active-bg: @primary-7;
+@btn-link-icon-color: @color-neutral-text-3;
+@btn-link-icon-hover-color: @primary-5;
+@btn-link-icon-active-color: @primary-7;
 @btn-text-hover-bg: rgba(0, 0, 0, 0.018);
 
 // Checkbox
@@ -980,8 +1007,9 @@
 @alert-error-icon-color: @error-color;
 @alert-message-color: @heading-color;
 @alert-text-color: @text-color;
-@alert-close-color: @text-color-secondary;
-@alert-close-hover-color: @icon-color-hover;
+@alert-close-color: @text-color;
+@alert-close-hover-color: @text-color;
+@alert-close-bg-color: @color-neutral-line;
 @alert-no-icon-padding-vertical: @padding-xs;
 @alert-with-description-no-icon-padding-vertical: @padding-md - 1px;
 @alert-with-description-padding-vertical: @padding-md - 1px;

@@ -33,6 +33,10 @@
     font-size: 14px;
     line-height: 2;
   }
+
+  &:last-child {
+    padding-bottom: 100px;
+  }
 }
 
 .tdesign-demo-item + .tdesign-demo-item {
@@ -44,7 +48,7 @@
 .tdesign-demo-item__title {
   font-size: 22px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
   font-weight: bold;
 }
 
@@ -58,6 +62,14 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: auto;
+  margin-bottom: 16px;
+}
+
+.tdesign-demo-item__body-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 16px;
 }
 
 .tdesign-demo-item__body + .tdesign-demo-item__body {
