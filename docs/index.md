@@ -2,7 +2,7 @@
 title: Sensoro Design Styles
 hero:
   title: Sensoro Design Styles
-  desc: 封装
+  desc: 企业级产品设计体系，创造高效愉悦的工作体验
   actions:
     - text: 快速开始
       link: /docs/getting-started
