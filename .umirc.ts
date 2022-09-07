@@ -1,6 +1,15 @@
+import path from 'path';
 import { defineConfig } from 'dumi';
 
 const logo = 'https://cdn.jsdelivr.net/gh/wangxingkang/pictures@latest/imgs/sensoro-design.svg';
+
+const SRC_DIR = path.join(__dirname, 'src');
+
+const components = [
+  'button',
+  'avatar',
+  'alert',
+];
 
 export default defineConfig({
   mode: 'site',
@@ -16,5 +25,19 @@ export default defineConfig({
     },
   ],
   hash: true,
-  workerLoader: {},
+  extraBabelPlugins: [
+    [
+      require.resolve('babel-plugin-import'),
+      {
+        libraryName: 'antd',
+        customStyleName: (name: string, file: object) => {
+          if (components.includes(name)) {
+            return path.join(SRC_DIR, `${name}/index.less`);
+          }
+          return name;
+        }
+      },
+      'antd',
+    ],
+  ]
 });
