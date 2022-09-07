@@ -35,8 +35,8 @@ jobs:
         with:
           version: latest
           run_install: |
-            - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - recursive: false
+              args: [--frozen-lockfile]
 
       - name: Build
         run: pnpm build:site
