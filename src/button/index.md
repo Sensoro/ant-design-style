@@ -17,3 +17,20 @@ nav:
 ### 按钮类型
 
 <code src="./demos/basic.tsx" />
+
+### 图标按钮
+
+<code src="./demos/icon.tsx" />
+
+### 加载按钮
+
+<code src="./demos/loading.tsx" />
+
+### 按钮属性
+
+<code src="./demos/danger.tsx" />
+
+### 按钮尺寸
+
+<code src="./demos/size.tsx" />
+

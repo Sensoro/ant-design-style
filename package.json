@@ -10,10 +10,12 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@sensoro-design/icons": "^1.43.0",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^9.8.0",
