@@ -6,7 +6,6 @@ npm-debug.log*
 yarn-error.log
 yarn.lock
 lerna-debug.log
-pnpm-lock.yaml
 .pnpm-debug.log
 
 
