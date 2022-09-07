@@ -1,5 +1,4 @@
 import "../index.less";
-import "../_docs.less";
 
 export default () => {
   return (
