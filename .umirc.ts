@@ -34,7 +34,7 @@ export default defineConfig({
           if (components.includes(name)) {
             return path.join(SRC_DIR, `${name}/index.less`);
           }
-          return name;
+          return `antd/lib/${name}/style`;
         }
       },
       'antd',
