@@ -1,24 +1,17 @@
+import { Button } from "antd";
 import "../index.less";
 import "../_docs.less";
 
 export default () => {
   return (
     <>
-      <button
-        type="button"
-        className="ant-btn ant-btn-primary ant-btn-dangerous"
-      >
+      <Button danger type="primary">
         <span>删除项目</span>
-      </button>
-      <button
-        type="button"
-        className="ant-btn ant-btn-default ant-btn-dangerous"
-      >
+      </Button>
+      <Button danger>删除</Button>
+      <Button type="link" danger>
         删除
-      </button>
-      <button type="button" className="ant-btn ant-btn-link ant-btn-dangerous">
-        删除
-      </button>
+      </Button>
     </>
   );
 };

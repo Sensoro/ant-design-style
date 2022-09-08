@@ -21,3 +21,11 @@ nav:
 ### 搜索框
 
 <code src="./demos/search.tsx" />
+
+### 尺寸
+
+<code src="./demos/size.tsx" />
+
+### 文本域
+
+<code src="./demos/textarea.tsx" />

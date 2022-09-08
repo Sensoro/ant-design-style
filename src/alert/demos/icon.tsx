@@ -1,37 +1,15 @@
 import "../index.less";
 import "../_docs.less";
 
-import {
-  CheckCircleFilled,
-  InfoCircleFilled,
-  ExclamationCircleFilled,
-  CloseCircleFilled,
-  CloseOutlined,
-} from "@ant-design/icons";
+import { Alert } from "antd";
 
 export default () => {
   return (
     <>
-      <div className="ant-alert ant-alert-success">
-        <CheckCircleFilled className="ant-alert-icon" />
-        这是一条成功的消息提示
-      </div>
-      <div className="ant-alert ant-alert-info">
-        <InfoCircleFilled className="ant-alert-icon" /> 这是一条普通的消息提示
-      </div>
-      <div className="ant-alert ant-alert-warning">
-        <ExclamationCircleFilled className="ant-alert-icon" />
-        <div className="ant-alert-content">
-          <div className="ant-alert-message">这是一条警示信息</div>
-        </div>
-        <button className="ant-alert-close-icon">
-          <CloseOutlined />
-        </button>
-      </div>
-      <div className="ant-alert ant-alert-error">
-        <CloseCircleFilled className="ant-alert-icon" />
-        高危操作/出错信息提示
-      </div>
+      <Alert message="Success Tips" type="success" showIcon />
+      <Alert message="Informational Notes" type="info" showIcon closable />
+      <Alert message="Warning" type="warning" showIcon closable />
+      <Alert message="Error" type="error" showIcon />
     </>
   );
 };

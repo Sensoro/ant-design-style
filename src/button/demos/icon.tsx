@@ -2,27 +2,17 @@ import "../index.less";
 import "../_docs.less";
 
 import { PlusOutlined, FormOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 
 export default () => {
   return (
     <>
-      <button type="button" className="ant-btn ant-btn-primary">
-        <PlusOutlined />
-        <span>编辑</span>
-      </button>
-      <button type="button" className="ant-btn ant-btn-default">
-        <PlusOutlined />
-        <span>编辑</span>
-      </button>
-      <button
-        type="button"
-        className="ant-btn ant-btn-default ant-btn-icon-only"
-      >
-        <PlusOutlined />
-      </button>
-      <button type="button" className="ant-btn ant-btn-link ant-btn-icon-only">
-        <FormOutlined />
-      </button>
+      <Button type="primary" icon={<PlusOutlined />}>
+        编辑
+      </Button>
+      <Button icon={<PlusOutlined />}>编辑</Button>
+      <Button icon={<PlusOutlined />} />
+      <Button type="link" icon={<FormOutlined />} />
     </>
   );
 };

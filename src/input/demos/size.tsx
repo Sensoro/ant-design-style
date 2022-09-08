@@ -6,9 +6,11 @@ import { Input } from "antd";
 export default () => {
   return (
     <div className="demo-block">
+      <Input placeholder="请输入" size="large" />
+
       <Input placeholder="请输入" />
 
-      <Input defaultValue="李四" />
+      <Input placeholder="请输入" size="small" />
     </div>
   );
 };

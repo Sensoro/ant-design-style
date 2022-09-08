@@ -3,32 +3,25 @@ import "../_docs.less";
 
 import UserFilled from "@sensoro-design/icons/UserFilled";
 
+import { Avatar } from "antd";
+
 export default () => {
   return (
     <div className="demo-inline">
-      <span
-        className="ant-avatar ant-avatar-circle ant-avatar-icon"
-        style={{
-          width: 64,
-          height: 64,
-          lineHeight: "64px",
-          fontSize: 32,
-        }}
-      >
-        <UserFilled />
-      </span>
-
-      <span
-        className="ant-avatar ant-avatar-circle ant-avatar-icon"
-        style={{
-          width: 64,
-          height: 64,
-          lineHeight: "64px",
-          fontSize: 32,
-        }}
-      >
-        <img src="https://joeschmoe.io/api/v1/random" />
-      </span>
+      <Avatar icon={<UserFilled />} />
+      <Avatar>U</Avatar>
+      <Avatar size={40}>USER</Avatar>
+      <Avatar src="https://joeschmoe.io/api/v1/random" />
+      <Avatar
+        src={<img src="https://joeschmoe.io/api/v1/random" width={32} />}
+      />
+      <Avatar style={{ color: "#f56a00", backgroundColor: "#fde3cf" }}>
+        U
+      </Avatar>
+      <Avatar
+        style={{ backgroundColor: "#87d068", color: "#fff" }}
+        icon={<UserFilled />}
+      />
     </div>
   );
 };

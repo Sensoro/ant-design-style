@@ -98,9 +98,9 @@
   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
   'Noto Color Emoji';
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-@text-color-primary: @gray;
-@text-color: fade(@gray, 80%);
-@text-color-secondary: fade(@gray, 35%);
+@text-color-primary: @color-neutral-text-1;
+@text-color: @color-neutral-text-2;
+@text-color-secondary: @color-neutral-text-4;
 @text-color-inverse: @white;
 @icon-color: inherit;
 @icon-color-hover: fade(@gray, 75%);
@@ -148,9 +148,9 @@
 @margin-xss: 4px; // more small
 
 // height rules
-@height-base: 32px;
 @height-lg: 40px;
-@height-sm: 24px;
+@height-base: 32px;
+@height-sm: 20px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
@@ -502,6 +502,7 @@
 @input-number-handler-border-color: @border-color-base;
 @input-addon-bg: @background-color-light;
 @input-hover-border-color: @color-neutral-bg-5;
+@input-active-border-color: @primary-color;
 @input-disabled-bg: @color-neutral-bg-2;
 @input-outline-offset: 0 0;
 @input-icon-hover-color: fade(@black, 85%);

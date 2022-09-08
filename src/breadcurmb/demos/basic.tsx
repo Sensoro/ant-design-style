@@ -1,32 +1,18 @@
 import "../index.less";
 
+import { Breadcrumb } from "antd";
+
 export default () => {
   return (
-    <>
-      <nav className="ant-breadcrumb">
-        <ol>
-          <li>
-            <span className="ant-breadcrumb-link">Home</span>
-            <span className="ant-breadcrumb-separator">/</span>
-          </li>
-          <li>
-            <span className="ant-breadcrumb-link">
-              <a href="">Application Center</a>
-            </span>
-            <span className="ant-breadcrumb-separator">/</span>
-          </li>
-          <li>
-            <span className="ant-breadcrumb-link">
-              <a href="">Application List</a>
-            </span>
-            <span className="ant-breadcrumb-separator">/</span>
-          </li>
-          <li>
-            <span className="ant-breadcrumb-link">An Application</span>
-            <span className="ant-breadcrumb-separator">/</span>
-          </li>
-        </ol>
-      </nav>
-    </>
+    <Breadcrumb>
+      <Breadcrumb.Item>Home</Breadcrumb.Item>
+      <Breadcrumb.Item>
+        <a href="">Application Center</a>
+      </Breadcrumb.Item>
+      <Breadcrumb.Item>
+        <a href="">Application List</a>
+      </Breadcrumb.Item>
+      <Breadcrumb.Item>An Application</Breadcrumb.Item>
+    </Breadcrumb>
   );
 };
