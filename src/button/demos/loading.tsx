@@ -1,7 +1,4 @@
-import "../index.less";
 import "../_docs.less";
-
-import { LoadingOutlined } from "@ant-design/icons";
 
 import { Button } from "antd";
 

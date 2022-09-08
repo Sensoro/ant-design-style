@@ -1,5 +1,4 @@
 import { Button } from "antd";
-import "../index.less";
 import "../_docs.less";
 
 export default () => {

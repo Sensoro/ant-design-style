@@ -1,4 +1,3 @@
-import "../index.less";
 import "../_docs.less";
 
 import UserFilled from "@sensoro-design/icons/UserFilled";

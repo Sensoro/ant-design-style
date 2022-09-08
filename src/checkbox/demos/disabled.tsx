@@ -1,7 +1,4 @@
 import { Checkbox } from "antd";
-import type { CheckboxProps } from "antd/es/checkbox";
-
-import "../index.less";
 
 export default () => {
   return (

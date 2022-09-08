@@ -1,4 +1,3 @@
-import "../index.less";
 import "../_docs.less";
 
 import { Alert } from "antd";

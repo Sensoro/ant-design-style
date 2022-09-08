@@ -1,8 +1,6 @@
 import { Checkbox } from "antd";
 import type { CheckboxProps } from "antd/es/checkbox";
 
-import "../index.less";
-
 export default () => {
   const onChange: CheckboxProps["onChange"] = (e) => {
     console.log(`checked = ${e.target.checked}`);
