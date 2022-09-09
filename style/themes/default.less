@@ -120,6 +120,7 @@
 @heading-5-size: ceil(@font-size-base * 1.14);
 // https://github.com/ant-design/ant-design/issues/20210
 @line-height-base: 1.5715;
+@border-radius-lg: 4px;
 @border-radius-base: 2px;
 @border-radius-sm: 2px;
 
@@ -564,18 +565,19 @@
 // Tooltip
 // ---
 // Tooltip max width
-@tooltip-max-width: 250px;
+@tooltip-max-width: 240px;
 // Tooltip text color
 @tooltip-color: #fff;
 // Tooltip background color
-@tooltip-bg: rgba(0, 0, 0, 0.75);
+@tooltip-bg: @color-neutral-text-2;
 // Tooltip arrow width
 @tooltip-arrow-width: 8px * sqrt(2);
 // Tooltip distance with trigger
 @tooltip-distance: @tooltip-arrow-width - 1px + 4px;
 // Tooltip arrow color
 @tooltip-arrow-color: @tooltip-bg;
-@tooltip-border-radius: @border-radius-base;
+@tooltip-border-radius: @border-radius-lg;
+@tooltip-inner-padding: @padding-xs @padding-sm;
 
 // Popover
 // ---
