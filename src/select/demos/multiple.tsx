@@ -16,7 +16,7 @@ const handleChange = (value: string[]) => {
 };
 
 const App = () => (
-  <>
+  <div className="demo-block">
     <Select
       showArrow
       mode="multiple"
@@ -46,7 +46,7 @@ const App = () => (
     >
       {children}
     </Select>
-  </>
+  </div>
 );
 
 export default App;
