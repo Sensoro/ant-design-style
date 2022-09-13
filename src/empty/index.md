@@ -14,6 +14,6 @@ nav:
 
 ## 代码演示
 
-### 基本
+### 基本用法
 
 <code src="./demos/basic.tsx" />

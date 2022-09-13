@@ -151,12 +151,12 @@
 // height rules
 @height-lg: 40px;
 @height-base: 32px;
-@height-sm: 20px;
+@height-sm: 24px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
 @item-active-bg: @primary-1;
-@item-hover-bg: #f5f5f5;
+@item-hover-bg: @color-neutral-bg-2;
 
 // ICONFONT
 @iconfont-css-prefix: anticon;
@@ -521,9 +521,12 @@
 
 // Select
 // ---
-@select-border-color: @border-color-base;
-@select-item-selected-color: @text-color;
-@select-item-selected-font-weight: 600;
+@select-arrow-color: @color-neutral-text-4;
+@select-border-color: @color-neutral-bg-4;
+@select-item-selected-color: @primary-color;
+@select-item-disabled-color: @color-neutral-text-4;
+@select-item-selected-disabled-color: @primary-3;
+@select-item-selected-font-weight: 500;
 @select-dropdown-bg: @component-background;
 @select-item-selected-bg: @primary-1;
 @select-item-active-bg: @item-hover-bg;
@@ -533,15 +536,19 @@
 @select-dropdown-height: 32px;
 @select-background: @component-background;
 @select-clear-background: @select-background;
-@select-selection-item-bg: @background-color-base;
-@select-selection-item-border-color: @border-color-split;
+@select-selection-item-bg: @color-neutral-bg-2;
+@select-selection-item-border-color: @color-neutral-bg-4;
 @select-single-item-height-lg: 40px;
+@select-group-item-color: @color-neutral-text-3;
+@select-group-padding: @padding-md @padding-md @padding-xs;
 @select-multiple-item-height: @input-height-base - @input-padding-vertical-base * 2; // Normal 24px
 @select-multiple-item-height-lg: 32px;
 @select-multiple-item-spacing-half: ceil((@input-padding-vertical-base / 2));
 @select-multiple-disabled-background: @input-disabled-bg;
-@select-multiple-item-disabled-color: #bfbfbf;
+@select-multiple-item-disabled-color: @text-color-secondary;
 @select-multiple-item-disabled-border-color: @select-border-color;
+@select-multiple-item-remove-color: @color-neutral-text-3;
+@select-multiple-item-hover-color: @text-color-primary;
 
 // Cascader
 // ---
