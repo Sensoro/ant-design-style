@@ -1,75 +1,49 @@
 import "../_docs.less";
 
 import { PlusOutlined, FormOutlined } from "@ant-design/icons";
+import { Button, Space } from "antd";
+
+import "../../space/index.less";
 
 export default () => {
   return (
     <div>
       <div className="demo-inline">
-        <button type="button" className="ant-btn ant-btn-lg ant-btn-primary">
-          <PlusOutlined />
-          <span>大按钮</span>
-        </button>
-        <button type="button" className="ant-btn ant-btn-lg ant-btn-default">
-          <PlusOutlined />
-          <span>大按钮</span>
-        </button>
-        <button
-          type="button"
-          className="ant-btn ant-btn-lg ant-btn-default ant-btn-icon-only"
-        >
-          <PlusOutlined />
-        </button>
-        <button
-          type="button"
-          className="ant-btn ant-btn-lg ant-btn-link ant-btn-icon-only"
-        >
-          <FormOutlined />
-        </button>
+        <Space>
+          <Button type="primary" size="large" icon={<PlusOutlined />}>
+            大按钮
+          </Button>
+          <Button size="large" icon={<PlusOutlined />}>
+            大按钮
+          </Button>
+          <Button size="large" icon={<PlusOutlined />} />
+
+          <Button size="large" type="link" icon={<FormOutlined />} />
+        </Space>
       </div>
       <div className="demo-inline">
-        <button type="button" className="ant-btn ant-btn-primary">
-          <PlusOutlined />
-          <span>大按钮</span>
-        </button>
-        <button type="button" className="ant-btn ant-btn-default">
-          <PlusOutlined />
-          <span>大按钮</span>
-        </button>
-        <button
-          type="button"
-          className="ant-btn ant-btn-default ant-btn-icon-only"
-        >
-          <PlusOutlined />
-        </button>
-        <button
-          type="button"
-          className="ant-btn ant-btn-link ant-btn-icon-only"
-        >
-          <FormOutlined />
-        </button>
+        <Space>
+          <Button type="primary" icon={<PlusOutlined />}>
+            按钮
+          </Button>
+          <Button icon={<PlusOutlined />}>按钮</Button>
+          <Button icon={<PlusOutlined />} />
+
+          <Button type="link" icon={<FormOutlined />} />
+        </Space>
       </div>
       <div className="demo-inline">
-        <button type="button" className="ant-btn ant-btn-sm ant-btn-primary">
-          <PlusOutlined />
-          <span>大按钮</span>
-        </button>
-        <button type="button" className="ant-btn ant-btn-sm ant-btn-default">
-          <PlusOutlined />
-          <span>大按钮</span>
-        </button>
-        <button
-          type="button"
-          className="ant-btn ant-btn-sm ant-btn-default ant-btn-icon-only"
-        >
-          <PlusOutlined />
-        </button>
-        <button
-          type="button"
-          className="ant-btn ant-btn-sm ant-btn-link ant-btn-icon-only"
-        >
-          <FormOutlined />
-        </button>
+        <Space>
+          <Button type="primary" size="small" icon={<PlusOutlined />}>
+            小按钮
+          </Button>
+          <Button size="small" icon={<PlusOutlined />}>
+            小按钮
+          </Button>
+          <Button size="small" icon={<PlusOutlined />} />
+
+          <Button size="small" type="link" icon={<FormOutlined />} />
+        </Space>
       </div>
     </div>
   );

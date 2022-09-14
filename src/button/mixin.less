@@ -1,12 +1,13 @@
 // mixins for button
 // ------------------------
-.button-size(@height; @padding-horizontal; @font-size; @border-radius) {
+.button-size(@height; @padding-horizontal; @font-size; @border-radius; @line-height: @line-height-base) {
   @padding-vertical: max(
     (round(((@height - @font-size * @line-height-base) / 2) * 10) / 10) -
       @border-width-base,
     0
   );
   height: @height;
+  line-height: @line-height;
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   border-radius: @border-radius;
@@ -87,7 +88,7 @@
     }
   }
 
-  .button-disabled(@btn-disable-primary-color, ~`colorPalette('@{background}', 3) `, transparent);
+  .button-disabled(@btn-disable-primary-color, ~`colorPalette("@{background}", 3) `, transparent);
 }
 
 .button-variant-other(@color; @background; @border) {
@@ -337,7 +338,7 @@
 
   &-sm {
     .button-size(
-      @btn-height-sm; @btn-padding-horizontal-sm; @btn-font-size-sm; @btn-border-radius-sm
+      @btn-height-sm; @btn-padding-horizontal-sm; @btn-font-size-sm; @btn-border-radius-sm; @btn-line-height-sm
     );
   }
 }
