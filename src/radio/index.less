@@ -13,7 +13,6 @@
 
   display: inline-block;
   font-size: 0;
-  padding: @padding-xss;
 
   .@{ant-prefix}-badge-count {
     z-index: 1;
@@ -22,23 +21,6 @@
   > .@{ant-prefix}-badge:not(:first-child)
     > .@{radio-prefix-cls}-button-wrapper {
     border-left: none;
-  }
-
-  &&-large {
-    .@{radio-prefix-cls}-button-wrapper .@{radio-prefix-cls}-button {
-      height: @radio-button-size-lg;
-    }
-  }
-
-  &&-small {
-    .@{radio-prefix-cls}-button-wrapper {
-      height: 28px;
-      line-height: 28px;
-
-      .@{radio-prefix-cls}-button {
-        height: @radio-button-size-sm;
-      }
-    }
   }
 }
 
@@ -229,8 +211,8 @@ span.@{radio-prefix-cls} + * {
   margin: 0;
   padding: 0 @radio-button-padding-horizontal;
   color: @radio-button-color;
-  font-size: @font-size-base;
-  line-height: @btn-height-base - 2px;
+  font-size: @font-size-sm;
+  line-height: @btn-height-base;
   background: @radio-button-bg;
   border: none;
   cursor: pointer;
@@ -252,15 +234,23 @@ span.@{radio-prefix-cls} + * {
   }
 
   .@{radio-group-prefix-cls}-large & {
-    height: @input-height-lg;
-    font-size: @font-size-lg;
-    line-height: @input-height-lg - 2px;
+    height: @radio-button-wrapper-height-lg;
+    font-size: @font-size-base;
+    line-height: @radio-button-wrapper-height-lg;
+
+    > .@{radio-prefix-cls}-button {
+      height: @radio-button-size-lg;
+    }
   }
 
   .@{radio-group-prefix-cls}-small & {
-    height: @input-height-sm;
+    height: @radio-button-wrapper-height-sm;
     padding: 0 @control-padding-horizontal-sm - 1px;
-    line-height: @input-height-sm - 2px;
+    line-height: @radio-button-wrapper-height-sm;
+
+    > .@{radio-prefix-cls}-button {
+      height: @radio-button-size-sm;
+    }
   }
 
   &:first-child {
