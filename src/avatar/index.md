@@ -22,7 +22,7 @@ nav:
 
 <code src="./demos/type.tsx" />
 
-### 头像组合
+[//]: # (### 头像组合)
 
-<code src="./demos/group.tsx" />
+[//]: # (<code src="./demos/group.tsx" />)
 
