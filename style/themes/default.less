@@ -353,21 +353,32 @@
 @radio-size: 16px;
 @radio-top: 0.2em;
 @radio-border-width: 1px;
-@radio-dot-size: @radio-size - 8px;
+@radio-border-color: @color-neutral-text-4;
+@radio-hover-bg: @color-neutral-bg-2;
+@radio-active-bg: @color-neutral-line;
+@radio-dot-size: @radio-size - 10px;
 @radio-dot-color: @primary-color;
 @radio-dot-disabled-color: fade(@black, 20%);
 @radio-solid-checked-color: @component-background;
+@radio-checked-bg: @primary-color;
+@radio-disabled-bg: @color-neutral-line;
+@radio-disabled-border-color: @color-neutral-bg-4;
 
 // Radio buttons
-@radio-button-bg: @btn-default-bg;
+@radio-button-bg: @color-neutral-bg-2;
 @radio-button-checked-bg: @btn-default-bg;
 @radio-button-color: @btn-default-color;
 @radio-button-hover-color: @primary-5;
 @radio-button-active-color: @primary-7;
 @radio-button-padding-horizontal: @padding-md - 1px;
-@radio-disabled-button-checked-bg: @disabled-active-bg;
+@radio-disabled-button-checked-bg: @radio-button-bg;
 @radio-disabled-button-checked-color: @disabled-color;
-@radio-wrapper-margin-right: 8px;
+@radio-disabled-button-bg: @disabled-active-bg;
+@radio-disabled-button-color: @color-neutral-text-4;
+@radio-wrapper-margin-right: 32px;
+@radio-button-size-lg: 32px;
+@radio-button-size: 24px;
+@radio-button-size-sm: 20px;
 
 // Media queries breakpoints
 // @screen-xs and @screen-xs-min is not used in Grid
