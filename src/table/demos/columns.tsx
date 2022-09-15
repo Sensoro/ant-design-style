@@ -5,7 +5,7 @@ export interface DataType {
   key: number;
   name: string;
   desc: string;
-  updateTime: number;
+  updateTime: number | string;
   execCnt: number;
   successCnt: number;
   status: string;

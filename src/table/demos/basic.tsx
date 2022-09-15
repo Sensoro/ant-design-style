@@ -14,7 +14,7 @@ const data: DataType[] = Array(10)
     key: idx + 1,
     name: "老人关爱",
     desc: "依赖其他规则提供的数据",
-    updateTime: +new Date(),
+    updateTime: "2022-09-15",
     execCnt: 2769,
     successCnt: idx % 2 === 0 ? 2769 : 1000,
     status: idx % 2 === 0 ? "打开" : "关闭",
