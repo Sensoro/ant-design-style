@@ -1,12 +1,13 @@
 import { Button, Dropdown, Space, Menu } from "antd";
-import React from "react";
 import DownOutlined from "@sensoro-design/icons/DownOutlined";
+
 import "../../button/index.less";
 import "../../menu/index.less";
 import "../../space/index.less";
 
 const menu = (
   <Menu
+    selectedKeys={["3"]}
     items={[
       {
         key: "1",
@@ -27,14 +28,8 @@ const menu = (
 const App = () => (
   <Space wrap size={16}>
     <Dropdown overlay={menu} trigger={["click"]} placement="bottom">
-      <Button type="primary">
-        下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
-      </Button>
-    </Dropdown>
-
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottom">
-      <Button>
-        下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
+      <Button type="link">
+        创建合同 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
       </Button>
     </Dropdown>
   </Space>

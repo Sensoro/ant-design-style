@@ -10,61 +10,33 @@ const menu = (
     items={[
       {
         key: "1",
-        label: (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.antgroup.com"
-          >
-            1st menu item
-          </a>
-        ),
+        label: "铁塔专用",
       },
       {
         key: "2",
-        label: (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.aliyun.com"
-          >
-            2nd menu item
-          </a>
-        ),
+        label: "这就是一个合同",
       },
       {
         key: "3",
-        label: (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.luohanacademy.com"
-          >
-            3rd menu item
-          </a>
-        ),
+        label: "直签合同",
       },
     ]}
   />
 );
 
 const App = () => (
-  <Space wrap size={16}>
-    {/*<Dropdown overlay={menu} trigger={["click"]} placement="bottom">
+  <Space wrap size={32}>
+    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button type="primary">
         下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
       </Button>
-    </Dropdown>*/}
+    </Dropdown>
 
-    <Dropdown.Button overlay={menu} icon={<DownOutlined />}>
-      下拉菜单
-    </Dropdown.Button>
-
-    {/*<Dropdown overlay={menu} trigger={["click"]} placement="bottom">
-      <Button>
+    <Dropdown overlay={menu} trigger={["click"]} placement="bottomRight">
+      <Button type="primary">
         下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
       </Button>
-    </Dropdown>*/}
+    </Dropdown>
   </Space>
 );
 

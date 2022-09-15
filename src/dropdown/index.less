@@ -217,7 +217,6 @@
 
       &-selected {
         color: @dropdown-selected-color;
-        background-color: @dropdown-selected-bg;
       }
 
       &:hover,
@@ -296,6 +295,32 @@
     // https://github.com/ant-design/ant-design/issues/19264
     &-submenu-selected &-submenu-title {
       color: @primary-color;
+    }
+  }
+
+  // ======================= large =======================
+  &.@{dropdown-prefix-cls}-large {
+    .@{dropdown-prefix-cls}-menu {
+      padding: @padding-xs 0;
+
+      &-item {
+        padding: @padding-xs @padding-md;
+        font-size: @font-size-lg;
+        height: @dropdown-menu-item-height-lg;
+      }
+    }
+  }
+
+  // ======================= small =======================
+  &.@{dropdown-prefix-cls}-small {
+    .@{dropdown-prefix-cls}-menu {
+      padding: @padding-xss 0;
+
+      &-item {
+        padding: 2px @padding-xs;
+        font-size: @font-size-sm;
+        height: @dropdown-menu-item-height-sm;
+      }
     }
   }
 
