@@ -24,6 +24,8 @@ nav:
 
 ### 添加和删除标签
 
+添加和编辑 `Tag` 的 `Input` 组件样式进行了集成，需要手动添加 `className="ant-tag-input"`
+
 <code src="./demos/operate.tsx" />
 
 ### 多彩标签

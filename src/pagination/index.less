@@ -346,11 +346,13 @@
 
   &&-mini &-total-text,
   &&-mini &-simple-pager {
+    font-size: @font-size-sm;
     height: @pagination-item-size-sm;
     line-height: @pagination-item-size-sm;
   }
 
   &&-mini &-item {
+    font-size: @font-size-sm;
     min-width: @pagination-item-size-sm;
     height: @pagination-item-size-sm;
     margin: 0;
@@ -372,8 +374,7 @@
 
   &&-mini &-prev &-item-link,
   &&-mini &-next &-item-link {
-    background: transparent;
-    border-color: transparent;
+    font-size: @font-size-sm;
 
     &::after {
       height: @pagination-item-size-sm;
@@ -396,6 +397,7 @@
     }
 
     &-quick-jumper {
+      font-size: @font-size-sm;
       height: @pagination-item-size-sm;
       line-height: @pagination-item-size-sm;
 

@@ -17,3 +17,7 @@ nav:
 ### 基本用法
 
 <code src="./demos/basic.tsx" />
+
+### 迷你版本
+
+<code src="./demos/size.tsx" />

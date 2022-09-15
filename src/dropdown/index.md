@@ -24,6 +24,10 @@ nav:
 
 ### 尺寸
 
+尺寸是手动进行添加的 `overlayClassName` 设置上即可，默认是中等大小
+* `ant-dropdown-large`
+* `ant-dropdown-small`
+
 <code src="./demos/size.tsx" />
 
 ### 其他样式

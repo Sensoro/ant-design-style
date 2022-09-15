@@ -55,6 +55,17 @@
 @normal-color: #d9d9d9;
 @white: #fff;
 @black: #000;
+
+// @sensoro-design/antd theme colors - without opacity
+@gray-1: #fbfbfc;
+@gray-2: #f6f7f8;
+@gray-3: #f1f2f4;
+@gray-4: #eceef0;
+@gray-5: #dbdee2;
+@gray-6: #c2c7ce;
+@gray-7: #aab0ba;
+@gray-8: #6d7789;
+@gray-9: #3c4961;
 @gray: #0a1b39;
 
 // @sensoro-design/antd theme colors
@@ -104,7 +115,7 @@
 @text-color-inverse: @white;
 @icon-color: inherit;
 @icon-color-hover: fade(@gray, 75%);
-@heading-color: fade(@gray, 85%);
+@heading-color: @text-color-primary;
 @text-color-dark: fade(@white, 85%);
 @text-color-secondary-dark: fade(@white, 65%);
 @text-selection-bg: @primary-color;
@@ -715,23 +726,23 @@
 // Table
 // --
 @table-bg: @component-background;
-@table-header-bg: @background-color-light;
+@table-header-bg: @gray-1;
 @table-header-color: @heading-color;
 @table-header-sort-bg: @background-color-base;
-@table-body-sort-bg: #fafafa;
-@table-row-hover-bg: @background-color-light;
+@table-body-sort-bg: @gray-1;
+@table-row-hover-bg: @gray-2;
 @table-selected-row-color: inherit;
-@table-selected-row-bg: @primary-1;
+@table-selected-row-bg: @table-row-hover-bg;
 @table-body-selected-sort-bg: @table-selected-row-bg;
 @table-selected-row-hover-bg: darken(@table-selected-row-bg, 2%);
-@table-expanded-row-bg: #fbfbfb;
+@table-expanded-row-bg: @gray-1;
 @table-padding-vertical: 16px;
 @table-padding-horizontal: 16px;
 @table-padding-vertical-md: (@table-padding-vertical * 3 / 4);
-@table-padding-horizontal-md: (@table-padding-horizontal / 2);
+@table-padding-horizontal-md: @table-padding-horizontal;
 @table-padding-vertical-sm: (@table-padding-vertical / 2);
 @table-padding-horizontal-sm: (@table-padding-horizontal / 2);
-@table-border-color: @border-color-split;
+@table-border-color: @color-neutral-line;
 @table-border-radius-base: @border-radius-base;
 @table-footer-bg: @background-color-light;
 @table-footer-color: @heading-color;
@@ -742,14 +753,17 @@
 @table-header-cell-split-color: rgba(0, 0, 0, 0.06);
 // Sorter
 // Legacy: `table-header-sort-active-bg` is used for hover not real active
-@table-header-sort-active-bg: rgba(0, 0, 0, 0.04);
+@table-header-sort-active-bg: @color-neutral-bg-3;
 @table-fixed-header-sort-active-bg: hsv(0, 0, 96%);
 
 // Filter
 @table-header-filter-active-bg: rgba(0, 0, 0, 0.04);
 @table-filter-btns-bg: inherit;
 @table-filter-dropdown-bg: @component-background;
-@table-expand-icon-bg: @component-background;
+@table-expand-icon-color: @color-neutral-text-3;
+@table-expand-icon-bg: @color-neutral-line;
+@table-expand-icon-size: 12px;
+@table-expand-hover-icon-bg: @color-neutral-bg-4;
 @table-selection-column-width: 32px;
 // Sticky
 @table-sticky-scroll-bar-bg: fade(#000, 35%);
