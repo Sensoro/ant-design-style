@@ -18,7 +18,15 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
-### 可选择标签
+### 尺寸
 
-<code src="./demos/checkable.tsx" />
+**large 类型 antd 暂不支持，现阶段使用手动添加 class 形式支持。`className="ant-switch-large"`**
+
+<code src="./demos/size.tsx" />
+
+### 带文本
+
+<code src="./demos/text.tsx" />
+
+
 

@@ -215,6 +215,7 @@
 
 // Disabled states
 @disabled-color: @color-neutral-bg-4;
+@disabled-text-color: @color-neutral-bg-4;
 @disabled-bg: @background-color-base;
 @disabled-active-bg: tint(@black, 90%);
 @disabled-color-dark: fade(#fff, 35%);
@@ -938,19 +939,30 @@
 // ---
 @switch-height: 24px;
 @switch-sm-height: 16px;
+@switch-lg-height: 32px;
 @switch-min-width: 40px;
 @switch-sm-min-width: 28px;
+@switch-lg-min-width: 54px;
 @switch-disabled-opacity: 0.4;
 @switch-color: @primary-color;
 @switch-bg: @component-background;
 @switch-image-bg: @color-neutral-line;
+@switch-image-hover-bg: @color-neutral-bg-4;
+@switch-image-checked-bg: @primary-color;
+@switch-image-checked-hover-bg: @primary-5;
+@switch-image-disabled-bg: @color-neutral-bg-2;
+@switch-image-checked-disabled-bg: @primary-3;
 @switch-shadow-color: fade(#00230b, 20%);
+@switch-padding-lg: 4px;
 @switch-padding: 3px;
 @switch-padding-sm: 2px;
+@switch-inner-color: @color-neutral-text-3;
 @switch-inner-margin-min: ceil(@switch-height * 0.3);
 @switch-inner-margin-max: ceil(@switch-height * 1.1);
 @switch-sm-inner-margin-min: ceil(@switch-sm-height * 0.3);
 @switch-sm-inner-margin-max: ceil(@switch-sm-height * 1.1);
+@switch-lg-inner-margin-min: ceil(@switch-lg-height * 0.3);
+@switch-lg-inner-margin-max: ceil(@switch-lg-height * 1.1);
 
 // Pagination
 // ---

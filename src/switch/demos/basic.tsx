@@ -7,15 +7,7 @@ const onChange = (checked: boolean) => {
 
 const App: FC = () => (
   <Space direction="vertical" size={16}>
-    <Space size={16}>
-      <Switch onChange={onChange} />
-      <Switch size="small" onChange={onChange} />
-    </Space>
-
-    <Space size={16}>
-      <Switch defaultChecked onChange={onChange} />
-      <Switch size="small" defaultChecked onChange={onChange} />
-    </Space>
+    <Switch onChange={onChange} />
   </Space>
 );
 

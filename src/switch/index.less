@@ -1,15 +1,21 @@
-@import '../../style/index';
-@import '../../style/mixins/index';
+@import "../../style/index";
+@import "../../style/mixins/index";
 
-@switch-prefix-cls: ~'@{ant-prefix}-switch';
+@switch-prefix-cls: ~"@{ant-prefix}-switch";
 @switch-duration: 0.2s;
 
 @switch-pin-size: @switch-height - 6px;
 @switch-sm-pin-size: @switch-sm-height - 4px;
+@switch-lg-pin-size: @switch-lg-height - 8px;
+
+.switch-background(@background: @switch-image-bg) {
+  background-image: linear-gradient(to right, @background, @background),
+    linear-gradient(to right, @component-background, @component-background);
+}
 
 .@{switch-prefix-cls} {
   .reset-component();
-
+  .switch-background();
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -17,8 +23,6 @@
   height: @switch-height;
   line-height: @switch-height;
   vertical-align: middle;
-  background-image: linear-gradient(to right, @switch-image-bg, @switch-image-bg),
-    linear-gradient(to right, @component-background, @component-background);
   border: 0;
   border-radius: 100px;
   cursor: pointer;
@@ -27,11 +31,11 @@
 
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px fade(@disabled-color, 10%);
+    //box-shadow: 0 0 0 2px @switch-image-bg;
   }
 
   &-checked:focus {
-    box-shadow: 0 0 0 2px @primary-1;
+    //box-shadow: 0 0 0 2px @primary-1;
   }
 
   &:focus:hover {
@@ -42,10 +46,21 @@
     background: @switch-color;
   }
 
+  &-disabled {
+    .switch-background(@switch-image-disabled-bg);
+
+    &.@{switch-prefix-cls}-checked {
+      .switch-background(@switch-image-checked-disabled-bg);
+    }
+
+    .@{switch-prefix-cls}-inner {
+      color: @disabled-text-color;
+    }
+  }
+
   &-loading,
   &-disabled {
     cursor: not-allowed;
-    opacity: @switch-disabled-opacity;
 
     * {
       box-shadow: none;
@@ -53,16 +68,26 @@
     }
   }
 
+  // ========================= Hover ==========================
+  &:not(&-disabled):hover {
+    .switch-background(@switch-image-hover-bg);
+  }
+
+  &-checked:not(&-disabled):hover {
+    .switch-background(@switch-image-checked-bg);
+  }
+
   // ========================= Inner ==========================
   &-inner {
     display: block;
     margin: 0 @switch-inner-margin-min 0 @switch-inner-margin-max;
-    color: @text-color-inverse;
+    color: @switch-inner-color;
     font-size: @font-size-sm;
     transition: margin @switch-duration;
   }
 
   &-checked &-inner {
+    color: @text-color-inverse;
     margin: 0 @switch-inner-margin-max 0 @switch-inner-margin-min;
   }
 
@@ -85,7 +110,7 @@
       border-radius: (@switch-pin-size / 2);
       box-shadow: 0 2px 4px 0 @switch-shadow-color;
       transition: all @switch-duration ease-in-out;
-      content: '';
+      content: "";
     }
   }
 
@@ -134,6 +159,10 @@
       top: @switch-padding-sm;
       width: @switch-sm-pin-size;
       height: @switch-sm-pin-size;
+
+      &::before {
+        border-radius: (@switch-sm-pin-size / 2);
+      }
     }
 
     .@{switch-prefix-cls}-loading-icon {
@@ -147,10 +176,46 @@
       }
 
       .@{switch-prefix-cls}-handle {
-        left: calc(100% - @switch-sm-pin-size - @switch-padding);
+        left: calc(100% - @switch-sm-pin-size - @switch-padding-sm);
+      }
+    }
+  }
+
+  &-large {
+    min-width: @switch-lg-min-width;
+    height: @switch-lg-height;
+    line-height: @switch-lg-height;
+
+    .@{switch-prefix-cls}-inner {
+      margin: 0 @switch-lg-inner-margin-min 0 @switch-lg-inner-margin-max;
+      font-size: @font-size-base;
+    }
+
+    .@{switch-prefix-cls}-handle {
+      top: @switch-padding-lg;
+      width: @switch-lg-pin-size;
+      height: @switch-lg-pin-size;
+
+      &::before {
+        border-radius: (@switch-lg-pin-size / 2);
+      }
+    }
+
+    .@{switch-prefix-cls}-loading-icon {
+      top: ((@switch-lg-pin-size - 9px) / 2);
+      font-size: 9px;
+    }
+
+    &.@{switch-prefix-cls}-checked {
+      .@{switch-prefix-cls}-inner {
+        margin: 0 @switch-lg-inner-margin-max 0 @switch-lg-inner-margin-min;
+      }
+
+      .@{switch-prefix-cls}-handle {
+        left: calc(100% - @switch-lg-pin-size - @switch-padding-lg);
       }
     }
   }
 }
 
-@import './rtl';
+@import "./rtl";
