@@ -38,7 +38,7 @@
       flex-wrap: wrap;
       align-items: center;
       // Multiple is little different that horizontal is follow the vertical
-      padding: @select-multiple-padding @padding-sm;
+      padding: @select-multiple-padding + 1px @padding-sm;
 
       .@{select-prefix-cls}-show-search& {
         cursor: text;
@@ -165,15 +165,14 @@
     // ============================================================
     // ==                          Size                          ==
     // ============================================================
-    .select-size(@suffix, @input-height, @font-size: @font-size-sm, @selector-padding: @padding-sm) {
+    .select-size(@suffix, @input-height, @font-size: @font-size-sm, @selector-padding-horizontal: @padding-sm) {
       @merged-cls: ~'@{select-prefix-cls}-@{suffix}';
       &.@{merged-cls} {
         @select-selection-height: @input-height - @input-padding-vertical-base * 2;
         @select-height-without-border: @input-height - @border-width-base * 2;
 
         .@{select-prefix-cls}-selector {
-          padding-left: @selector-padding;
-          padding-right: @selector-padding;
+          padding: @select-multiple-padding @selector-padding-horizontal;
 
           &::after {
             line-height: @select-selection-height;

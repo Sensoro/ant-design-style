@@ -4,7 +4,7 @@ import type { FC } from "react";
 
 import "../../space/index.less";
 
-const treeData = [
+export const treeData = [
   {
     value: "cloud",
     title: "云平台研发",
