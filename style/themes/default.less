@@ -235,6 +235,8 @@
 @shadow-2: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
   0 9px 28px 8px rgba(0, 0, 0, 0.05);
 
+@sensoro-shadow-base: 0 0 2px 0 rgba(60, 73, 97, 0.08), 0 4px 8px 0 rgba(109, 119, 137, 0.16);
+
 // Buttons
 @btn-font-weight: 400;
 @btn-border-radius-base: @border-radius-base;
@@ -1009,22 +1011,23 @@
 @slider-margin: 10px 6px 10px;
 @slider-rail-background-color: @background-color-base;
 @slider-rail-background-color-hover: #e1e1e1;
-@slider-track-background-color: @primary-3;
+@slider-track-background-color: @primary-color;
 @slider-track-background-color-hover: @primary-4;
-@slider-handle-border-width: 2px;
+@slider-handle-border-width: @border-width-base;
 @slider-handle-background-color: @component-background;
-@slider-handle-color: @primary-3;
+@slider-handle-color: @primary-color;
 @slider-handle-color-hover: @primary-4;
 @slider-handle-color-focus: tint(@primary-color, 20%);
 @slider-handle-color-focus-shadow: fade(@primary-color, 12%);
 @slider-handle-color-tooltip-open: @primary-color;
-@slider-handle-size: 14px;
-@slider-handle-margin-top: -5px;
-@slider-handle-margin-left: -5px;
-@slider-handle-shadow: 0;
+@slider-handle-size: 16px;
+@slider-handle-margin-top: -6px;
+@slider-handle-margin-left: -6px;
+@slider-handle-shadow: @sensoro-shadow-base;
 @slider-dot-border-color: @border-color-split;
 @slider-dot-border-color-active: tint(@primary-color, 50%);
-@slider-disabled-color: @disabled-color;
+@slider-marker-text-color: @color-neutral-text-3;
+@slider-disabled-color: @primary-3;
 @slider-disabled-background-color: @component-background;
 
 // Tree
