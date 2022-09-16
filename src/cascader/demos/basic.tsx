@@ -82,7 +82,6 @@ const App: FC = () => {
     <Cascader
       defaultValue={["cloud", "fe", "sj"]}
       placeholder="请选择"
-      expandTrigger="hover"
       style={{ width: 240 }}
       options={options}
       onChange={(value) => console.log(value)}

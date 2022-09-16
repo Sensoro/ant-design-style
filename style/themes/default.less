@@ -591,7 +591,7 @@
 @cascader-menu-bg: @component-background;
 @cascader-menu-active-bg: @color-neutral-bg-2;
 @cascader-menu-minwidth: 144px;
-@cascader-menu-border-color-split: @border-color-split;
+@cascader-menu-border-color-split: @color-neutral-line;
 
 // Cascader
 // ----
@@ -936,15 +936,17 @@
 
 // Switch
 // ---
-@switch-height: 22px;
+@switch-height: 24px;
 @switch-sm-height: 16px;
-@switch-min-width: 44px;
+@switch-min-width: 40px;
 @switch-sm-min-width: 28px;
 @switch-disabled-opacity: 0.4;
 @switch-color: @primary-color;
 @switch-bg: @component-background;
+@switch-image-bg: @color-neutral-line;
 @switch-shadow-color: fade(#00230b, 20%);
-@switch-padding: 2px;
+@switch-padding: 3px;
+@switch-padding-sm: 2px;
 @switch-inner-margin-min: ceil(@switch-height * 0.3);
 @switch-inner-margin-max: ceil(@switch-height * 1.1);
 @switch-sm-inner-margin-min: ceil(@switch-sm-height * 0.3);

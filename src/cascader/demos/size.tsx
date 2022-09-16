@@ -12,7 +12,6 @@ const App: FC = () => {
         size="large"
         placeholder="请选择"
         maxTagCount="responsive"
-        expandTrigger="hover"
         style={{ width: 240 }}
         options={options}
         onChange={(value) => console.log(value)}
@@ -22,7 +21,6 @@ const App: FC = () => {
         showArrow
         placeholder="请选择"
         maxTagCount="responsive"
-        expandTrigger="hover"
         style={{ width: 240 }}
         options={options}
         onChange={(value) => console.log(value)}
@@ -33,7 +31,6 @@ const App: FC = () => {
         size="small"
         placeholder="请选择"
         maxTagCount="responsive"
-        expandTrigger="hover"
         style={{ width: 240 }}
         options={options}
         onChange={(value) => console.log(value)}

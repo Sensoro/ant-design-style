@@ -10,7 +10,6 @@ const App: FC = () => {
       showArrow
       placeholder="请选择"
       maxTagCount="responsive"
-      expandTrigger="hover"
       style={{ width: 240 }}
       options={options}
       onChange={(value) => console.log(value)}

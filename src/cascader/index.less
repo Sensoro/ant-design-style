@@ -79,8 +79,8 @@
       &-active:not(&-disabled) {
         &,
         &:hover {
-          //font-weight: @select-item-selected-font-weight;
-          background-color: @cascader-menu-active-bg;
+          font-weight: @select-item-selected-font-weight;
+          color: @primary-color;
         }
       }
 
@@ -91,7 +91,6 @@
       &-expand &-expand-icon,
       &-loading-icon {
         margin-left: @padding-xss;
-        color: @text-color-secondary;
         font-size: 10px;
 
         .@{cascader-prefix-cls}-menu-item-disabled& {
