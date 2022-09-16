@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Avatar头像
+# Avatar 头像
 
 ## 代码演示
 

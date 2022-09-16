@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Select选择器
+# Select 选择器
 
 ## 代码演示
 
@@ -19,6 +19,8 @@ nav:
 <code src="./demos/basic.tsx" />
 
 ### 搜索功能
+
+默认无内容样式可使用 `className="ant-select-empty-content"`; 自定义的可自行设计。
 
 <code src="./demos/search.tsx" />
 

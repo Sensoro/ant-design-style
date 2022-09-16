@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Descriptions描述列表
+# Descriptions 描述列表
 
 ## 代码演示
 

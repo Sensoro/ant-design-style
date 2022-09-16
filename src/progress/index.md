@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Progress进度条
+# Progress 进度条
 
 ## 代码演示
 

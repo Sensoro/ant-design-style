@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Menu导航菜单
+# Menu 导航菜单
 
 ## 代码演示
 

@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# InputNumber数字输入框
+# InputNumber 数字输入框
 
 ## 代码演示
 

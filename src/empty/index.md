@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Empty空状态
+# Empty 空状态
 
 ## 代码演示
 

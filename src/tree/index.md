@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Tree树形控件
+# Tree 树形控件
 
 ## 代码演示
 

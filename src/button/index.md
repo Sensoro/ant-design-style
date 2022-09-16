@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Button按钮
+# Button 按钮
 
 ## 代码演示
 

@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Tooltip气泡提示
+# Tooltip 气泡提示
 
 ## 代码演示
 

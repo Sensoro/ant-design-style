@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# List列表
+# List 列表
 
 ## 代码演示
 

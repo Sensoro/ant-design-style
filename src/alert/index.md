@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Alert警告
+# Alert 警告
 
 ## 代码演示
 

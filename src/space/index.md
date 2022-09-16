@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Space间距
+# Space 间距
 
 ## 代码演示
 

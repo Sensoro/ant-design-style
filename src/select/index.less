@@ -72,6 +72,7 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
+  color: @text-color-primary;
 
   &:not(&-customize-input) &-selector {
     .select-selector();
@@ -96,6 +97,10 @@
       & {
         flex: auto;
       }
+    }
+
+    &-content {
+      font-size: @font-size-sm;
     }
   }
 
@@ -234,6 +239,16 @@
 
     &-empty {
       color: @disabled-color;
+    }
+
+    .@{select-prefix-cls}-empty {
+      color: @select-dropdown-empty-color;
+
+      &-content {
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+      }
     }
   }
 

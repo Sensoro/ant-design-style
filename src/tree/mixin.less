@@ -10,7 +10,8 @@
   .@{tree-prefix-cls}-switcher-icon,
   .@{select-tree-prefix-cls}-switcher-icon {
     display: inline-block;
-    font-size: 10px;
+    color: @color-neutral-text-4;
+    font-size: @font-size-sm;
     vertical-align: baseline;
 
     svg {
@@ -103,6 +104,7 @@
       // >>> Title
       .@{custom-tree-prefix-cls}-node-content-wrapper {
         cursor: not-allowed;
+        color: @color-neutral-text-4;
 
         &:hover {
           background: transparent;
@@ -219,7 +221,7 @@
     position: relative;
     z-index: auto;
     min-height: @tree-title-height;
-    margin: 0;
+    margin-left: @margin-xss;
     padding: 0 8px;
     color: inherit;
     line-height: @tree-treenode-height;
@@ -235,7 +237,6 @@
     &.@{custom-tree-prefix-cls}-node-selected {
       font-weight: @tree-node-selected-font-weight;
       color: @tree-node-selected-color;
-      background-color: @tree-node-selected-bg;
     }
 
     // Icon

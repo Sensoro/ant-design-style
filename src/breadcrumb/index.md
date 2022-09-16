@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Breadcrumb面包屑
+# Breadcrumb 面包屑
 
 ## 代码演示
 

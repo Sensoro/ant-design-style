@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Tag标签
+# Tag 标签
 
 ## 代码演示
 

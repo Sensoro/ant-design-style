@@ -21,18 +21,7 @@ export default () => {
         // @ts-ignore
         option.children.toLowerCase().includes(input.toLowerCase())
       }
-      notFoundContent={
-        <div
-          style={{
-            height: 38,
-            lineHeight: "38px",
-            textAlign: "center",
-            color: "rgba(10, 27, 57, 0.35)",
-          }}
-        >
-          暂无内容
-        </div>
-      }
+      notFoundContent={<div className="ant-select-empty-content">暂无内容</div>}
     >
       <Option value="pxl">亮哥</Option>
       <Option value="wsj">婧姐</Option>

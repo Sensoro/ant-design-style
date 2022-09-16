@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Table表格
+# Table 表格
 
 ## 代码演示
 
