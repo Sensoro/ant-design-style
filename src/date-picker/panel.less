@@ -89,6 +89,7 @@
   &-next-icon,
   &-super-prev-icon,
   &-super-next-icon {
+    color: @color-neutral-text-3;
     position: relative;
     display: inline-block;
     width: @picker-arrow-size;
@@ -173,7 +174,7 @@
       min-width: @picker-panel-cell-height;
       height: @picker-panel-cell-height;
       line-height: @picker-panel-cell-height;
-      border-radius: @border-radius-base;
+      border-radius: 50% !important;
       transition: background @animation-duration-slow, border @animation-duration-slow;
     }
 
@@ -188,15 +189,16 @@
     // >>> Today
     &-in-view&-today .@{cellClassName} {
       &::before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        border: @border-width-base @border-style-base @primary-color;
-        border-radius: @border-radius-base;
         content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: @primary-color;
       }
     }
 
@@ -347,7 +349,7 @@
 
     // >>> Disabled
     &-disabled {
-      color: @disabled-color;
+      color: @picker-basic-cell-disabled-color;
       pointer-events: none;
 
       .@{cellClassName} {
@@ -364,8 +366,8 @@
   }
 
   &-cell {
-    padding: 3px 0;
-    color: @disabled-color;
+    padding: 2px 0;
+    color: @disabled-text-color;
     cursor: pointer;
 
     // In view

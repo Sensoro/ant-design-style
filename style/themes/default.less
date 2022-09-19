@@ -102,6 +102,7 @@
 @body-background: #fff;
 // Base background color for most components
 @component-background: #fff;
+@input-component-bg: fade(@component-background, 60%);
 // Popover background color
 @popover-background: @component-background;
 @popover-customize-border-color: @border-color-split;
@@ -215,7 +216,7 @@
 
 // Disabled states
 @disabled-color: @color-neutral-bg-4;
-@disabled-text-color: @color-neutral-bg-4;
+@disabled-text-color: @color-neutral-text-4;
 @disabled-bg: @background-color-base;
 @disabled-active-bg: tint(@black, 90%);
 @disabled-color-dark: fade(#fff, 35%);
@@ -535,7 +536,7 @@
 @input-addon-color: @color-neutral-text-3;
 @input-icon-color: @input-color;
 @input-border-color: @color-neutral-bg-4;
-@input-bg: @component-background;
+@input-bg: @input-component-bg;
 @input-number-hover-border-color: @input-hover-border-color;
 @input-number-handler-active-bg: #f4f4f4;
 @input-number-handler-hover-bg: @primary-5;
@@ -570,7 +571,7 @@
 @select-dropdown-line-height: @dropdown-line-height;
 @select-dropdown-height: 32px;
 @select-dropdown-empty-color: @color-neutral-text-4;
-@select-background: @component-background;
+@select-background: @input-component-bg;
 @select-clear-background: @select-background;
 @select-selection-item-bg: @color-neutral-bg-2;
 @select-selection-item-border-color: @color-neutral-bg-4;
@@ -794,11 +795,12 @@
 
 // TimePicker
 // ---
-@picker-bg: @component-background;
+@picker-bg: @input-component-bg;
 @picker-basic-cell-hover-color: @item-hover-bg;
 @picker-basic-cell-active-with-range-color: @primary-1;
-@picker-basic-cell-hover-with-range-color: lighten(@primary-color, 35%);
-@picker-basic-cell-disabled-bg: rgba(0, 0, 0, 0.04);
+@picker-basic-cell-hover-with-range-color: @primary-2;
+@picker-basic-cell-disabled-bg: @color-neutral-bg-2;
+@picker-basic-cell-disabled-color: @color-neutral-text-4;
 @picker-border-color: @color-neutral-line;
 @picker-date-hover-range-border-color: lighten(@primary-color, 20%);
 @picker-date-hover-range-color: @picker-basic-cell-hover-with-range-color;
@@ -809,9 +811,9 @@
 @picker-panel-cell-width: 36px;
 @picker-text-height: 40px;
 @picker-panel-without-time-cell-height: 66px;
-@picker-clear-size: @font-size-sm;
-@picker-clear-bg: @color-neutral-line;
-@picker-clear-hover-bg: @color-neutral-bg-4;
+@picker-clear-size: @font-size-base;
+@picker-clear-bg: @gray-4;
+@picker-clear-hover-bg: @gray-5;
 
 // Calendar
 // ---
