@@ -1,29 +1,30 @@
+import type { RangePickerProps, DatePickerProps } from "antd/es/date-picker";
+import { DatePicker, Space, ConfigProvider } from "antd";
 import type { FC } from "react";
-import { TimePicker, ConfigProvider, Space } from "antd";
-import type {
-  TimePickerProps,
-  TimeRangePickerProps,
-} from "antd/es/time-picker";
-import moment from "moment";
 import { CloseOutlined } from "@ant-design/icons";
-
-const { RangePicker } = TimePicker;
-
-import zhCN from "antd/es/locale/zh_CN";
-
 import "../../space/index.less";
+import zhCN from "antd/es/locale/zh_CN";
+import moment from "moment";
 
-const onChange: TimeRangePickerProps["onChange"] = (time, timeString) => {
-  console.log(time, timeString);
+const { RangePicker } = DatePicker;
+
+const onChange: RangePickerProps["onChange"] = (date, dateString) => {
+  console.log(date, dateString);
+};
+
+const disabledDate: RangePickerProps["disabledDate"] = (current) => {
+  // Can not select days before today and today
+  return current && current < moment().subtract(1, "day").endOf("day");
 };
 
 const App: FC = () => (
   <ConfigProvider locale={zhCN}>
     <Space direction="vertical">
       <RangePicker
-        separator="~"
         size="large"
         clearIcon={<CloseOutlined />}
+        disabledDate={disabledDate}
+        separator="~"
         defaultValue={[
           moment(moment(new Date()).subtract("10", "day"), "YYYY-MM-DD"),
           moment(moment(new Date()).subtract("1", "day"), "YYYY-MM-DD"),
