@@ -631,7 +631,8 @@
             width: 100%;
             height: @picker-time-panel-cell-height;
             margin: 0;
-            padding: 0 0 0 ((@picker-time-panel-column-width - 28px) / 2);
+            //padding: 0 0 0 ((@picker-time-panel-column-width - 28px) / 2);
+            text-align: center;
             color: @text-color;
             line-height: @picker-time-panel-cell-height;
             border-radius: 0;
@@ -645,7 +646,8 @@
 
           &-selected {
             .@{picker-prefix-cls}-time-panel-cell-inner {
-              background: @calendar-item-active-bg;
+              color: @primary-color;
+              font-weight: 500;
             }
           }
 

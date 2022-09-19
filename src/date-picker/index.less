@@ -1,33 +1,36 @@
-// style dependencies
-//@import '../../button/style';
-//@import '../../tag/style';
-@import '../../style/themes/index';
-@import '../../style/mixins/index';
-//@import '../../input/style/mixin';
-@import './status';
+@import "../../style/themes/index";
+@import "../../style/mixins/index";
+@import "../input/mixin";
+@import "../button/index";
+@import "../tag/index";
+@import "./status";
 
-@picker-prefix-cls: ~'@{ant-prefix}-picker';
+@picker-prefix-cls: ~"@{ant-prefix}-picker";
 
-.picker-padding(@input-height, @font-size, @padding-horizontal) {
+@picker-input-height: 22px;
+
+.picker-padding(@padding-vertical, @padding-horizontal) {
   // font height probably 22.0001， So use floor better
-  @font-height: floor(@font-size * @line-height-base) + 2;
-  @padding-top: max(((@input-height - @font-height) / 2), 0);
-  @padding-bottom: max(@input-height - @font-height - @padding-top, 0);
-  padding: @padding-top @padding-horizontal @padding-bottom;
+  //@font-height: floor(@font-size * @line-height-base) + 2;
+  //@padding-top: max(((@input-height - @font-height) / 2), 0);
+  //@padding-bottom: max(@input-height - @font-height - @padding-top, 0);
+  //padding: @padding-top @padding-horizontal @padding-bottom;
+  padding: @padding-vertical @padding-horizontal;
 }
 
 .@{picker-prefix-cls} {
   @arrow-size: @popover-arrow-width;
 
   .reset-component();
-  .picker-padding(@input-height-base, @font-size-base, @input-padding-horizontal-base);
+  .picker-padding(@padding-xss, @padding-sm);
   position: relative;
   display: inline-flex;
   align-items: center;
   background: @picker-bg;
   border: @border-width-base @border-style-base @select-border-color;
   border-radius: @control-border-radius;
-  transition: border @animation-duration-slow, box-shadow @animation-duration-slow;
+  transition: border @animation-duration-slow,
+    box-shadow @animation-duration-slow;
 
   &:hover,
   &-focused {
@@ -46,6 +49,7 @@
 
   &&-disabled &-suffix {
     color: @disabled-color;
+    opacity: 1 !important;
   }
 
   &&-borderless {
@@ -68,7 +72,7 @@
       // Fix Firefox flex not correct:
       // https://github.com/ant-design/ant-design/pull/20023#issuecomment-564389553
       min-width: 1px;
-      height: auto;
+      height: @picker-input-height;
       padding: 0;
       background: transparent;
 
@@ -87,6 +91,10 @@
       .@{picker-prefix-cls}-clear {
         opacity: 1;
       }
+
+      .@{picker-prefix-cls}-suffix {
+        opacity: 0;
+      }
     }
 
     &-placeholder {
@@ -98,15 +106,21 @@
 
   // Size
   &-large {
-    .picker-padding(@input-height-lg, @font-size-lg, @input-padding-horizontal-lg);
+    .picker-padding(@padding-xs - 1px, @padding-sm);
 
     .@{picker-prefix-cls}-input > input {
+      height: @picker-input-height + 2px;
       font-size: @font-size-lg;
     }
   }
 
   &-small {
-    .picker-padding(@input-height-sm, @font-size-base, @input-padding-horizontal-sm);
+    .picker-padding(1px, @padding-xs);
+
+    .@{picker-prefix-cls}-input > input {
+      height: @picker-input-height - 2px;
+      font-size: @font-size-sm;
+    }
   }
 
   &-suffix {
@@ -114,9 +128,10 @@
     flex: none;
     align-self: center;
     margin-left: (@padding-xs / 2);
-    color: @disabled-color;
+    color: @color-neutral-text-4;
     line-height: 1;
     pointer-events: none;
+    opacity: 1;
 
     > * {
       vertical-align: top;
@@ -131,20 +146,25 @@
     position: absolute;
     top: 50%;
     right: 0;
-    color: @disabled-color;
-    line-height: 1;
-    background: @component-background;
+    color: @text-color-primary;
+    font-size: @picker-clear-size - 4px;
+    width: @picker-clear-size;
+    height: @picker-clear-size;
+    line-height: @picker-clear-size - 2px;
+    text-align: center;
+    background: @picker-clear-bg;
     transform: translateY(-50%);
     cursor: pointer;
     opacity: 0;
     transition: opacity @animation-duration-slow, color @animation-duration-slow;
+    border-radius: 50%;
 
     > * {
       vertical-align: top;
     }
 
     &:hover {
-      color: @text-color-secondary;
+      background: @picker-clear-hover-bg;
     }
   }
 
@@ -183,10 +203,18 @@
       .@{picker-prefix-cls}-clear {
         opacity: 1;
       }
+
+      .@{picker-prefix-cls}-suffix {
+        opacity: 0;
+      }
+
     }
 
     // Active bar
     .@{picker-prefix-cls}-active-bar {
+      // @sensoro-design 废弃
+      display: none;
+
       bottom: -@border-width-base;
       height: 2px;
       margin-left: @input-padding-horizontal-base;
@@ -292,7 +320,8 @@
     margin-bottom: 0;
     padding: (@padding-xs / 2) @padding-sm;
     overflow: hidden;
-    line-height: @picker-text-height - 2 * @border-width-base - (@padding-xs / 2);
+    line-height: @picker-text-height - 2 * @border-width-base -
+      (@padding-xs / 2);
     text-align: left;
     list-style: none;
 
@@ -362,5 +391,5 @@
   }
 }
 
-@import './panel';
-@import './rtl';
+@import "./panel";
+@import "./rtl";
