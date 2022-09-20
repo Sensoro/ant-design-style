@@ -1,27 +1,45 @@
----
-title: Modal 对话框
-order: 0
-toc: content
-group:
-  title: 反馈
-  order: 0
-nav:
-  title: 组件
-  path: /components
----
+[//]: # (---)
 
-# Modal 对话框
+[//]: # (title: Modal 对话框)
 
-## 代码演示
+[//]: # (order: 0)
 
-### 基本用法
+[//]: # (toc: content)
 
-<code src="./demos/basic.tsx" />
+[//]: # (group:)
 
-### 加深印象版本通知
+[//]: # (  title: 反馈)
 
-<code src="./demos/deep.tsx" />
+[//]: # (  order: 0)
 
-### 其他
+[//]: # (nav:)
 
-链接文本等操作需在各个项目中自定义实现
+[//]: # (  title: 组件)
+
+[//]: # (  path: /components)
+
+[//]: # (---)
+
+[//]: # ()
+[//]: # (# Modal 对话框)
+
+[//]: # ()
+[//]: # (## 代码演示)
+
+[//]: # ()
+[//]: # (### 基本用法)
+
+[//]: # ()
+[//]: # (<code src="./demos/basic.tsx" />)
+
+[//]: # ()
+[//]: # (### 加深印象版本通知)
+
+[//]: # ()
+[//]: # (<code src="./demos/deep.tsx" />)
+
+[//]: # ()
+[//]: # (### 其他)
+
+[//]: # ()
+[//]: # (链接文本等操作需在各个项目中自定义实现)

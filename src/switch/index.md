@@ -1,5 +1,5 @@
 ---
-title: Switch 开发
+title: Switch 开关
 order: 0
 toc: content
 group:
@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Switch 开发
+# Switch 开关
 
 ## 代码演示
 
