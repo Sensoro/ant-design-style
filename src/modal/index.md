@@ -1,5 +1,5 @@
 ---
-title: Notification 通知提醒框
+title: Modal 对话框
 order: 0
 toc: content
 group:
@@ -10,17 +10,13 @@ nav:
   path: /components
 ---
 
-# Notification 通知提醒框
+# Modal 对话框
 
 ## 代码演示
 
 ### 基本用法
 
 <code src="./demos/basic.tsx" />
-
-### 单行
-
-<code src="./demos/single.tsx" />
 
 ### 加深印象版本通知
 
