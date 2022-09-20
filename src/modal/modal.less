@@ -5,7 +5,7 @@
   .modal-mask();
 
   position: relative;
-  top: 100px;
+  top: 40px;
   width: auto;
   max-width: calc(100vw - 32px);
   margin: 0 auto;
@@ -30,17 +30,17 @@
     background-clip: padding-box;
     border: 0;
     border-radius: @modal-border-radius;
-    box-shadow: @shadow-2;
+    box-shadow: @sensoro-shadow-5;
     pointer-events: auto;
   }
 
   &-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 24px;
+    right: 24px;
+
     z-index: @zindex-popup-close;
     padding: 0;
-    color: @modal-close-color;
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
@@ -51,20 +51,25 @@
     transition: color 0.3s;
 
     &-x {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: @modal-header-close-size;
       height: @modal-header-close-size;
-      font-size: @font-size-lg;
+      border-radius: @border-radius-lg;
+      font-size: 24px;
       font-style: normal;
-      line-height: @modal-header-close-size;
       text-align: center;
       text-transform: none;
       text-rendering: auto;
+
+      &:hover {
+        background: @modal-close-hover-bg;
+      }
     }
 
     &:focus,
     &:hover {
-      color: @icon-color-hover;
       text-decoration: none;
     }
   }
@@ -73,8 +78,6 @@
     padding: @modal-header-padding;
     color: @text-color;
     background: @modal-header-bg;
-    border-bottom: @modal-header-border-width @modal-header-border-style
-      @modal-header-border-color-split;
     border-radius: @modal-border-radius @modal-border-radius 0 0;
   }
 
@@ -83,19 +86,19 @@
     font-size: @font-size-base;
     line-height: @line-height-base;
     word-wrap: break-word;
+    max-height: calc(100vh - @modal-header-height - @modal-footer-height - 80px);
+    overflow: auto;
   }
 
   &-footer {
     padding: @modal-footer-padding-vertical @modal-footer-padding-horizontal;
     text-align: right;
     background: @modal-footer-bg;
-    border-top: @modal-footer-border-width @modal-footer-border-style
-      @modal-footer-border-color-split;
     border-radius: 0 0 @modal-border-radius @modal-border-radius;
 
     .@{ant-prefix}-btn + .@{ant-prefix}-btn:not(.@{ant-prefix}-dropdown-trigger) {
       margin-bottom: 0;
-      margin-left: 8px;
+      margin-left: @margin-sm;
     }
   }
 

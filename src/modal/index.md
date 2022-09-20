@@ -1,45 +1,31 @@
-[//]: # (---)
+---
+title: Modal 对话框
+order: 0
+toc: content
+group:
+  title: 反馈
+  order: 0
+nav:
+  title: 组件
+  path: /components
+---
 
-[//]: # (title: Modal 对话框)
+# Modal 对话框
 
-[//]: # (order: 0)
+## 代码演示
 
-[//]: # (toc: content)
+### 基本用法
 
-[//]: # (group:)
+<code src="./demos/basic.tsx" />
 
-[//]: # (  title: 反馈)
+### 适配规则
 
-[//]: # (  order: 0)
+* `Modal` 最大高度 `100vh - 80px`
+* 内容区域最大高度 = `Modal - @modal-header-height - @modal-footer-height` === `calc(100vh - 76px -80px - 80px)`
 
-[//]: # (nav:)
+<code src="./demos/max-height.tsx" />
 
-[//]: # (  title: 组件)
+### 对话框
 
-[//]: # (  path: /components)
+<code src="./demos/confirm.tsx" />
 
-[//]: # (---)
-
-[//]: # ()
-[//]: # (# Modal 对话框)
-
-[//]: # ()
-[//]: # (## 代码演示)
-
-[//]: # ()
-[//]: # (### 基本用法)
-
-[//]: # ()
-[//]: # (<code src="./demos/basic.tsx" />)
-
-[//]: # ()
-[//]: # (### 加深印象版本通知)
-
-[//]: # ()
-[//]: # (<code src="./demos/deep.tsx" />)
-
-[//]: # ()
-[//]: # (### 其他)
-
-[//]: # ()
-[//]: # (链接文本等操作需在各个项目中自定义实现)

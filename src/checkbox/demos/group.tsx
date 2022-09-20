@@ -19,11 +19,25 @@ export default () => {
 
       <div>
         垂直：
-        <Space direction="vertical" size={16}>
-          <Checkbox value="Apple">Apple</Checkbox>
-          <Checkbox value="Pear">Pear</Checkbox>
-          <Checkbox value="Orange">Orange</Checkbox>
-        </Space>
+        <Checkbox.Group style={{ width: "100%" }}>
+          <Row gutter={[0, 16]}>
+            <Col span={24}>
+              <Checkbox value="A">A</Checkbox>
+            </Col>
+            <Col span={24}>
+              <Checkbox value="B">B</Checkbox>
+            </Col>
+            <Col span={24}>
+              <Checkbox value="C">C</Checkbox>
+            </Col>
+            <Col span={24}>
+              <Checkbox value="D">D</Checkbox>
+            </Col>
+            <Col span={24}>
+              <Checkbox value="E">E</Checkbox>
+            </Col>
+          </Row>
+        </Checkbox.Group>
       </div>
     </Space>
   );
