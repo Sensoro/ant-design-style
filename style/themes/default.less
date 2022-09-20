@@ -102,7 +102,6 @@
 @body-background: #fff;
 // Base background color for most components
 @component-background: #fff;
-@input-component-bg: fade(@component-background, 60%);
 // Popover background color
 @popover-background: @component-background;
 @popover-customize-border-color: @border-color-split;
@@ -537,7 +536,7 @@
 @input-addon-color: @color-neutral-text-3;
 @input-icon-color: @input-color;
 @input-border-color: @color-neutral-bg-4;
-@input-bg: @input-component-bg;
+@input-bg: @component-background;
 @input-number-hover-border-color: @input-hover-border-color;
 @input-number-handler-active-bg: #f4f4f4;
 @input-number-handler-hover-bg: @primary-5;
@@ -572,7 +571,7 @@
 @select-dropdown-line-height: @dropdown-line-height;
 @select-dropdown-height: 32px;
 @select-dropdown-empty-color: @color-neutral-text-4;
-@select-background: @input-component-bg;
+@select-background: @component-background;
 @select-clear-background: @select-background;
 @select-selection-item-bg: @color-neutral-bg-2;
 @select-selection-item-border-color: @color-neutral-bg-4;
@@ -796,7 +795,7 @@
 
 // TimePicker
 // ---
-@picker-bg: @input-component-bg;
+@picker-bg: @component-background;
 @picker-basic-cell-hover-color: @item-hover-bg;
 @picker-basic-cell-active-with-range-color: @primary-1;
 @picker-basic-cell-hover-with-range-color: @primary-2;
@@ -1195,6 +1194,7 @@
 
 // Notification
 // ---
+@notification-description-color: @color-neutral-text-3;
 @notification-bg: @component-background;
 @notification-padding-vertical: 16px;
 @notification-padding-horizontal: 24px;

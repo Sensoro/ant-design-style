@@ -1,5 +1,5 @@
 ---
-title: Message 全局提示
+title: Notification 通知提醒框
 order: 0
 toc: content
 group:
@@ -10,7 +10,7 @@ nav:
   path: /components
 ---
 
-# Message 全局提示
+# Notification 通知提醒框
 
 ## 代码演示
 
@@ -18,8 +18,6 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
-### 不主动消失
+### 加深印象版本通知
 
-样式类型和链接等操作dom 各个项目自定义就 🉑️
-
-<code src="./demos/display.tsx" />
+<code src="./demos/deep.tsx" />

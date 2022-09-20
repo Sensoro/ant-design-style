@@ -9,14 +9,13 @@ const contentStyle = {
 };
 
 const App: React.FC = () => {
-  const instance = useRef<any>();
-
   const onClose = () => {
-    instance?.current();
+    message.destroy("custom");
   };
 
   const success = () => {
-    instance.current = message.success({
+    message.success({
+      key: "custom",
       content: (
         <div style={contentStyle}>
           这是一条提示消息，不会主动消失
