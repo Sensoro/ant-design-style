@@ -14,7 +14,7 @@ nav:
 
 ## 代码演示
 
-**顶部按钮组合+批量操作显示需要在物料库实现[物料库Table组件](https://frontend.sensoro.com/material/components/data-display/table)**
+**完整版点这里 👉🏻 [物料库Table组件](https://frontend.sensoro.com/material/components/data-display/table)**
 
 ### 基础表格
 
