@@ -1,5 +1,11 @@
-@import '../../style/themes/index';
+@import '../../style/index';
 @import '../../style/mixins/index';
+
+// style dependencies
+// deps-lint-skip: form
+@import '../button/index.less';
+@import '../progress/index.less';
+@import '../tooltip/index.less';
 
 @upload-prefix-cls: ~'@{ant-prefix}-upload';
 @upload-item: ~'@{ant-prefix}-upload-list-item';

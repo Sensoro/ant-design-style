@@ -237,6 +237,7 @@
   0 9px 28px 8px rgba(0, 0, 0, 0.05);
 
 @sensoro-shadow-base: 0 0 2px 0 rgba(60, 73, 97, 0.08), 0 4px 8px 0 rgba(109, 119, 137, 0.16);
+@sensoro-shadow-1: 0 2px 4px 0 rgba(60, 73, 97, 0.04), 0 8px 16px 0 rgba(109, 119, 137, 0.16);
 
 // Buttons
 @btn-font-weight: 400;
@@ -1081,7 +1082,7 @@
 
 // Message
 // ---
-@message-notice-content-padding: 10px 16px;
+@message-notice-content-padding: @padding-xs + 2px @padding-md;
 @message-notice-content-bg: @component-background;
 // Motion
 // ---
