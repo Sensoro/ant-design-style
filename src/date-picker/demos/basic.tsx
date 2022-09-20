@@ -18,16 +18,7 @@ const disabledDate: RangePickerProps["disabledDate"] = (current) => {
 const App: FC = () => (
   <ConfigProvider locale={zhCN}>
     <Space direction="vertical">
-      <Space
-        style={{
-          background: "#f5f6f7",
-          width: 500,
-          height: 150,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <Space>
         <DatePicker
           clearIcon={<CloseOutlined />}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
