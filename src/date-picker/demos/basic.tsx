@@ -45,6 +45,16 @@ const App: FC = () => (
           onChange={onChange}
         />
       </Space>
+
+      <Space>
+        走查专用
+        <DatePicker
+          defaultOpen
+          clearIcon={<CloseOutlined />}
+          defaultValue={moment(new Date(), "YYYY-MM-DD")}
+          onChange={onChange}
+        />
+      </Space>
     </Space>
   </ConfigProvider>
 );

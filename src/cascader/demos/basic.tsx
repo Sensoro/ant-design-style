@@ -1,4 +1,4 @@
-import { Cascader } from "antd";
+import { Cascader, Space } from "antd";
 import type { FC } from "react";
 
 export const options = [
@@ -79,13 +79,29 @@ export const options = [
 
 const App: FC = () => {
   return (
-    <Cascader
-      defaultValue={["cloud", "fe", "sj"]}
-      placeholder="请选择"
-      style={{ width: 240 }}
-      options={options}
-      onChange={(value) => console.log(value)}
-    />
+    <Space direction="vertical">
+      <Space>
+        正常展示
+        <Cascader
+          defaultValue={["cloud", "fe", "sj"]}
+          placeholder="请选择"
+          style={{ width: 240 }}
+          options={options}
+          onChange={(value) => console.log(value)}
+        />
+      </Space>
+      <Space>
+        走查专用
+        <Cascader
+          defaultOpen
+          defaultValue={["cloud", "fe", "sj"]}
+          placeholder="请选择"
+          style={{ width: 240 }}
+          options={options}
+          onChange={(value) => console.log(value)}
+        />
+      </Space>
+    </Space>
   );
 };
 
