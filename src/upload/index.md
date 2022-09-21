@@ -16,4 +16,4 @@ nav:
 
 ### 基本用法
 
-[//]: # (<code src="./demos/basic.tsx" />)
+<code src="./demos/basic.tsx" />
