@@ -101,6 +101,20 @@ const App: FC = () => {
         onChange={onChange}
         treeData={treeData}
       />
+
+      <Space>
+        走查专用
+        <TreeSelect
+          defaultOpen
+          style={{ width: 240 }}
+          value={value}
+          dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
+          placeholder="请选择"
+          treeDefaultExpandedKeys={["fe"]}
+          onChange={onChange}
+          treeData={treeData}
+        />
+      </Space>
     </Space>
   );
 };

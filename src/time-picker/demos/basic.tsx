@@ -34,20 +34,14 @@ const App: FC = () => (
       </Space>
 
       <Space>
+        走查专用
         <TimePicker
-          disabled
+          defaultOpen
           style={{ width: 160 }}
           clearIcon={<CloseOutlined />}
           placeholder="请选择时间"
           defaultValue={moment(new Date(), "HH:mm:ss")}
           onChange={onChange}
-        />
-
-        <TimePicker
-          disabled
-          clearIcon={<CloseOutlined />}
-          defaultValue={moment("12:08", format)}
-          format={format}
         />
       </Space>
     </Space>
