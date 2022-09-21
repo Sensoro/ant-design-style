@@ -18,10 +18,6 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
-### 单行
-
-<code src="./demos/single.tsx" />
-
 ### 加深印象版本通知
 
 <code src="./demos/deep.tsx" />
