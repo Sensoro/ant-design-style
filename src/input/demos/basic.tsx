@@ -1,13 +1,11 @@
-import "../_docs.less";
-
-import { Input } from "antd";
+import { Input, Space } from "antd";
 
 export default () => {
   return (
-    <div className="demo-block">
-      <Input placeholder="请输入" />
+    <Space direction="vertical" size={16}>
+      <Input placeholder="请输入" style={{ width: 240 }} />
 
-      <Input defaultValue="李四" />
-    </div>
+      <Input defaultValue="李四" style={{ width: 240 }} />
+    </Space>
   );
 };

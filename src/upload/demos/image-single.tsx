@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { UploadFile, UploadProps } from "antd/es/upload";
 import zhCN from "antd/es/locale/zh_CN";
 
-const getBase64 = (file: any) =>
+export const getBase64 = (file: any) =>
   new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);

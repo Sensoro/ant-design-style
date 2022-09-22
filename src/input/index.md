@@ -22,6 +22,10 @@ nav:
 
 <code src="./demos/search.tsx" />
 
+### 组合
+
+<code src="./demos/group.tsx" />
+
 ### 尺寸
 
 <code src="./demos/size.tsx" />

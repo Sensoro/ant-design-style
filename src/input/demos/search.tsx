@@ -1,19 +1,22 @@
-import "../_docs.less";
-
-import { Input } from "antd";
+import { Input, Space } from "antd";
 
 export default () => {
   return (
-    <div className="input-search-demo">
-      <Input.Search placeholder="请输入关键词" />
+    <Space direction="vertical" size={16}>
+      <Input.Search placeholder="请输入关键词" style={{ width: 240 }} />
 
       <Input.Search
         allowClear
+        style={{ width: 240 }}
         placeholder="请输入关键词"
         defaultValue="海海海"
       />
 
-      <Input.Search disabled placeholder="请输入关键词" />
-    </div>
+      <Input.Search
+        disabled
+        placeholder="请输入关键词"
+        style={{ width: 240 }}
+      />
+    </Space>
   );
 };

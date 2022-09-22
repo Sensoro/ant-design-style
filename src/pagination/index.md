@@ -3,7 +3,7 @@ title: Pagination 分页
 order: 0
 toc: content
 group:
-  title: 数据展示
+  title: 导航
   order: 0
 nav:
   title: 组件
