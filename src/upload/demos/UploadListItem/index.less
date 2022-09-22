@@ -1,76 +1,125 @@
 @import "../../../../style/index";
 
-@upload-prefix-cls: ~"ant-upload";
+@upload-prefix-cls: ~"@{ant-prefix}-upload";
 
 @upload-list-item-icon-body: 40px;
 @upload-list-item-icon-size: 24px;
 @upload-list-item-height: 56px;
 
-@upload-custom-prefix-cls: ~"@{upload-prefix-cls}-list-item-custom";
+@upload-custom-prefix-cls: ~"@{upload-prefix-cls}-list";
 
-.@{upload-custom-prefix-cls} {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-
-  min-width: 320px;
-  height: 56px;
-  margin-top: @margin-xs;
-  padding: @padding-xs;
-  background: @color-neutral-bg-2;
-  border-radius: @border-radius-lg;
-
-  &.@{upload-custom-prefix-cls}-error {
-    background: @red-1;
-  }
-
-  &-icon {
-    display: inline-block;
-    text-align: center;
-    color: @white;
-    width: @upload-list-item-icon-body;
-    height: @upload-list-item-icon-body;
-    line-height: @upload-list-item-icon-body;
-    font-size: @upload-list-item-icon-size;
-    border-radius: @border-radius-base;
-    background: @color-neutral-text-4;
-    margin-right: @margin-xs;
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-
-    &-title {
-      font-weight: 500;
-      color: @text-color-primary;
-      margin-right: @margin-xs;
-    }
-
-    &-size {
+.@{upload-prefix-cls} {
+  &-list {
+    &-clear {
+      position: absolute;
+      left: 0;
+      top: 32px;
+      display: flex;
+      align-items: center;
+      height: 20px;
       color: @color-neutral-text-3;
+      font-size: @font-size-sm;
+    }
+
+    &-item-custom {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      width: 320px;
+      height: 56px;
+      margin-top: @margin-xs;
+      padding: @padding-xs;
+      background: @color-neutral-bg-2;
+      border-radius: @border-radius-lg;
+
+      &.@{upload-custom-prefix-cls}-item-custom-error {
+        background: @red-1;
+      }
+
+      &-icon {
+        display: inline-block;
+        text-align: center;
+        color: @white;
+        width: @upload-list-item-icon-body;
+        height: @upload-list-item-icon-body;
+        line-height: @upload-list-item-icon-body;
+        font-size: @upload-list-item-icon-size;
+        border-radius: @border-radius-base;
+        background: @color-neutral-text-4;
+        margin-right: @margin-xs;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        &-line {
+          display: flex;
+          flex-direction: row;
+        }
+
+        &-title {
+          display: inline-block;
+          max-width: 175px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-weight: 500;
+          color: @text-color-primary;
+          margin-right: @margin-xs;
+        }
+
+        &-size {
+          color: @color-neutral-text-3;
+          //margin-right: 24px;
+        }
+
+        > .@{ant-prefix}-progress {
+          .@{ant-prefix}-progress-outer {
+            width: auto;
+          }
+          .@{ant-prefix}-progress-inner {
+            width: 125px;
+          }
+        }
+
+        &-progress-error {
+          font-size: @font-size-sm;
+
+          .@{iconfont-css-prefix} {
+            color: @red-base;
+          }
+        }
+      }
+
+      &-close {
+        position: absolute;
+        top: (@upload-list-item-height - 20px) / 2;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+        line-height: 22px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all @animation-duration-base;
+
+        &:hover {
+          background: @color-neutral-line;
+        }
+
+        .@{iconfont-css-prefix} {
+          font-size: @font-size-lg;
+        }
+      }
     }
   }
 
-  &-close {
-    position: absolute;
-    top: (@upload-list-item-height - 20px) / 2;
-    right: 8px;
-    width: 20px;
-    height: 20px;
-    line-height: 22px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: all @animation-duration-base;
-
-    &:hover {
-      background: @color-neutral-line;
-    }
-
-    .@{iconfont-css-prefix} {
-      font-size: @font-size-lg;
+  &&-drag {
+    .@{upload-custom-prefix-cls}-clear {
+      top: @upload-drag-height + @margin-xs;
     }
   }
 }

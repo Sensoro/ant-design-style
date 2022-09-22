@@ -1,7 +1,8 @@
 import type { UploadProps } from "antd";
-import { Button, Upload, Space, ConfigProvider, Radio } from "antd";
-import React, { useState } from "react";
+import { Button, message, Upload, Space, ConfigProvider } from "antd";
+import React, { useEffect, useState } from "react";
 import UploadFilled from "@sensoro-design/icons/UploadFilled";
+import { Clear } from "./UploadListItem/Clear";
 
 import type { UploadListProps, UploadFile } from "antd/es/upload";
 
@@ -21,6 +22,30 @@ const App: React.FC = () => {
   const [uploading, setUploading] = useState(false);
   const [fileList, setFileList] = useState<UploadFile[]>([
     {
+      uid: "0",
+      percent: 50,
+      name: "上传中状态.xlsx",
+      status: "uploading",
+      size: 212986,
+      url:
+        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "1",
+      percent: 60,
+      size: 999999,
+      name: "我是超出一行文件的名称的文件我是超出一行文件的名称的文件.xlsx",
+      status: "uploading",
+      url:
+        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "2",
+      name: "上传失败的demo.xlsx",
+      status: "error",
+      size: 142 * 1024,
+    },
+    {
       uid: "3",
       name: "上传完成的demo.png",
       status: "done",
@@ -28,13 +53,9 @@ const App: React.FC = () => {
     },
   ]);
 
-  const [type, setType] = useState<"default" | "primary">("primary");
-
   const onRemove = (uid: string) => {
     setFileList((prev) => prev.filter((file) => file.uid !== uid));
   };
-
-  const onReload = () => {};
 
   const itemRender: UploadListProps["itemRender"] = (
     originNode,
@@ -43,9 +64,7 @@ const App: React.FC = () => {
     actions
   ) => {
     // console.log({ originNode, file, fileList, actions });
-    return (
-      <UploadListItem file={file} onRemove={onRemove} onReload={onReload} />
-    );
+    return <UploadListItem file={file} onRemove={onRemove} />;
   };
 
   const onChange: UploadProps["onChange"] = ({ file, fileList, event }) => {
@@ -66,7 +85,7 @@ const App: React.FC = () => {
 
     // set loading
     setUploading(file.status === "uploading");
-    console.log(file);
+    console.log(file.percent, ": ", file.status);
 
     setFileList(newFileList);
   };
@@ -74,26 +93,21 @@ const App: React.FC = () => {
   return (
     <ConfigProvider locale={zhCN}>
       <Space direction="vertical" size={32}>
-        <Radio.Group value={type} onChange={(e) => setType(e.target.value)}>
-          <Radio value="default">默认按钮</Radio>
-          <Radio value="primary">主题按钮</Radio>
-        </Radio.Group>
-        <Space direction="vertical" size={32}>
-          <Upload
-            maxCount={1}
-            onChange={onChange}
-            {...props}
-            fileList={fileList}
-            itemRender={itemRender}
-          >
-            <Space>
-              <Button disabled={uploading} type={type} icon={<UploadFilled />}>
-                选择文件
-              </Button>
-              支持 SVG 格式
-            </Space>
-          </Upload>
-        </Space>
+        <Upload
+          onChange={onChange}
+          {...props}
+          fileList={fileList}
+          itemRender={itemRender}
+        >
+          <Space>
+            <Button disabled={uploading} type="primary" icon={<UploadFilled />}>
+              选择文件
+            </Button>
+            支持 SVG 格式，可一次上传多个文件
+          </Space>
+
+          {fileList.length > 1 && <Clear onClear={() => setFileList([])} />}
+        </Upload>
       </Space>
     </ConfigProvider>
   );

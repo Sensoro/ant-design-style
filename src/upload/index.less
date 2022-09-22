@@ -15,6 +15,7 @@
 .@{upload-prefix-cls} {
   .reset-component();
 
+  position: relative;
   outline: 0;
 
   p {
@@ -47,9 +48,9 @@
     margin-bottom: 8px;
     text-align: center;
     vertical-align: top;
-    background-color: @background-color-light;
-    border: @border-width-base dashed @border-color-base;
-    border-radius: @border-radius-base;
+    background-color: @sensoro-background;
+    border: @border-width-base dashed @sensoro-border-color-base;
+    border-radius: @border-radius-lg;
     cursor: pointer;
     transition: border-color 0.3s;
 
@@ -59,24 +60,31 @@
       justify-content: center;
       height: 100%;
       text-align: center;
+      font-size: @font-size-sm;
+
+      .@{iconfont-css-prefix} {
+        color: @color-neutral-text-4;
+        font-size: 24px;
+      }
     }
 
     &:hover {
-      border-color: @primary-color;
+      background-color: @color-neutral-line;
+
       .@{upload-prefix-cls}-disabled& {
-        border-color: @border-color-base;
+        background-color: @sensoro-background;
       }
     }
   }
 
   &&-drag {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 432px;
+    height: @upload-drag-height;
     text-align: center;
-    background: @background-color-light;
-    border: @border-width-base dashed @border-color-base;
-    border-radius: @border-radius-base;
+    background: @sensoro-background;
+    border: @border-width-base dashed @sensoro-border-color-base;
+    border-radius: @border-radius-lg;
     cursor: pointer;
     transition: border-color 0.3s;
 
@@ -85,11 +93,16 @@
     }
 
     &.@{upload-prefix-cls}-drag-hover:not(.@{upload-prefix-cls}-disabled) {
-      border-color: @primary-7;
+      border-color: @primary-color;
     }
 
     &.@{upload-prefix-cls}-disabled {
       cursor: not-allowed;
+      border-color: transparent;
+
+      p.@{upload-prefix-cls}-text, p.@{upload-prefix-cls}-title, p.@{upload-prefix-cls}-hint {
+        color: @disabled-text-color;
+      }
     }
 
     .@{upload-prefix-cls}-btn {
@@ -103,25 +116,29 @@
     }
 
     &:not(.@{upload-prefix-cls}-disabled):hover {
-      border-color: @primary-5;
+      border-color: @primary-color;
+      background: @primary-1;
     }
 
     p.@{upload-prefix-cls}-drag-icon {
       .@{iconfont-css-prefix} {
-        color: @primary-5;
+        color: @primary-color;
         font-size: 48px;
       }
 
       margin-bottom: 20px;
     }
     p.@{upload-prefix-cls}-text {
-      margin: 0 0 4px;
-      color: @heading-color;
-      font-size: @font-size-lg;
+      color: @color-neutral-text-3;
+      font-size: @font-size-sm;
+    }
+    p.@{upload-prefix-cls}-title {
+      margin: @margin-xs 0;
+      font-weight: 500;
+      color: @text-color-primary;
     }
     p.@{upload-prefix-cls}-hint {
-      color: @text-color-secondary;
-      font-size: @font-size-base;
+      color: @color-neutral-text-3;
     }
 
     .@{iconfont-css-prefix}-plus {
@@ -234,7 +251,7 @@
     &-error,
     &-error .@{upload-prefix-cls}-text-icon > .@{iconfont-css-prefix},
     &-error &-name {
-      color: @error-color;
+      //color: @error-color;
     }
 
     &-error &-card-actions {
@@ -263,17 +280,31 @@
     .@{upload-item} {
       position: relative;
       height: 66px;
-      padding: @padding-xs;
+      padding: 0;
       border: @border-width-base @upload-picture-card-border-style @border-color-base;
-      border-radius: @border-radius-base;
+      border-radius: @border-radius-lg;
 
       &:hover {
         background: transparent;
       }
 
       &-error {
+        background-color: @sensoro-background;
         border-color: @error-color;
+
+        .@{upload-item}-actions {
+          a:first-child {
+            opacity: 1 !important;
+            .@{iconfont-css-prefix} {
+              color: fade(@white, 35%);
+            }
+          }
+        }
       }
+    }
+
+    .@{ant-prefix}-progress-outer {
+      margin-left: @margin-xs;
     }
 
     .@{upload-item}-info {
@@ -296,7 +327,16 @@
       opacity: 0.8;
 
       .@{iconfont-css-prefix} {
-        font-size: 26px;
+        color: @color-neutral-text-4;
+        font-size: 24px;
+      }
+
+      &.@{upload-item}-file {
+        line-height: 1;
+
+        .@{iconfont-css-prefix} {
+          margin-top: 24px;
+        }
       }
     }
 
@@ -379,6 +419,10 @@
       margin: 0;
     }
 
+    .@{upload-item}.@{upload-item}-done {
+      border-color: transparent;
+    }
+
     .@{upload-item}-info {
       position: relative;
       height: 100%;
@@ -389,10 +433,11 @@
         z-index: 1;
         width: 100%;
         height: 100%;
-        background-color: fade(@black, 50%);
+        background-color: @color-neutral-text-3;
         opacity: 0;
         transition: all 0.3s;
         content: ' ';
+        border-radius: @border-radius-lg;
       }
     }
 
@@ -416,14 +461,10 @@
         z-index: 10;
         width: 16px;
         margin: 0 4px;
-        color: @text-color-dark;
-        font-size: 16px;
+        color: @white;
+        font-size: @font-size-lg;
         cursor: pointer;
         transition: all 0.3s;
-
-        &:hover {
-          color: @text-color-inverse;
-        }
       }
     }
 
@@ -434,6 +475,7 @@
 
     .@{upload-item}-thumbnail,
     .@{upload-item}-thumbnail img {
+      border-radius: @border-radius-lg;
       position: static;
       display: block;
       width: 100%;
@@ -451,13 +493,20 @@
 
     .@{upload-item}-file + .@{upload-item}-name {
       position: absolute;
-      bottom: 10px;
+      bottom: 24px;
+      left: 12px;
       display: block;
+      max-width: 80px;
+      font-size: @font-size-sm;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     .@{upload-item}-uploading {
       &.@{upload-item} {
-        background-color: @background-color-light;
+        border-color: transparent;
+        background-color: @sensoro-background;
       }
 
       .@{upload-item}-info {
@@ -483,6 +532,14 @@
   &-picture {
     &-container {
       transition: opacity @animation-duration-slow, height @animation-duration-slow;
+
+      &:not(:only-child):first-child {
+        margin-top: 28px;
+
+        .@{upload-prefix-cls}-list-item-custom {
+          margin-top: @margin-xss;
+        }
+      }
 
       &::before {
         display: table;

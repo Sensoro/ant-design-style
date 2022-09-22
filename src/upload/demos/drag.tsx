@@ -1,19 +1,19 @@
-import type { UploadProps } from "antd";
-import { Button, Upload, Space, ConfigProvider, Radio } from "antd";
+import type { UploadProps } from "antd/es/upload";
+import { Button, Upload, ConfigProvider } from "antd";
 import React, { useState } from "react";
-import UploadFilled from "@sensoro-design/icons/UploadFilled";
-
-import type { UploadListProps, UploadFile } from "antd/es/upload";
-
-import { UploadListItem } from "./UploadListItem";
-
 import zhCN from "antd/es/locale/zh_CN";
+import { UploadFile, UploadListProps } from "antd/es/upload";
+import { UploadListItem } from "./UploadListItem";
+import { Clear } from "./UploadListItem/Clear";
+
+const { Dragger } = Upload;
 
 const props: UploadProps = {
   name: "file",
+  multiple: true,
   action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
-  headers: {
-    authorization: "authorization-text",
+  onDrop(e) {
+    console.log("Dropped files", e.dataTransfer.files);
   },
 };
 
@@ -21,14 +21,27 @@ const App: React.FC = () => {
   const [uploading, setUploading] = useState(false);
   const [fileList, setFileList] = useState<UploadFile[]>([
     {
+      uid: "1",
+      percent: 60,
+      size: 999999,
+      name: "我是超出一行文件的名称的文件我是超出一行文件的名称的文件.xlsx",
+      status: "uploading",
+      url:
+        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "2",
+      name: "上传失败的demo.xlsx",
+      status: "error",
+      size: 142 * 1024,
+    },
+    {
       uid: "3",
       name: "上传完成的demo.png",
       status: "done",
       size: 1.16 * 1024 * 1024,
     },
   ]);
-
-  const [type, setType] = useState<"default" | "primary">("primary");
 
   const onRemove = (uid: string) => {
     setFileList((prev) => prev.filter((file) => file.uid !== uid));
@@ -73,30 +86,31 @@ const App: React.FC = () => {
 
   return (
     <ConfigProvider locale={zhCN}>
-      <Space direction="vertical" size={32}>
-        <Radio.Group value={type} onChange={(e) => setType(e.target.value)}>
-          <Radio value="default">默认按钮</Radio>
-          <Radio value="primary">主题按钮</Radio>
-        </Radio.Group>
-        <Space direction="vertical" size={32}>
-          <Upload
-            maxCount={1}
-            onChange={onChange}
-            {...props}
-            fileList={fileList}
-            itemRender={itemRender}
+      <Dragger
+        disabled={uploading}
+        maxCount={3}
+        onChange={onChange}
+        {...props}
+        fileList={fileList}
+        itemRender={itemRender}
+      >
+        <p className="ant-upload-text">2M以内，xlsx / xls/ zip格式</p>
+        <p className="ant-upload-title">将您的文件拖放到此处</p>
+        <p className="ant-upload-hint">
+          或者
+          <Button
+            disabled={uploading}
+            type="link"
+            size="small"
+            style={{ fontSize: 14 }}
           >
-            <Space>
-              <Button disabled={uploading} type={type} icon={<UploadFilled />}>
-                选择文件
-              </Button>
-              支持 SVG 格式
-            </Space>
-          </Upload>
-        </Space>
-      </Space>
+            点击上传
+          </Button>
+        </p>
+
+        {fileList.length > 1 && <Clear onClear={() => setFileList([])} />}
+      </Dragger>
     </ConfigProvider>
   );
 };
-
 export default App;
