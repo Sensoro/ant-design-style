@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { UploadFile, UploadProps } from "antd/es/upload";
 import zhCN from "antd/es/locale/zh_CN";
 
-const getBase64 = (file) =>
+const getBase64 = (file: any) =>
   new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);
@@ -30,7 +30,7 @@ const App = () => {
 
   const handleCancel = () => setPreviewOpen(false);
 
-  const handlePreview = async (file) => {
+  const handlePreview = async (file: any) => {
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj);
     }
@@ -75,6 +75,7 @@ const App = () => {
       </Space>
 
       <Modal
+        width={480}
         open={previewOpen}
         title={previewTitle}
         footer={null}
