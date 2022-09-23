@@ -12,6 +12,7 @@ export default defineConfig({
   dynamicImport: {},
   favicon: logo,
   logo,
+  outputPath: 'site',
   navs: [
     null,
     {
