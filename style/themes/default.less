@@ -928,15 +928,15 @@
 
 // Tabs
 // ---
-@tabs-card-head-background: @background-color-light;
+@tabs-card-head-background: @sensoro-background;
 @tabs-card-height: 40px;
-@tabs-card-active-color: @primary-color;
+@tabs-card-active-color: @text-color-primary;
 @tabs-card-horizontal-padding: (
     (@tabs-card-height - floor(@font-size-base * @line-height-base)) / 2
   ) - @border-width-base @padding-md;
 @tabs-card-horizontal-padding-sm: 6px @padding-md;
 @tabs-card-horizontal-padding-lg: 7px @padding-md 6px;
-@tabs-title-font-size: @font-size-base;
+@tabs-title-font-size: @font-size-lg;
 @tabs-title-font-size-lg: @font-size-lg;
 @tabs-title-font-size-sm: @font-size-base;
 @tabs-ink-bar-color: @primary-color;
@@ -953,7 +953,7 @@
 @tabs-highlight-color: @primary-color;
 @tabs-hover-color: @primary-5;
 @tabs-active-color: @primary-7;
-@tabs-card-gutter: 2px;
+@tabs-card-gutter: @margin-xss;
 @tabs-card-tab-active-border-top: 2px solid transparent;
 
 // BackTop
