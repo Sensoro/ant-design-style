@@ -1,10 +1,10 @@
 ---
-title: Scrollbar 滚动条
+title: 滚动条
 order: 4
 group:
   path: /
 nav:
-  title: 文档
+  title: 设计
   path: /docs
 ---
 

@@ -4,7 +4,7 @@ order: 2
 group:
   path: /
 nav:
-  title: 文档
+  title: 设计
   path: /docs
 ---
 
