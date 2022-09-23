@@ -27,6 +27,7 @@ const App = () => {
       </Radio.Group>
 
       <Select
+        defaultOpen
         showArrow
         maxTagCount={type}
         mode="multiple"
