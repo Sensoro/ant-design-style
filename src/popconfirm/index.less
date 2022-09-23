@@ -1,0 +1,13 @@
+@import '../../style/index';
+@import '../../style/mixins/index';
+
+// style dependencies
+// deps-lint-skip: tooltip, popover
+@import '../button/index';
+@import '../popover/index';
+
+@popconfirm-prefix-cls: ~'@{ant-prefix}-popconfirm';
+
+.@{popconfirm-prefix-cls} {
+  z-index: @zindex-popoconfirm;
+}
