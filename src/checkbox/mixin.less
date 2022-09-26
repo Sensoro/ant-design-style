@@ -37,25 +37,6 @@
       background-color: @checkbox-color;
     }
 
-    &-checked::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 1px solid @checkbox-color;
-      border-radius: @checkbox-border-radius;
-      visibility: hidden;
-      animation: antCheckboxEffect 0.36s ease-in-out;
-      animation-fill-mode: backwards;
-      content: "";
-    }
-
-    &:hover::after,
-    .@{checkbox-prefix-cls}-wrapper:hover &::after {
-      visibility: visible;
-    }
-
     &-inner {
       position: relative;
       top: 0;
