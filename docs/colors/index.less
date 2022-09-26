@@ -1,35 +1,82 @@
-@import '../../style/index';
+@import "../../style/index";
 
-.box {
-  padding: @padding-lg;
-  background: @sensoro-background;
+.generate-colors(@status, @n: 10, @i: 1) when (@i =< @n) {
+  @background: "@{status}-@{i}";
+  .@{status}-@{i} {
+    background: @@background;
+  }
+  .generate-colors(@status, @n, (@i + 1));
+}
 
-  .shadow {
-    width: 100%;
-    height: 228px;
-    padding: @padding-lg;
-    color: @text-color-primary;
-    border-radius: @border-radius-lg;
-    background: @component-background;
+.generate-colors(primary);
+.generate-colors(violet);
+.generate-colors(purple);
+.generate-colors(red);
+.generate-colors(orange);
+.generate-colors(gold);
+.generate-colors(yellow);
+.generate-colors(lime);
+.generate-colors(green);
+.generate-colors(lightblue);
+.generate-colors(grey);
 
-    > span:first-child {
-      font-size: @font-size-lg;
+.colors {
+  width: 100%;
+
+  .color-box {
+    width: 80px;
+    height: 80px;
+    font-size: @font-size-sm;
+    text-align: center;
+    padding: @padding-md 0;
+    transition: all @animation-duration-base;
+    cursor: pointer;
+
+    &:hover {
+      border-radius: @border-radius-base;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.func {
+  width: 100%;
+
+  .func-color {
+    display: flex;
+    align-items: center;
+
+    &-demo {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+      border-radius: @border-radius-lg;
     }
   }
 
-  .shadow-2 {
-    box-shadow: @sensoro-shadow-1;
-  }
-  .shadow-3 {
-    box-shadow: @sensoro-shadow-2;
-  }
-  .shadow-4 {
-    box-shadow: @sensoro-shadow-3;
-  }
-  .shadow-5 {
-    box-shadow: @sensoro-shadow-4;
-  }
-  .shadow-6 {
-    box-shadow: @sensoro-shadow-5;
+  .func-type {
+    > div {
+      width: 100%;
+      height: 78px;
+      margin-bottom: @margin-xs;
+    }
+
+    > p {
+      margin-bottom: @margin-xs;
+    }
+
+    p:nth-child(2n) {
+      color: @grey-8;
+    }
+
+    p:nth-child(3n) {
+      font-weight: 500;
+      color: @text-color-primary;
+    }
+
+    p:last-child {
+      font-size: @font-size-sm;
+    }
   }
 }

@@ -10,4 +10,12 @@ nav:
 
 ## colors 颜色
 
-### 待补充
+### 基础色盘
+
+**开发时，请勿直接使用颜色值，通过变量形式引用，方便统一管理**
+
+<code src="./colors/index.tsx" />
+
+### 功能色
+
+<code src="./colors/func.tsx" />

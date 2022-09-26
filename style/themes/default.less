@@ -61,28 +61,29 @@
 @black: #000;
 
 // @sensoro-design/antd theme colors - without opacity
-@gray-1: #02024b;
-@gray-2: #f6f7f8;
-@gray-3: #f1f2f4;
-@gray-4: #eceef0;
-@gray-5: #dbdee2;
-@gray-6: #c2c7ce;
-@gray-7: #aab0ba;
-@gray-8: #6d7789;
-@gray-9: #3c4961;
-@gray: #0a1b39;
+@grey-1: #fbfbfc;
+@grey-2: #f6f7f8;
+@grey-3: #f1f2f4;
+@grey-4: #eceef0;
+@grey-5: #dbdee2;
+@grey-6: #c2c7ce;
+@grey-7: #aab0ba;
+@grey-8: #6d7789;
+@grey-9: #3c4961;
+@grey-10: #0a1b39;
+@grey: #0a1b39;
 
 // @sensoro-design/antd theme colors
-@color-neutral-bg-1: fade(@gray, 2%);
-@color-neutral-bg-2: fade(@gray, 4%);
-@color-neutral-bg-3: fade(@gray, 6%);
-@color-neutral-line: fade(@gray, 8%);
-@color-neutral-bg-4: fade(@gray, 15%);
-@color-neutral-bg-5: fade(@gray, 25%);
-@color-neutral-text-4: fade(@gray, 35%);
-@color-neutral-text-3: fade(@gray, 60%);
-@color-neutral-text-2: fade(@gray, 80%);
-@color-neutral-text-1: fade(@gray, 100%);
+@color-neutral-bg-1: fade(@grey, 2%);
+@color-neutral-bg-2: fade(@grey, 4%);
+@color-neutral-bg-3: fade(@grey, 6%);
+@color-neutral-line: fade(@grey, 8%);
+@color-neutral-bg-4: fade(@grey, 15%);
+@color-neutral-bg-5: fade(@grey, 25%);
+@color-neutral-text-4: fade(@grey, 35%);
+@color-neutral-text-3: fade(@grey, 60%);
+@color-neutral-text-2: fade(@grey, 80%);
+@color-neutral-text-1: fade(@grey, 100%);
 
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
@@ -127,7 +128,7 @@
 @text-color-secondary: @color-neutral-text-4;
 @text-color-inverse: @white;
 @icon-color: inherit;
-@icon-color-hover: fade(@gray, 75%);
+@icon-color-hover: fade(@grey, 75%);
 @heading-color: @text-color-primary;
 @text-color-dark: fade(@white, 85%);
 @text-color-secondary-dark: fade(@white, 65%);
@@ -189,6 +190,9 @@
 @link-color: @primary-color;
 @link-hover-color: color(~`colorPalette("@{link-color}", 5) `);
 @link-active-color: color(~`colorPalette("@{link-color}", 7) `);
+@link-disabled-color: color(~`colorPalette("@{link-color}", 3) `);
+@link-bg-1: color(~`colorPalette("@{link-color}", 1) `);
+@link-bg-2: color(~`colorPalette("@{link-color}", 2) `);
 @link-decoration: none;
 @link-hover-decoration: none;
 @link-focus-decoration: none;
@@ -723,7 +727,7 @@
 @progress-radius: 100px;
 @progress-steps-item-bg: #f3f3f3;
 @progress-text-font-size: @font-size-sm;
-@progress-text-color: @gray-8; // This is for circle text color, should be renamed better
+@progress-text-color: @grey-8; // This is for circle text color, should be renamed better
 @progress-circle-text-font-size: 1em;
 // Menu
 // ---
@@ -774,16 +778,16 @@
 // Table
 // --
 @table-bg: @component-background;
-@table-header-bg: @gray-1;
+@table-header-bg: @grey-1;
 @table-header-color: @heading-color;
 @table-header-sort-bg: @background-color-base;
-@table-body-sort-bg: @gray-1;
-@table-row-hover-bg: @gray-2;
+@table-body-sort-bg: @grey-1;
+@table-row-hover-bg: @grey-2;
 @table-selected-row-color: inherit;
 @table-selected-row-bg: @table-row-hover-bg;
 @table-body-selected-sort-bg: @table-selected-row-bg;
 @table-selected-row-hover-bg: darken(@table-selected-row-bg, 2%);
-@table-expanded-row-bg: @gray-1;
+@table-expanded-row-bg: @grey-1;
 @table-padding-vertical: 16px;
 @table-padding-horizontal: 16px;
 @table-padding-vertical-md: (@table-padding-vertical * 3 / 4);
@@ -850,8 +854,8 @@
 @picker-text-height: 40px;
 @picker-panel-without-time-cell-height: 66px;
 @picker-clear-size: @font-size-base;
-@picker-clear-bg: @gray-4;
-@picker-clear-hover-bg: @gray-5;
+@picker-clear-bg: @grey-4;
+@picker-clear-hover-bg: @grey-5;
 
 // Calendar
 // ---
