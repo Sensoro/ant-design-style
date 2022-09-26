@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/sensoro-design/ant-design-style/compare/v1.0.0...v1.1.0) (2022-09-26)
+
+
+### Features
+
+* add carousel ([c5cd1fc](https://github.com/sensoro-design/ant-design-style/commit/c5cd1fc6db186cdd925066d71fccea353b6c07e5))
+* add colors docs ([ca6f310](https://github.com/sensoro-design/ant-design-style/commit/ca6f31068d255e1d3f5f191ea9a01bed1719932b))
+* update colors ([669450c](https://github.com/sensoro-design/ant-design-style/commit/669450c81372627ed92444480eb58f08a496f5c0))
+
 # 1.0.0 (2022-09-26)
 
 
