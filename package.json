@@ -50,5 +50,8 @@
     "not ie < 11",
     "ios >= 9",
     "android >= 4.4"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
