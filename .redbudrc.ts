@@ -7,4 +7,8 @@ export default defineConfig({
   cjs: {
     output: 'lib'
   },
+  umd: {
+    name: 'antd',
+    output: 'dist'
+  },
 })

@@ -17,6 +17,8 @@ coverage
 .npmignore
 components/**/*.css
 
+src/index.ts
+
 # misc
 .DS_Store
 
