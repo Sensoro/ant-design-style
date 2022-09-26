@@ -22,6 +22,18 @@
     > .@{radio-prefix-cls}-button-wrapper {
     border-left: none;
   }
+
+  &&-large {
+    .@{radio-prefix-cls}-button-wrapper {
+      padding: 0 @radio-button-padding-horizontal-lg;
+    }
+  }
+
+  &&-small {
+    .@{radio-prefix-cls}-button-wrapper {
+      padding: 0 @radio-button-padding-horizontal-sm;
+    }
+  }
 }
 
 // 一般状态
@@ -247,6 +259,7 @@ span.@{radio-prefix-cls} + * {
     line-height: @radio-button-wrapper-height-sm;
 
     > .@{radio-prefix-cls}-button {
+      //width: calc(100% - 4px);
       height: @radio-button-size-sm;
     }
   }
