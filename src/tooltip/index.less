@@ -66,7 +66,7 @@
     word-wrap: break-word;
     background-color: @tooltip-bg;
     border-radius: @tooltip-border-radius;
-    box-shadow: @box-shadow-base;
+    font-weight: normal;
   }
 
   // Arrows
@@ -110,7 +110,6 @@
     transform: translateY(100%);
 
     &-content {
-      box-shadow: @tooltip-arrow-shadow-width @tooltip-arrow-shadow-width 7px fade(@black, 7%);
       transform: translateY((-@tooltip-arrow-rotate-width / 2)) rotate(45deg);
     }
   }
@@ -135,7 +134,6 @@
     transform: translateX(-100%);
 
     &-content {
-      box-shadow: -@tooltip-arrow-shadow-width @tooltip-arrow-shadow-width 7px fade(@black, 7%);
       transform: translateX((@tooltip-arrow-rotate-width / 2)) rotate(135deg);
     }
   }
@@ -160,7 +158,6 @@
     transform: translateX(100%);
 
     &-content {
-      box-shadow: @tooltip-arrow-shadow-width -@tooltip-arrow-shadow-width 7px fade(@black, 7%);
       transform: translateX((-@tooltip-arrow-rotate-width / 2)) rotate(315deg);
     }
   }
@@ -185,7 +182,6 @@
     transform: translateY(-100%);
 
     &-content {
-      box-shadow: -@tooltip-arrow-shadow-width -@tooltip-arrow-shadow-width 7px fade(@black, 7%);
       transform: translateY((@tooltip-arrow-rotate-width / 2)) rotate(225deg);
     }
   }
