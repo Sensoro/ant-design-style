@@ -8,7 +8,7 @@
   .generate-colors(@status, @n, (@i + 1));
 }
 
-.generate-colors(primary);
+.generate-colors(blue);
 .generate-colors(violet);
 .generate-colors(purple);
 .generate-colors(red);
@@ -60,6 +60,13 @@
       width: 100%;
       height: 78px;
       margin-bottom: @margin-xs;
+      transition: all @animation-duration-base;
+      cursor: pointer;
+
+      &:hover {
+        border-radius: @border-radius-base;
+        transform: scale(1.1);
+      }
     }
 
     > p {

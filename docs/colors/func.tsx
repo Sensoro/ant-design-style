@@ -2,6 +2,8 @@ import "./index.less";
 
 import { Space, Table, Row, Col } from "antd";
 
+import { onCopy } from "./index";
+
 // @ts-ignore
 import { primaryColumns, primaryData } from "./primary";
 // @ts-ignore
@@ -12,7 +14,7 @@ const colors = [
     title: "链接",
     type: "link",
     desc: "通常用于表达完成、开启、链接、提醒等状态",
-    color: "primary",
+    color: "blue",
   },
   {
     title: "成功",
@@ -97,13 +99,16 @@ export default () => (
           <Row>
             {reactions.map((reaction) => (
               <Col className="func-type" span={4} key={reaction.name}>
-                <div className={`${color}-${reaction.color}`} />
+                <div
+                  className={`${color}-${reaction.color}`}
+                  onClick={() => onCopy(`${color}-${reaction.color}`)}
+                />
                 <p>
                   color-{type}-{reaction.name}
                 </p>
                 <p>{reaction.label}</p>
                 <p>
-                  {type}-{reaction.color}
+                  {color}-{reaction.color}
                 </p>
               </Col>
             ))}

@@ -3,7 +3,7 @@ import "./index.less";
 import { message, Space } from "antd";
 
 type ColorsType =
-  | "primary"
+  | "blue"
   | "violet"
   | "purple"
   | "red"
@@ -16,7 +16,7 @@ type ColorsType =
   | "grey";
 
 const colors: ColorsType[] = [
-  "primary",
+  "blue",
   "violet",
   "purple",
   "red",
@@ -30,7 +30,7 @@ const colors: ColorsType[] = [
 ];
 
 const colorsMap: Record<ColorsType, any> = {
-  primary: {
+  blue: {
     label: "品牌色 - 蓝色 Blue",
     colors: [
       "#f0f8ff",
