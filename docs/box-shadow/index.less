@@ -11,9 +11,15 @@
     color: @text-color-primary;
     border-radius: @border-radius-lg;
     background: @component-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    > span:first-child {
+    &-name {
       font-size: @font-size-lg;
+    }
+    &-value {
+      font-size: @font-size-sm;
     }
   }
 
