@@ -23,6 +23,7 @@ const App: FC = () => {
         disabled: <Switch checked={disabled} onChange={onChange} />
       </div>
       <Slider defaultValue={30} disabled={disabled} />
+      <Slider defaultValue={40} disabled={disabled} tooltip={{ open: true }} />
       <Slider range defaultValue={[20, 50]} disabled={disabled} />
       <Slider marks={marks} defaultValue={37} disabled={disabled} />
     </Space>

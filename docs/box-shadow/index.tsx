@@ -2,8 +2,11 @@ import "./index.less";
 
 import { Row, Col } from "antd";
 
+// @ts-ignore
+import { onCopy } from "../colors";
+
 export default () => (
-  <Row className="box" gutter={[16, 24]}>
+  <Row className="box" gutter={[24, 24]}>
     <Col span={8}>
       <div className="shadow">
         <span>BG-white</span>
@@ -12,7 +15,14 @@ export default () => (
       </div>
     </Col>
     <Col span={8}>
-      <div className="shadow shadow-1">
+      <div
+        className="shadow shadow-1"
+        onClick={() =>
+          onCopy(
+            "0 0 1px 0 rgba(60, 73, 97, 0.08), 0 1px 2px 0 rgba(109, 119, 137, 0.16);"
+          )
+        }
+      >
         <div>
           <span className="shadow-name">@sensoro-shadow-1</span>
           <br />
@@ -30,7 +40,14 @@ export default () => (
       </div>
     </Col>
     <Col span={8}>
-      <div className="shadow shadow-2">
+      <div
+        className="shadow shadow-2"
+        onClick={() =>
+          onCopy(
+            "0 0 2px 0 rgba(60, 73, 97, 0.08), 0 4px 8px 0 rgba(109, 119, 137, 0.16);"
+          )
+        }
+      >
         <div>
           <span className="shadow-name">@sensoro-shadow-2</span>
           <br />
@@ -48,7 +65,14 @@ export default () => (
       </div>
     </Col>
     <Col span={8}>
-      <div className="shadow shadow-3">
+      <div
+        className="shadow shadow-3"
+        onClick={() =>
+          onCopy(
+            "0 2px 4px 0 rgba(60, 73, 97, 0.04), 0 8px 16px 0 rgba(109, 119, 137, 0.16);"
+          )
+        }
+      >
         <div>
           <span className="shadow-name">@sensoro-shadow-3</span>
           <br />
@@ -66,7 +90,14 @@ export default () => (
       </div>
     </Col>
     <Col span={8}>
-      <div className="shadow shadow-4">
+      <div
+        className="shadow shadow-4"
+        onClick={() =>
+          onCopy(
+            "0 2px 8px 0 rgba(60, 73, 97, 0.04), 0 16px 24px 0 rgba(109, 119, 137, 0.16);"
+          )
+        }
+      >
         <div>
           <span className="shadow-name">@sensoro-shadow-4</span>
           <br />
@@ -84,7 +115,14 @@ export default () => (
       </div>
     </Col>
     <Col span={8}>
-      <div className="shadow shadow-5">
+      <div
+        className="shadow shadow-5"
+        onClick={() =>
+          onCopy(
+            "0 2px 8px 0 rgba(60, 73, 97, 0.08), 0 20px 32px 0 rgba(109, 119, 137, 0.24);"
+          )
+        }
+      >
         <div>
           <span className="shadow-name">@sensoro-shadow-5</span>
           <br />
