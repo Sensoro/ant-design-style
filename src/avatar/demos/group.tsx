@@ -1,5 +1,3 @@
-import "../_docs.less";
-
 import UserFilled from "@sensoro-design/icons/UserFilled";
 import { AntDesignOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";

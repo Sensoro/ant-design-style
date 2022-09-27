@@ -1,32 +1,25 @@
-import { Tag } from "antd";
-import "./_docs.less";
+import { Space, Tag } from "antd";
 
 export default () => {
   return (
-    <>
-      <div className="colors-demo">
+    <Space direction="vertical" size={16}>
+      <Space>
         <label>深色</label>
-        <Tag color="#f72231">#f72231</Tag>
-        <Tag color="#2f54eb">#2f54eb</Tag>
-        <Tag color="#87d068">#87d068</Tag>
-        <Tag color="#f98206">#f98206</Tag>
-        <Tag color="#f9aa06">#f9aa06</Tag>
-      </div>
+        <Tag color="#f72231">标签名称</Tag>
+        <Tag color="#f98206">标签名称</Tag>
+        <Tag color="#f9aa06">标签名称</Tag>
+        <Tag color="#87d068">标签名称</Tag>
+        <Tag color="#2f54eb">标签名称</Tag>
+      </Space>
 
-      <div className="colors-demo">
+      <Space wrap>
         <label>浅色</label>
-        <Tag color="magenta">magenta</Tag>
-        <Tag color="red">red</Tag>
-        <Tag color="volcano">volcano</Tag>
-        <Tag color="orange">orange</Tag>
-        <Tag color="gold">gold</Tag>
-        <Tag color="lime">lime</Tag>
-        <Tag color="green">green</Tag>
-        <Tag color="cyan">cyan</Tag>
-        <Tag color="blue">blue</Tag>
-        <Tag color="geekblue">geekblue</Tag>
-        <Tag color="purple">purple</Tag>
-      </div>
-    </>
+        <Tag color="red">标签名称</Tag>
+        <Tag color="orange">标签名称</Tag>
+        <Tag color="gold">标签名称</Tag>
+        <Tag color="green">标签名称</Tag>
+        <Tag color="blue">标签名称</Tag>
+      </Space>
+    </Space>
   );
 };

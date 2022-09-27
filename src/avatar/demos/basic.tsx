@@ -1,23 +1,21 @@
-import "../_docs.less";
-
 import UserFilled from "@sensoro-design/icons/UserFilled";
-import { Avatar } from "antd";
+import { Avatar, Space } from "antd";
 
 export default () => {
   return (
-    <>
-      <div className="demo-inline">
+    <Space direction="vertical">
+      <Space style={{ width: "100%" }}>
         <Avatar size={64} icon={<UserFilled />} />
         <Avatar size="large" icon={<UserFilled />} />
         <Avatar icon={<UserFilled />} />
         <Avatar size="small" icon={<UserFilled />} />
-      </div>
-      <div className="demo-inline">
+      </Space>
+      <Space>
         <Avatar shape="square" size={64} icon={<UserFilled />} />
         <Avatar shape="square" size="large" icon={<UserFilled />} />
         <Avatar shape="square" icon={<UserFilled />} />
         <Avatar shape="square" size="small" icon={<UserFilled />} />
-      </div>
-    </>
+      </Space>
+    </Space>
   );
 };

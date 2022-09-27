@@ -1,11 +1,10 @@
-import { Tooltip } from "antd";
-import "./_docs.less";
+import { Space, Tooltip } from "antd";
 
 import InfoCircleOutlined from "@sensoro-design/icons/InfoCircleOutlined";
 
 export default () => {
   return (
-    <div className="tooltip-placement-demo">
+    <Space size={16}>
       <Tooltip title="这是一个工具提示">
         <span>工具</span>
       </Tooltip>
@@ -17,6 +16,6 @@ export default () => {
       <Tooltip title="图标类型的提示">
         <InfoCircleOutlined />
       </Tooltip>
-    </div>
+    </Space>
   );
 };

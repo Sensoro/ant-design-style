@@ -1,5 +1,4 @@
 import { Tag } from "antd";
-import "./_docs.less";
 
 export default () => {
   return (

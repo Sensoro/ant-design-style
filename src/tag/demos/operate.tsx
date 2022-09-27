@@ -70,6 +70,7 @@ const App = () => {
               key={tag}
               size="small"
               className="ant-tag-input"
+              style={{ width: 78 }}
               placeholder="1~6个字"
               value={editInputValue}
               onChange={handleEditInputChange}
@@ -115,6 +116,7 @@ const App = () => {
           type="text"
           size="small"
           className="ant-tag-input"
+          style={{ width: 78 }}
           placeholder="1~6个字"
           value={inputValue}
           onChange={handleInputChange}
@@ -123,8 +125,11 @@ const App = () => {
         />
       )}
       {!inputVisible && (
-        <Tag className="site-tag-plus" onClick={showInput}>
-          <PlusOutlined /> 我要加菜
+        <Tag
+          style={{ color: "#2b6de5", cursor: "pointer" }}
+          onClick={showInput}
+        >
+          <PlusOutlined style={{ marginRight: 4 }} /> 我要加菜
         </Tag>
       )}
     </>

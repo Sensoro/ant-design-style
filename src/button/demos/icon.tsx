@@ -1,5 +1,3 @@
-import "../_docs.less";
-
 import { PlusOutlined, FormOutlined } from "@ant-design/icons";
 import { Button, Space } from "antd";
 import "../../space/index.less";

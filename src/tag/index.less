@@ -138,11 +138,11 @@
 }
 
 .@{tag-input-cls} {
-  &:focus {
-    caret-color: @primary-color;
-    border-color: @primary-color;
-    border-radius: @height-sm / 2;
-  }
+  transition: all @animation-duration-base;
+
+  caret-color: @primary-color;
+  border-color: @primary-color;
+  border-radius: @height-sm / 2;
 }
 
 @import './rtl';

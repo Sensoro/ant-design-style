@@ -1,14 +1,12 @@
-import "../_docs.less";
-
 import UserFilled from "@sensoro-design/icons/UserFilled";
 
-import { Avatar } from "antd";
+import { Avatar, Space } from "antd";
 
 export default () => {
   return (
-    <div className="demo-inline">
+    <Space>
       <Avatar icon={<UserFilled />} />
       <Avatar src="https://joeschmoe.io/api/v1/random" />
-    </div>
+    </Space>
   );
 };

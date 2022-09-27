@@ -1,6 +1,5 @@
 import { Button, Space } from "antd";
 
-import "../_docs.less";
 import "../../space/index.less";
 
 export default () => {
