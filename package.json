@@ -4,9 +4,10 @@
   "description": "Sensoro Design Styles",
   "scripts": {
     "start": "dumi dev",
-    "build": "redbud build",
+    "build": "pnpm generate & redbud build",
     "build:site": "dumi build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate": "node generate-entry.js"
   },
   "files": [
     "es",
