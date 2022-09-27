@@ -2,7 +2,7 @@
 @import "../../style/mixins/index";
 
 @switch-prefix-cls: ~"@{ant-prefix}-switch";
-@switch-duration: 0.2s;
+@switch-duration: @animation-duration-base;
 
 @switch-pin-size: @switch-height - 6px;
 @switch-sm-pin-size: @switch-sm-height - 4px;
@@ -31,11 +31,6 @@
 
   &:focus {
     outline: 0;
-    //box-shadow: 0 0 0 2px @switch-image-bg;
-  }
-
-  &-checked:focus {
-    //box-shadow: 0 0 0 2px @primary-1;
   }
 
   &:focus:hover {
@@ -74,7 +69,7 @@
   }
 
   &-checked:not(&-disabled):hover {
-    .switch-background(@switch-image-checked-bg);
+    .switch-background(@switch-image-checked-hover-bg);
   }
 
   // ========================= Inner ==========================
@@ -108,7 +103,7 @@
       left: 0;
       background-color: @switch-bg;
       border-radius: (@switch-pin-size / 2);
-      box-shadow: 0 2px 4px 0 @switch-shadow-color;
+      box-shadow: @switch-handle-box-shadow;
       transition: all @switch-duration ease-in-out;
       content: "";
     }
@@ -157,10 +152,12 @@
 
     .@{switch-prefix-cls}-handle {
       top: @switch-padding-sm;
+      left: @switch-padding-sm;
       width: @switch-sm-pin-size;
       height: @switch-sm-pin-size;
 
       &::before {
+        box-shadow: @switch-sm-handle-box-shadow;
         border-radius: (@switch-sm-pin-size / 2);
       }
     }
@@ -193,6 +190,7 @@
 
     .@{switch-prefix-cls}-handle {
       top: @switch-padding-lg;
+      left: @switch-padding-lg;
       width: @switch-lg-pin-size;
       height: @switch-lg-pin-size;
 
