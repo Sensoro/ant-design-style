@@ -19,9 +19,9 @@ export default () => {
       </Space>
       <Space>
         <Button type="primary" icon={<PlusOutlined />}>
-          按钮
+          中按钮
         </Button>
-        <Button icon={<PlusOutlined />}>按钮</Button>
+        <Button icon={<PlusOutlined />}>中按钮</Button>
         <Button icon={<PlusOutlined />} />
 
         <Button type="link" icon={<FormOutlined />} />

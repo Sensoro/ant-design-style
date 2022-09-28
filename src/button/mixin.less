@@ -53,7 +53,6 @@
   .button-color(@color; @background; @background);
 
   text-shadow: @btn-text-shadow;
-  box-shadow: @btn-primary-shadow;
 
   &:hover,
   &:focus {
@@ -248,8 +247,7 @@
 .button-variant-link-icon-only(@color; @background; @border) {
   .button-color(@color; @background; @border);
 
-  &:hover,
-  &:focus {
+  &:hover {
     & when (not (@theme = dark) and not (@theme = variable)) {
       .button-color(@btn-link-icon-hover-color; @background; @border);
     }
@@ -295,7 +293,6 @@
   text-align: center;
   background-image: none;
   border: @btn-border-width @btn-border-style transparent;
-  box-shadow: @btn-shadow;
   cursor: pointer;
   transition: all 0.3s @ease-in-out;
   user-select: none;
@@ -330,16 +327,36 @@
     }
   }
 
+  .@{iconfont-css-prefix} {
+    font-size: @font-size-lg;
+  }
+
+  &-icon-only .@{iconfont-css-prefix} {
+    font-size: @font-size-lg;
+  }
+
   &-lg {
     .button-size(
       @btn-height-lg; @btn-padding-horizontal-lg; @btn-font-size-lg; @btn-border-radius-base
     );
+
+    &.@{btn-prefix-cls}-link.@{btn-prefix-cls}-icon-only .@{iconfont-css-prefix} {
+      font-size: 20px;
+    }
   }
 
   &-sm {
     .button-size(
       @btn-height-sm; @btn-padding-horizontal-sm; @btn-font-size-sm; @btn-border-radius-sm; @btn-line-height-sm
     );
+
+    .@{iconfont-css-prefix} {
+      font-size: @font-size-sm;
+    }
+
+    &.@{btn-prefix-cls}-link.@{btn-prefix-cls}-icon-only .@{iconfont-css-prefix} {
+      font-size: @font-size-sm;
+    }
   }
 }
 // primary button style
@@ -348,7 +365,7 @@
 }
 // default button style
 .btn-default() {
-  .button-variant-other(@btn-default-color; @btn-default-bg; transparent; );
+  .button-variant-other(@btn-default-color; @btn-default-bg; transparent);
 
   &:hover,
   &:focus {

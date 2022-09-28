@@ -22,4 +22,6 @@ nav:
 
 样式类型和链接等操作dom 各个项目自定义就 🉑️
 
+关闭按钮样式可使用：`ant-message-close`
+
 <code src="./demos/display.tsx" />

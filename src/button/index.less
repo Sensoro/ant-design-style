@@ -148,7 +148,7 @@
     background: @component-background;
     border-radius: inherit;
     opacity: 0.35;
-    transition: opacity 0.2s;
+    //transition: opacity 0.2s;
     content: '';
     pointer-events: none;
   }
@@ -201,7 +201,7 @@
   // To ensure that a space will be placed between character and `Icon`.
   > .@{iconfont-css-prefix} + span,
   > span + .@{iconfont-css-prefix} {
-    margin-left: @margin-xs;
+    margin-left: @margin-xss;
   }
 
   &&-background-ghost {
@@ -250,12 +250,12 @@
   }
 
   &-two-chinese-chars::first-letter {
-    letter-spacing: 0.34em;
+    letter-spacing: 0;
   }
 
   &-two-chinese-chars > *:not(.@{iconfont-css-prefix}) {
-    margin-right: -0.34em;
-    letter-spacing: 0.34em;
+    margin-right: 0;
+    letter-spacing: 0;
   }
 
   &&-block {
