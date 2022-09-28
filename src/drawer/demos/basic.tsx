@@ -26,9 +26,9 @@ const App: React.FC = () => {
         onClose={() => setOpen(false)}
         open={open}
       >
-        <div style={{ background: "#ffcbc7" }}>
+        <div style={{ background: "#ffcbc7", height: "100vh" }}>
           <p>内容区域</p>
-          <p>padding: 0 24px</p>
+          <p>padding: 0 24px 32px</p>
         </div>
       </Drawer>
       <Drawer
@@ -38,9 +38,9 @@ const App: React.FC = () => {
         onClose={() => setOpen2(false)}
         open={open2}
       >
-        <div style={{ background: "#ffcbc7" }}>
+        <div style={{ background: "#ffcbc7", height: "100vh" }}>
           <p>内容区域</p>
-          <p>padding: 0 24px</p>
+          <p>padding: 0 24px 32px</p>
         </div>
       </Drawer>
       <Drawer
@@ -50,9 +50,9 @@ const App: React.FC = () => {
         onClose={() => setOpen3(false)}
         open={open3}
       >
-        <div style={{ background: "#ffcbc7" }}>
+        <div style={{ background: "#ffcbc7", height: "100vh" }}>
           <p>内容区域</p>
-          <p>padding: 0 24px</p>
+          <p>padding: 0 24px 32px</p>
         </div>
       </Drawer>
     </>

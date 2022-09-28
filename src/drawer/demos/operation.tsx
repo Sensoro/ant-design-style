@@ -19,6 +19,7 @@ const App: React.FC = () => {
         title="中等抽屉 480px"
         placement="right"
         onClose={() => setOpen2(false)}
+        bodyStyle={{ paddingBottom: 24 }}
         open={open2}
         footer={
           <Space style={{ float: "right" }} size={12}>
@@ -33,7 +34,7 @@ const App: React.FC = () => {
           {data.map((_, idx) => (
             <div key={idx}>
               <p>内容区域</p>
-              <p>padding: 0 24px</p>
+              <p>padding: 0 24px 24px</p>
             </div>
           ))}
         </div>
