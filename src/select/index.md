@@ -16,6 +16,8 @@ nav:
 
 ### 基本用法
 
+如果 `select item` 不想要 `title` 提示，可手动设置 `<Option title="">...</Option>`
+
 <code src="./demos/basic.tsx" />
 
 ### 搜索功能

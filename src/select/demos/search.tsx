@@ -1,4 +1,5 @@
-import { Select } from "antd";
+import { Select, Space } from "antd";
+import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 const { Option } = Select;
 
 const onChange = (value: string) => {
@@ -11,23 +12,39 @@ const onSearch = (value: string) => {
 
 export default () => {
   return (
-    <Select
-      showSearch
-      placeholder="请选择"
-      optionFilterProp="children"
-      onChange={onChange}
-      onSearch={onSearch}
-      filterOption={(input, option) =>
-        // @ts-ignore
-        option.children.toLowerCase().includes(input.toLowerCase())
-      }
-      notFoundContent={<div className="ant-select-empty-content">暂无内容</div>}
-    >
-      <Option value="pxl">亮哥</Option>
-      <Option value="wsj">婧姐</Option>
-      <Option value="zfh">小张</Option>
-      <Option value="nh">海哥</Option>
-      <Option value="lwl">龙哥</Option>
-    </Select>
+    <Space>
+      <Select
+        allowClear
+        clearIcon={<CloseOutlined />}
+        showSearch
+        placeholder="请选择"
+        optionFilterProp="children"
+        style={{ width: 240 }}
+        onChange={onChange}
+        onSearch={onSearch}
+        filterOption={(input, option) =>
+          // @ts-ignore
+          option.children.toLowerCase().includes(input.toLowerCase())
+        }
+        notFoundContent={
+          <div className="ant-select-empty-content">暂无内容</div>
+        }
+      >
+        <Option value="pxl">亮哥</Option>
+        <Option value="wsj">婧姐</Option>
+        <Option value="zfh">小张</Option>
+        <Option value="nh">海哥</Option>
+        <Option value="lwl">龙哥</Option>
+      </Select>
+
+      <Select
+        showSearch
+        placeholder="请选择"
+        style={{ width: 240 }}
+        notFoundContent={
+          <div className="ant-select-empty-content">暂无内容</div>
+        }
+      />
+    </Space>
   );
 };

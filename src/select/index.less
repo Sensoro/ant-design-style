@@ -100,6 +100,7 @@
     }
 
     &-content {
+      font-weight: 500;
       font-size: @font-size-sm;
     }
   }
@@ -166,28 +167,30 @@
     top: 50%;
     right: @control-padding-horizontal - 1px;
     z-index: 1;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: @font-size-sm;
     height: @font-size-sm;
     margin-top: (-@font-size-sm / 2);
-    color: @disabled-color;
-    font-size: @font-size-sm;
+    color: @text-color-primary;
+    font-size: @font-size-sm - 4px;
     font-style: normal;
-    line-height: 1;
     text-align: center;
     text-transform: none;
     background: @select-clear-background;
     cursor: pointer;
     opacity: 0;
-    transition: color 0.3s ease, opacity 0.15s ease;
+    transition: color 0.3s ease, opacity 0.15s ease, background @animation-duration-base;
     text-rendering: auto;
+    border-radius: @border-radius-circle;
 
     &::before {
       display: block;
     }
 
     &:hover {
-      color: @text-color-secondary;
+      background: @select-clear-hover-background;
     }
 
     .@{select-prefix-cls}:hover & {
@@ -211,9 +214,9 @@
     // https://github.com/ant-design/ant-design/issues/11843
     font-variant: initial;
     background-color: @select-dropdown-bg;
-    border-radius: @border-radius-base;
+    border-radius: @border-radius-lg;
     outline: none;
-    box-shadow: @box-shadow-base;
+    box-shadow: @sensoro-shadow-3;
 
     &.@{ant-prefix}-slide-up-enter.@{ant-prefix}-slide-up-enter-active&-placement-bottomLeft,
     &.@{ant-prefix}-slide-up-appear.@{ant-prefix}-slide-up-appear-active&-placement-bottomLeft {
@@ -242,11 +245,10 @@
     }
 
     .@{select-prefix-cls}-empty {
-      color: @select-dropdown-empty-color;
-
       &-content {
-        height: 38px;
-        line-height: 38px;
+        color: @select-dropdown-empty-color;
+        height: 30px;
+        line-height: 30px;
         text-align: center;
       }
     }
@@ -281,6 +283,10 @@
       color: @select-group-item-color;
       font-size: @font-size-sm;
       cursor: default;
+
+      &:first-child {
+        padding-top: @padding-xs;
+      }
     }
 
     // =========== Option ===========

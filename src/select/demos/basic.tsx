@@ -1,15 +1,18 @@
 import { Select, Space } from "antd";
+import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
+
 const { Option } = Select;
-import "./_doc.less";
 
 const handleChange = (value: string) => {
   console.log(`selected ${value}`);
 };
 
 const App = () => (
-  <Space>
+  <Space wrap>
     <Select
-      style={{ width: 128 }}
+      allowClear
+      clearIcon={<CloseOutlined />}
+      style={{ width: 160 }}
       onChange={handleChange}
       placeholder="请选择"
       defaultValue="nh"
@@ -25,7 +28,9 @@ const App = () => (
       </Option>
     </Select>
     <Select
-      style={{ width: 128 }}
+      allowClear
+      clearIcon={<CloseOutlined />}
+      style={{ width: 160 }}
       onChange={handleChange}
       placeholder="请选择"
       defaultValue="wsj"
@@ -37,13 +42,21 @@ const App = () => (
         海哥
       </Option>
     </Select>
-    <Select style={{ width: 128 }} disabled defaultValue="zfh">
+    <Select
+      allowClear
+      clearIcon={<CloseOutlined />}
+      style={{ width: 160 }}
+      disabled
+      defaultValue="zfh"
+    >
       <Option value="pxl">亮哥</Option>
       <Option value="wsj">婧姐</Option>
       <Option value="zfh">小张</Option>
     </Select>
     <Select
-      style={{ width: 128 }}
+      allowClear
+      clearIcon={<CloseOutlined />}
+      style={{ width: 160 }}
       onChange={handleChange}
       placeholder="请选择"
       defaultValue="nh"
@@ -54,7 +67,9 @@ const App = () => (
       <Option value="nh">这个人的名字有点长可能需要省略号</Option>
     </Select>
     <Select
-      style={{ width: 128 }}
+      allowClear
+      clearIcon={<CloseOutlined />}
+      style={{ width: 160 }}
       defaultOpen
       onChange={handleChange}
       placeholder="请选择"

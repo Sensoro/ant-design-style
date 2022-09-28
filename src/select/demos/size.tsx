@@ -1,4 +1,4 @@
-import { Select } from "antd";
+import { Select, Space } from "antd";
 const { Option } = Select;
 const children: any[] = [];
 
@@ -16,36 +16,37 @@ const handleChange = (value: string[]) => {
 };
 
 const App = () => (
-  <>
-    <div>
-      <Select
-        showArrow
-        mode="multiple"
-        size="large"
-        placeholder="请选择"
-        onChange={handleChange}
-      >
-        {children}
-      </Select>
-      <Select
-        showArrow
-        mode="multiple"
-        placeholder="请选择"
-        onChange={handleChange}
-      >
-        {children}
-      </Select>
-      <Select
-        showArrow
-        mode="multiple"
-        size="small"
-        placeholder="请选择"
-        onChange={handleChange}
-      >
-        {children}
-      </Select>
-    </div>
-  </>
+  <Space wrap>
+    <Select
+      style={{ width: 240 }}
+      showArrow
+      mode="multiple"
+      size="large"
+      placeholder="请选择"
+      onChange={handleChange}
+    >
+      {children}
+    </Select>
+    <Select
+      style={{ width: 240 }}
+      showArrow
+      mode="multiple"
+      placeholder="请选择"
+      onChange={handleChange}
+    >
+      {children}
+    </Select>
+    <Select
+      style={{ width: 240 }}
+      showArrow
+      mode="multiple"
+      size="small"
+      placeholder="请选择"
+      onChange={handleChange}
+    >
+      {children}
+    </Select>
+  </Space>
 );
 
 export default App;

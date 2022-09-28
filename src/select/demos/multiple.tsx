@@ -27,6 +27,7 @@ const App = () => {
       </Radio.Group>
 
       <Select
+        style={{ width: 240 }}
         defaultOpen
         showArrow
         maxTagCount={type}
