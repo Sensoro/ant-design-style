@@ -7,7 +7,7 @@
   .reset-component();
 
   position: fixed;
-  top: 8px;
+  top: 80px;
   left: 0;
   z-index: @zindex-message;
   width: 100%;
@@ -29,6 +29,22 @@
     .@{message-prefix-cls}-custom-content {
       display: flex;
       align-items: center;
+
+      .@{message-prefix-cls}-close.@{iconfont-css-prefix} {
+        font-size: @close-font-size;
+        margin-left: @margin-sm;
+        margin-right: 0;
+        color: @text-color;
+        width: @close-size;
+        height: @close-size;
+        line-height: @line-height-base;
+        transition: background @animation-duration-base;
+        border-radius: @border-radius-circle;
+
+        &:hover {
+          background: @close-hover-bg;
+        }
+      }
     }
   }
 

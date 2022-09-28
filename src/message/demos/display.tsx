@@ -9,23 +9,38 @@ const contentStyle = {
 };
 
 const App: React.FC = () => {
-  const onClose = () => {
-    message.destroy("custom");
+  const onClose = (key: string) => {
+    message.destroy(key);
   };
 
   const success = () => {
     message.success({
-      key: "custom",
+      key: "custom-1",
       content: (
         <div style={contentStyle}>
           这是一条提示消息，不会主动消失
           <CloseOutlined
-            style={{
-              fontSize: 16,
-              margin: "0 0 0 12px",
-              color: "#3c4961",
-            }}
-            onClick={onClose}
+            className="ant-message-close"
+            onClick={() => onClose("custom-1")}
+          />
+        </div>
+      ),
+      duration: 0,
+    });
+  };
+
+  const link = () => {
+    message.success({
+      key: "custom-2",
+      content: (
+        <div style={contentStyle}>
+          这是一条提示消息，不会主动消失
+          <Button type="link" style={{ padding: "4px 0 4px 11px" }}>
+            文字链接
+          </Button>
+          <CloseOutlined
+            className="ant-message-close"
+            onClick={() => onClose("custom-2")}
           />
         </div>
       ),
@@ -36,6 +51,7 @@ const App: React.FC = () => {
   return (
     <Space>
       <Button onClick={success}>Success</Button>
+      <Button onClick={link}>文字链接</Button>
     </Space>
   );
 };
