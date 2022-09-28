@@ -1,22 +1,43 @@
 import { Divider, Space } from "antd";
-
+import IdcardOutlined from "@sensoro-design/icons/IdcardOutlined";
+import PersonCameraOutlined from "@sensoro-design/icons/PersonCameraOutlined";
 import "../../space/index.less";
 
 const App = () => (
   <Space size={32} direction="vertical">
-    <Space style={{ background: "#f6f7f8" }}>
-      <span>浅色</span>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#f6f7f8",
+        width: 64,
+        height: 24,
+        borderRadius: 2,
+      }}
+    >
+      <PersonCameraOutlined style={{ fontSize: 16 }} />
       <Divider type="vertical" />
-      <span>背景</span>
-    </Space>
-    <Space style={{ background: "#6d7789" }}>
-      <span>深色</span>
+      <IdcardOutlined style={{ fontSize: 16 }} />
+    </div>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#6d7789",
+        width: 64,
+        height: 24,
+        borderRadius: 2,
+      }}
+    >
+      <PersonCameraOutlined style={{ fontSize: 16, color: "#fff" }} />
       <Divider
-        style={{ borderColor: "rgba(255,255,255, 0.15)" }}
         type="vertical"
+        style={{ borderColor: "rgba(255,255,255, 0.15)" }}
       />
-      <span>背景</span>
-    </Space>
+      <IdcardOutlined style={{ fontSize: 16, color: "#fff" }} />
+    </div>
   </Space>
 );
 
