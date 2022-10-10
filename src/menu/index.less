@@ -77,6 +77,7 @@
   }
 
   &-submenu-selected {
+    font-weight: 500;
     color: @menu-highlight-color;
 
     .@{menu-prefix-cls}-submenu-arrow {
@@ -145,6 +146,7 @@
   }
 
   &-item-selected {
+    font-weight: 500;
     color: @menu-highlight-color;
 
     a,
@@ -479,7 +481,8 @@
       text-overflow: ellipsis;
     }
 
-    .@{menu-prefix-cls}-submenu-title, .@{menu-prefix-cls}-item {
+    .@{menu-prefix-cls}-submenu-title,
+    .@{menu-prefix-cls}-item {
       // 在不修改源码情况下覆盖 style 样式
       padding-left: @padding-sm !important;
     }
@@ -560,6 +563,15 @@
       position: absolute;
       bottom: 8px;
       left: 12px;
+    }
+
+    > .@{menu-prefix-cls}-submenu, > .@{menu-prefix-cls}-item {
+      color: @color-neutral-text-3;
+
+      &.@{menu-prefix-cls}-submenu-selected,
+      &.@{menu-prefix-cls}-item-selected {
+        color: @primary-color;
+      }
     }
 
     > .@{menu-prefix-cls}-item,
