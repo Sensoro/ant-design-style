@@ -10,7 +10,7 @@
   .@{tree-prefix-cls}-switcher-icon,
   .@{select-tree-prefix-cls}-switcher-icon {
     display: inline-block;
-    color: @color-neutral-text-4;
+    color: @color-neutral-text-3;
     font-size: @font-size-sm;
     vertical-align: baseline;
 
@@ -97,7 +97,7 @@
     align-items: flex-start;
     height: @tree-treenode-height;
     line-height: @tree-treenode-height;
-    padding: 0 0 @tree-node-padding 0;
+    //padding: 0 0 @tree-node-padding 0;
     outline: none;
     // Disabled
     &-disabled {
@@ -160,7 +160,7 @@
     position: relative;
     flex: none;
     align-self: stretch;
-    width: @tree-title-height;
+    width: 20px;
     margin: 0;
     line-height: @tree-treenode-height;
     text-align: center;
@@ -221,7 +221,6 @@
     position: relative;
     z-index: auto;
     min-height: @tree-title-height;
-    margin-left: @margin-xss;
     padding: 0 8px;
     color: inherit;
     line-height: @tree-treenode-height;
@@ -235,8 +234,6 @@
     }
 
     &.@{custom-tree-prefix-cls}-node-selected {
-      font-weight: @tree-node-selected-font-weight;
-      color: @tree-node-selected-color;
     }
 
     // Icon
