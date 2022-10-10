@@ -31,6 +31,7 @@ const App: React.FC = () => {
       {...formItemLayout}
       layout={formLayout}
       form={form}
+      colon={false}
       initialValues={{ layout: formLayout }}
       onValuesChange={onFormLayoutChange}
     >

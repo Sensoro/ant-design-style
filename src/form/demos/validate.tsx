@@ -61,6 +61,7 @@ const App: React.FC = () => {
             fileList={fileList}
             onChange={handleChange}
             onPreview={handlePreview}
+            style={{ marginBottom: 6 }}
           >
             {fileList.length >= 1 ? null : (
               <div>
@@ -82,7 +83,6 @@ const App: React.FC = () => {
           label="姓名"
           name="username"
           rules={[{ required: true, message: "Please input your username!" }]}
-          extra="这是备注信息~"
           help="这是错误校验"
         >
           <Input placeholder="请输入姓名" style={{ width: 240 }} />
