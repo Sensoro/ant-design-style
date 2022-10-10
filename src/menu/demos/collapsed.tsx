@@ -11,6 +11,8 @@ import MenuFoldOutlined from "@sensoro-design/icons/MenuFoldOutlined";
 import MenuUnfoldOutlined from "@sensoro-design/icons/MenuUnfoldOutlined";
 
 import "../../button/index.less";
+import UpOutlined from "@sensoro-design/icons/UpOutlined";
+import DownOutlined from "@sensoro-design/icons/DownOutlined";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -83,6 +85,9 @@ const App: React.FC = () => {
         inlineCollapsed={collapsed}
         items={items}
         onClick={onClick}
+        expandIcon={({ isOpen }) =>
+          isOpen ? <UpOutlined /> : <DownOutlined />
+        }
       />
     </div>
   );

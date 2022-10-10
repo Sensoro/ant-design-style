@@ -16,6 +16,8 @@ nav:
 
 ### 基本用法
 
+icon 需要自定义
+
 <code src="./demos/basic.tsx" />
 
 ### 日期范围

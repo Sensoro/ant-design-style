@@ -6,6 +6,8 @@ import { Menu } from "antd";
 import React, { useState } from "react";
 
 import "./_doc.less";
+import UpOutlined from "@sensoro-design/icons/UpOutlined";
+import DownOutlined from "@sensoro-design/icons/DownOutlined";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -79,6 +81,9 @@ const App: React.FC = () => {
         defaultOpenKeys={["sub1"]}
         items={items}
         onClick={onClick}
+        expandIcon={({ isOpen }) =>
+          isOpen ? <UpOutlined /> : <DownOutlined />
+        }
       />
     </div>
   );

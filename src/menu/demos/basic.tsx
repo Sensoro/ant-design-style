@@ -4,7 +4,8 @@ import FolderOpenOutlined from "@sensoro-design/icons/FolderOpenOutlined";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import React from "react";
-
+import DownOutlined from "@sensoro-design/icons/DownOutlined";
+import UpOutlined from "@sensoro-design/icons/UpOutlined";
 type MenuItem = Required<MenuProps>["items"][number];
 
 function getItem(
@@ -60,6 +61,9 @@ const App: React.FC = () => {
         defaultOpenKeys={["sub1"]}
         mode="inline"
         items={items}
+        expandIcon={({ isOpen }) =>
+          isOpen ? <UpOutlined /> : <DownOutlined />
+        }
       />
     </div>
   );

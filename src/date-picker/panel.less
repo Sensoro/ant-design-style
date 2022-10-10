@@ -1,4 +1,4 @@
-@picker-cell-inner-cls: ~'@{picker-prefix-cls}-cell-inner';
+@picker-cell-inner-cls: ~"@{picker-prefix-cls}-cell-inner";
 
 .@{picker-prefix-cls} {
   @picker-arrow-size: 7px;
@@ -82,6 +82,15 @@
         }
       }
     }
+
+    &-next-btn,
+    &-prev-btn,
+    &-super-next-btn,
+    &-super-prev-btn {
+      .anticon {
+        color: @text-color;
+      }
+    }
   }
 
   // Arrow button
@@ -104,7 +113,7 @@
       height: @picker-arrow-size;
       border: 0 solid currentcolor;
       border-width: 1.5px 0 0 1.5px;
-      content: '';
+      content: "";
     }
   }
 
@@ -119,7 +128,7 @@
       height: @picker-arrow-size;
       border: 0 solid currentcolor;
       border-width: 1.5px 0 0 1.5px;
-      content: '';
+      content: "";
     }
   }
 
@@ -163,7 +172,7 @@
       height: @picker-panel-cell-height;
       transform: translateY(-50%);
       transition: all @animation-duration-slow;
-      content: '';
+      content: "";
     }
 
     // >>> Default
@@ -175,7 +184,8 @@
       height: @picker-panel-cell-height;
       line-height: @picker-panel-cell-height;
       border-radius: 50% !important;
-      transition: background @animation-duration-slow, border @animation-duration-slow;
+      transition: background @animation-duration-slow,
+        border @animation-duration-slow;
     }
 
     // >>> Hover
@@ -189,7 +199,8 @@
     // >>> Today
     &-in-view&-today .@{cellClassName} {
       &::before {
-        content: '';
+        display: inline-block;
+        content: "";
         position: absolute;
         bottom: -4px;
         left: 50%;
@@ -219,8 +230,8 @@
       background: @primary-color;
     }
 
-    &-in-view&-range-start:not(&-range-start-single),
-    &-in-view&-range-end:not(&-range-end-single) {
+    &-in-view&-range-start:not(&-range-start-single):not(&-disabled),
+    &-in-view&-range-end:not(&-range-end-single):not(&-disabled) {
       &::before {
         background: @picker-basic-cell-active-with-range-color;
       }
@@ -247,11 +258,13 @@
         top: 50%;
         z-index: 0;
         height: 24px;
-        border-top: @border-width-base dashed @picker-date-hover-range-border-color;
-        border-bottom: @border-width-base dashed @picker-date-hover-range-border-color;
+        border-top: @border-width-base dashed
+          @picker-date-hover-range-border-color;
+        border-bottom: @border-width-base dashed
+          @picker-date-hover-range-border-color;
         transform: translateY(-50%);
         transition: all @animation-duration-slow;
-        content: '';
+        content: "";
       }
     }
 
@@ -279,18 +292,24 @@
     }
 
     // range start border-radius
-    &-in-view&-range-start:not(&-range-start-single):not(&-range-end) .@{cellClassName} {
+    &-in-view&-range-start:not(&-range-start-single):not(&-range-end)
+      .@{cellClassName} {
       border-radius: @border-radius-base 0 0 @border-radius-base;
     }
 
     // range end border-radius
-    &-in-view&-range-end:not(&-range-end-single):not(&-range-start) .@{cellClassName} {
+    &-in-view&-range-end:not(&-range-end-single):not(&-range-start)
+      .@{cellClassName} {
       border-radius: 0 @border-radius-base @border-radius-base 0;
     }
 
     // DatePanel only
-    .@{picker-prefix-cls}-date-panel &-in-view&-in-range&-range-hover-start .@{cellClassName},
-    .@{picker-prefix-cls}-date-panel &-in-view&-in-range&-range-hover-end .@{cellClassName} {
+    .@{picker-prefix-cls}-date-panel
+      &-in-view&-in-range&-range-hover-start
+      .@{cellClassName},
+    .@{picker-prefix-cls}-date-panel
+      &-in-view&-in-range&-range-hover-end
+      .@{cellClassName} {
       &::after {
         position: absolute;
         top: 0;
@@ -298,7 +317,7 @@
         z-index: -1;
         background: @picker-date-hover-range-color;
         transition: all @animation-duration-slow;
-        content: '';
+        content: "";
       }
     }
 
@@ -309,7 +328,9 @@
       left: 0;
     }
 
-    .@{picker-prefix-cls}-date-panel &-in-view&-in-range&-range-hover-end .@{cellClassName}::after {
+    .@{picker-prefix-cls}-date-panel
+      &-in-view&-in-range&-range-hover-end
+      .@{cellClassName}::after {
       right: 0;
       left: -5px - @border-width-base;
     }
@@ -330,7 +351,8 @@
     &-in-view&-range-hover-edge-start:not(&-range-hover-edge-start-near-range)::after,
     &-in-view&-range-hover-start::after {
       left: 6px;
-      border-left: @border-width-base dashed @picker-date-hover-range-border-color;
+      border-left: @border-width-base dashed
+        @picker-date-hover-range-border-color;
       border-top-left-radius: @border-radius-base;
       border-bottom-left-radius: @border-radius-base;
     }
@@ -342,7 +364,8 @@
     &-in-view&-range-hover-edge-end:not(&-range-hover-edge-end-near-range)::after,
     &-in-view&-range-hover-end::after {
       right: 6px;
-      border-right: @border-width-base dashed @picker-date-hover-range-border-color;
+      border-right: @border-width-base dashed
+        @picker-date-hover-range-border-color;
       border-top-right-radius: @border-radius-base;
       border-bottom-right-radius: @border-radius-base;
     }
@@ -375,7 +398,7 @@
       color: @text-color;
     }
 
-    .picker-cell-inner(~'@{picker-cell-inner-cls}');
+    .picker-cell-inner(~"@{picker-cell-inner-cls}");
   }
 
   &-decade-panel,
@@ -415,7 +438,8 @@
       text-align: left;
 
       &:not(:last-child) {
-        border-bottom: @border-width-base @border-style-base @picker-border-color;
+        border-bottom: @border-width-base @border-style-base
+          @picker-border-color;
       }
     }
   }
@@ -461,7 +485,10 @@
   &-quarter-panel,
   &-month-panel {
     @hover-cell-fixed-distance: (
-      (((@picker-panel-width - @padding-xs * 2) / 3) - @picker-year-month-cell-width) / 2
+      (
+          ((@picker-panel-width - @padding-xs * 2) / 3) -
+            @picker-year-month-cell-width
+        ) / 2
     );
 
     .@{picker-prefix-cls}-body {
@@ -474,23 +501,27 @@
 
     .@{picker-prefix-cls}-cell-range-hover-start::after {
       left: @hover-cell-fixed-distance;
-      border-left: @border-width-base dashed @picker-date-hover-range-border-color;
+      border-left: @border-width-base dashed
+        @picker-date-hover-range-border-color;
       border-radius: @border-radius-base 0 0 @border-radius-base;
 
       .@{picker-prefix-cls}-panel-rtl & {
         right: @hover-cell-fixed-distance;
-        border-right: @border-width-base dashed @picker-date-hover-range-border-color;
+        border-right: @border-width-base dashed
+          @picker-date-hover-range-border-color;
         border-radius: 0 @border-radius-base @border-radius-base 0;
       }
     }
     .@{picker-prefix-cls}-cell-range-hover-end::after {
       right: @hover-cell-fixed-distance;
-      border-right: @border-width-base dashed @picker-date-hover-range-border-color;
+      border-right: @border-width-base dashed
+        @picker-date-hover-range-border-color;
       border-radius: 0 @border-radius-base @border-radius-base 0;
 
       .@{picker-prefix-cls}-panel-rtl & {
         left: @hover-cell-fixed-distance;
-        border-left: @border-width-base dashed @picker-date-hover-range-border-color;
+        border-left: @border-width-base dashed
+          @picker-date-hover-range-border-color;
         border-radius: @border-radius-base 0 0 @border-radius-base;
       }
     }
@@ -603,11 +634,12 @@
 
       &::after {
         display: block;
-        height: @picker-time-panel-column-height - @picker-time-panel-cell-height;
-        content: '';
+        height: @picker-time-panel-column-height -
+          @picker-time-panel-cell-height;
+        content: "";
         .@{picker-prefix-cls}-datetime-panel & {
-          height: @picker-time-panel-column-height - @picker-time-panel-cell-height + 2 *
-            @border-width-base;
+          height: @picker-time-panel-column-height -
+            @picker-time-panel-cell-height + 2 * @border-width-base;
         }
       }
 
