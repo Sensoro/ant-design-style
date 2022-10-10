@@ -1,10 +1,10 @@
-@import '../../style/index';
-@import '../../style/mixins/index';
-@import '../input/mixin';
+@import "../../style/index";
+@import "../../style/mixins/index";
+@import "../input/mixin";
 
-@import '../select/index.less';
+@import "../select/index.less";
 
-@pagination-prefix-cls: ~'@{ant-prefix}-pagination';
+@pagination-prefix-cls: ~"@{ant-prefix}-pagination";
 
 .@{pagination-prefix-cls} {
   .reset-component();
@@ -22,14 +22,14 @@
     height: 0;
     overflow: hidden;
     visibility: hidden;
-    content: ' ';
+    content: " ";
   }
 
   &-total-text {
     display: inline-block;
     height: @pagination-item-size;
     color: @pagination-total-text-color;
-    margin-right: @margin-lg;
+    margin-right: @margin-xs;
     line-height: @pagination-item-size - 2px;
     vertical-align: middle;
   }
@@ -61,23 +61,12 @@
       }
     }
 
-    &:hover {
-      border-color: @primary-color;
+    &:not(&-active):hover {
+      background: @pagination-item-hover-bg;
       transition: all 0.3s;
 
       a {
-        color: @primary-color;
-      }
-    }
-
-    // cannot merge with `&:hover`
-    // see https://github.com/ant-design/ant-design/pull/34002
-    &:focus-visible {
-      border-color: @primary-color;
-      transition: all 0.3s;
-
-      a {
-        color: @primary-color;
+        color: @text-color-primary;
       }
     }
 
@@ -90,20 +79,8 @@
         color: @primary-color;
       }
 
-      &:hover {
-        border-color: @primary-5;
-      }
-
-      &:focus-visible {
-        border-color: @primary-5;
-      }
-
       &:hover a {
-        color: @primary-5;
-      }
-
-      &:focus-visible a {
-        color: @primary-5;
+        color: @primary-color;
       }
     }
   }
@@ -225,9 +202,8 @@
       border-color: @primary-color;
     }
 
-    &:hover .@{pagination-prefix-cls}-item-link {
-      color: @primary-color;
-      border-color: @primary-color;
+    &:not(.@{pagination-prefix-cls}-disabled):hover .@{pagination-prefix-cls}-item-link {
+      background-color: @pagination-item-hover-bg;
     }
   }
 
@@ -253,12 +229,12 @@
   }
 
   &-slash {
-    margin: 0 10px 0 5px;
+    margin: 0 2px 0 0;
   }
 
   &-options {
     display: inline-block;
-    margin-left: 16px;
+    margin-left: @margin-xs;
     vertical-align: middle;
 
     // IE11 css hack. `*::-ms-backdrop,` is a must have
@@ -278,7 +254,7 @@
       display: inline-block;
       color: @pagination-options-quicker-jumper-color;
       height: @input-height-base;
-      margin-left: @margin-xs;
+      margin-left: @margin-md;
       line-height: @input-height-base;
       vertical-align: top;
 
@@ -296,11 +272,18 @@
   &-simple &-next {
     height: @pagination-item-size-sm;
     line-height: @pagination-item-size-sm;
+    margin-right: 0;
     vertical-align: top;
+
     .@{pagination-prefix-cls}-item-link {
+      width: @pagination-item-size-sm;
       height: @pagination-item-size-sm;
       background-color: transparent;
       border: 0;
+
+      .@{iconfont-css-prefix} {
+        font-size: @font-size-sm;
+      }
 
       &::after {
         height: @pagination-item-size-sm;
@@ -313,6 +296,7 @@
     display: inline-block;
     height: @pagination-item-size-sm;
     margin-right: 8px;
+    font-size: @font-size-sm;
 
     input {
       box-sizing: border-box;
@@ -332,7 +316,8 @@
 
       &:focus {
         border-color: @primary-color-hover;
-        box-shadow: @input-outline-offset @outline-blur-size @outline-width @primary-color-outline;
+        box-shadow: @input-outline-offset @outline-blur-size @outline-width
+          @primary-color-outline;
       }
 
       &[disabled] {
@@ -390,8 +375,6 @@
   }
 
   &&-mini &-options {
-    margin-left: 2px;
-
     &-size-changer {
       top: @pagination-mini-options-size-changer-top;
     }
@@ -479,4 +462,4 @@
   }
 }
 
-@import './rtl';
+@import "./rtl";

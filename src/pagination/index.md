@@ -21,3 +21,9 @@ nav:
 ### 迷你版本
 
 <code src="./demos/size.tsx" />
+
+### 简易版
+
+使用场景：穿梭框...
+
+<code src="./demos/simple.tsx" />

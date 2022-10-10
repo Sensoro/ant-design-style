@@ -7,7 +7,8 @@ const App = () => (
       showQuickJumper
       total={185}
       showTotal={(total) => `共 ${total} 条`}
-      defaultPageSize={20}
+      pageSizeOptions={[10, 50, 100]}
+      defaultPageSize={10}
       defaultCurrent={1}
     />
   </ConfigProvider>
