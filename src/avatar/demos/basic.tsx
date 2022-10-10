@@ -8,13 +8,11 @@ export default () => {
         <Avatar size={64} icon={<UserFilled />} />
         <Avatar size="large" icon={<UserFilled />} />
         <Avatar icon={<UserFilled />} />
-        <Avatar size="small" icon={<UserFilled />} />
       </Space>
       <Space>
         <Avatar shape="square" size={64} icon={<UserFilled />} />
         <Avatar shape="square" size="large" icon={<UserFilled />} />
         <Avatar shape="square" icon={<UserFilled />} />
-        <Avatar shape="square" size="small" icon={<UserFilled />} />
       </Space>
     </Space>
   );
