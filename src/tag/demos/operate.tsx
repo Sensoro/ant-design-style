@@ -125,10 +125,7 @@ const App = () => {
         />
       )}
       {!inputVisible && (
-        <Tag
-          style={{ color: "#2b6de5", cursor: "pointer" }}
-          onClick={showInput}
-        >
+        <Tag className="ant-tag-border" onClick={showInput}>
           <PlusOutlined style={{ marginRight: 4 }} /> 我要加菜
         </Tag>
       )}

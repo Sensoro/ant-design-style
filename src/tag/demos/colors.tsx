@@ -8,8 +8,8 @@ export default () => {
         <Tag color="#f72231">标签名称</Tag>
         <Tag color="#f98206">标签名称</Tag>
         <Tag color="#f9aa06">标签名称</Tag>
-        <Tag color="#87d068">标签名称</Tag>
-        <Tag color="#2f54eb">标签名称</Tag>
+        <Tag color="#1acb7c">标签名称</Tag>
+        <Tag color="#2b6de5">标签名称</Tag>
       </Space>
 
       <Space wrap>
