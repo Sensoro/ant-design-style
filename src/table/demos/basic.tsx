@@ -1,6 +1,5 @@
 import { Table, ConfigProvider } from "antd";
 import zhCN from "antd/es/locale/zh_CN";
-
 import type { FC } from "react";
 
 import "../../space/index.less";

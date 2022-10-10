@@ -183,7 +183,7 @@ const colorsMap: Record<ColorsType, any> = {
   grey: {
     label: "中性色 - 灰色 Grey",
     colors: [
-      "#02024b",
+      "#fbfbfc",
       "#f6f7f8",
       "#f1f2f4",
       "#eceef0",

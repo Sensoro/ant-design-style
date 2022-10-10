@@ -1,5 +1,6 @@
 import type { ColumnsType } from "antd/es/table";
 import { Space } from "antd";
+import FilterFilled from "@sensoro-design/icons/FilterFilled";
 
 export interface DataType {
   key: number;
@@ -37,6 +38,7 @@ export const columns: ColumnsType<DataType> = [
   {
     title: "状态",
     dataIndex: "status",
+    filterIcon: <FilterFilled />,
     filters: [
       {
         text: "打开报警",
@@ -56,7 +58,7 @@ export const columns: ColumnsType<DataType> = [
     title: "操作",
     key: "action",
     render: (_, record) => (
-      <Space>
+      <Space size={16}>
         <a>执行记录</a>
         <a>编辑</a>
       </Space>

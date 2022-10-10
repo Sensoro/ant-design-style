@@ -326,7 +326,6 @@
     padding: 0 4px;
     color: @table-header-icon-color;
     font-size: @font-size-sm;
-    border-radius: @border-radius-base;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -528,7 +527,6 @@
         ((@font-size-sm * 1.4 - @border-width-base * 3) / 2)
       ) * 2 + @border-width-base * 3;
 
-    &:focus,
     &:hover,
     &:active {
       background: @table-expand-hover-icon-bg;
@@ -702,13 +700,13 @@
       position: relative;
 
       &::before {
-        box-shadow: inset 10px 0 8px -8px darken(@shadow-color, 5%);
+        box-shadow: inset 10px 0 8px -8px @color-neutral-bg-4;
       }
     }
 
     .@{table-prefix-cls}-cell-fix-left-first::after,
     .@{table-prefix-cls}-cell-fix-left-last::after {
-      box-shadow: inset 10px 0 8px -8px darken(@shadow-color, 5%);
+      box-shadow: inset 10px 0 8px -8px @color-neutral-bg-4;
     }
 
     .@{table-prefix-cls}-cell-fix-left-last::before {
@@ -721,13 +719,13 @@
       position: relative;
 
       &::after {
-        box-shadow: inset -10px 0 8px -8px darken(@shadow-color, 5%);
+        box-shadow: inset -10px 0 8px -8px @color-neutral-bg-4;
       }
     }
 
     .@{table-prefix-cls}-cell-fix-right-first::after,
     .@{table-prefix-cls}-cell-fix-right-last::after {
-      box-shadow: inset -10px 0 8px -8px darken(@shadow-color, 5%);
+      box-shadow: inset -10px 0 8px -8px @color-neutral-bg-4;
     }
   }
 

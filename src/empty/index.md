@@ -17,3 +17,15 @@ nav:
 ### 基本用法
 
 <code src="./demos/basic.tsx" />
+
+### 表格中的样式
+
+<code src="./demos/table.tsx" />
+
+### 纯文字
+
+<code src="./demos/text.tsx" />
+
+### 带操作按钮
+
+<code src="./demos/size.tsx" />
