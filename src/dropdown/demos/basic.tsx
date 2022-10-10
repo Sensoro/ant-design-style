@@ -7,6 +7,7 @@ import "../../space/index.less";
 
 const menu = (
   <Menu
+    defaultSelectedKeys={["3"]}
     items={[
       {
         key: "1",
@@ -26,15 +27,21 @@ const menu = (
 
 const App = () => (
   <Space wrap size={16}>
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottom">
+    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button type="primary">
         下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
       </Button>
     </Dropdown>
 
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottom">
+    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button>
         下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
+      </Button>
+    </Dropdown>
+
+    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
+      <Button>
+        下拉菜单等宽 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
       </Button>
     </Dropdown>
   </Space>

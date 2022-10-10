@@ -28,29 +28,19 @@ const menu = (
 const App = () => {
   return (
     <Space wrap size={16}>
-      <Dropdown
-        overlayClassName="ant-dropdown-large"
-        overlay={menu}
-        trigger={["click"]}
-        placement="bottom"
-      >
+      <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
         <Button size="large">
           下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
         </Button>
       </Dropdown>
 
-      <Dropdown overlay={menu} trigger={["click"]} placement="bottom">
+      <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
         <Button>
           下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
         </Button>
       </Dropdown>
 
-      <Dropdown
-        overlayClassName="ant-dropdown-small"
-        overlay={menu}
-        trigger={["click"]}
-        placement="bottom"
-      >
+      <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
         <Button size="small">
           下拉菜单 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
         </Button>

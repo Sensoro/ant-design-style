@@ -27,7 +27,7 @@ const menu = (
 
 const App = () => (
   <Space wrap size={16}>
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottom">
+    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button type="link">
         创建合同 <DownOutlined style={{ fontSize: 12, marginLeft: 4 }} />
       </Button>
