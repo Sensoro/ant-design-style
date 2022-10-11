@@ -24,7 +24,7 @@ export default () => (
         }
       >
         <div>
-          <span className="shadow-name">@sensoro-shadow-1</span>
+          <span className="shadow-name">@sen-shadow-1</span>
           <br />
           卡片背景1
         </div>
@@ -49,7 +49,7 @@ export default () => (
         }
       >
         <div>
-          <span className="shadow-name">@sensoro-shadow-2</span>
+          <span className="shadow-name">@sen-shadow-2</span>
           <br />
           卡片背景2
         </div>
@@ -74,7 +74,7 @@ export default () => (
         }
       >
         <div>
-          <span className="shadow-name">@sensoro-shadow-3</span>
+          <span className="shadow-name">@sen-shadow-3</span>
           <br />
           时间选择器/级联选择/表单选择
         </div>
@@ -99,7 +99,7 @@ export default () => (
         }
       >
         <div>
-          <span className="shadow-name">@sensoro-shadow-4</span>
+          <span className="shadow-name">@sen-shadow-4</span>
           <br />
           卡片hover
         </div>
@@ -124,7 +124,7 @@ export default () => (
         }
       >
         <div>
-          <span className="shadow-name">@sensoro-shadow-5</span>
+          <span className="shadow-name">@sen-shadow-5</span>
           <br />
           弹窗
         </div>

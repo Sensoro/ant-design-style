@@ -48,8 +48,8 @@
     margin-bottom: 8px;
     text-align: center;
     vertical-align: top;
-    background-color: @sensoro-background;
-    border: @border-width-base dashed @sensoro-border-color-base;
+    background-color: @sen-background;
+    border: @border-width-base dashed @sen-border-color-base;
     border-radius: @border-radius-lg;
     cursor: pointer;
     transition: border-color 0.3s;
@@ -76,7 +76,7 @@
       background-color: @color-neutral-line;
 
       .@{upload-prefix-cls}-disabled& {
-        background-color: @sensoro-background;
+        background-color: @sen-background;
       }
     }
   }
@@ -86,8 +86,8 @@
     width: 432px;
     height: @upload-drag-height;
     text-align: center;
-    background: @sensoro-background;
-    border: @border-width-base dashed @sensoro-border-color-base;
+    background: @sen-background;
+    border: @border-width-base dashed @sen-border-color-base;
     border-radius: @border-radius-lg;
     cursor: pointer;
     transition: border-color 0.3s;
@@ -293,7 +293,7 @@
       }
 
       &-error {
-        background-color: @sensoro-background;
+        background-color: @sen-background;
         border-color: @error-color;
 
         .@{upload-item}-actions {
@@ -510,7 +510,7 @@
     .@{upload-item}-uploading {
       &.@{upload-item} {
         border-color: transparent;
-        background-color: @sensoro-background;
+        background-color: @sen-background;
       }
 
       .@{upload-item}-info {
