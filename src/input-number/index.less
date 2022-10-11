@@ -1,11 +1,11 @@
-@import '../../style/themes/index';
-@import '../../style/mixins/index';
-@import '../input/mixin';
-@import './affix';
-@import './status';
+@import "../../style/themes/index";
+@import "../../style/mixins/index";
+@import "../input/mixin";
+@import "./affix";
+@import "./status";
 
-@input-number-prefix-cls: ~'@{ant-prefix}-input-number';
-@form-item-prefix-cls: ~'@{ant-prefix}-form-item';
+@input-number-prefix-cls: ~"@{ant-prefix}-input-number";
+@form-item-prefix-cls: ~"@{ant-prefix}-form-item";
 
 .@{input-number-prefix-cls} {
   .reset-component();
@@ -14,7 +14,7 @@
   //== Style for input-group: input with label, with button or dropdown...
   &-group {
     .reset-component();
-    .input-group(~'@{input-number-prefix-cls}');
+    .input-group(~"@{input-number-prefix-cls}");
 
     &-wrapper {
       display: inline-block;
@@ -98,8 +98,8 @@
     appearance: textfield !important;
     .placeholder();
 
-    &[type='number']::-webkit-inner-spin-button,
-    &[type='number']::-webkit-outer-spin-button {
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
       margin: 0;
       /* stylelint-disable-next-line property-no-vendor-prefix */
       -webkit-appearance: none;
@@ -114,6 +114,19 @@
     input {
       height: @input-height-lg - 2px;
     }
+
+    .@{input-number-prefix-cls}-handler-up,
+    .@{input-number-prefix-cls}-handler-down {
+      height: 16px;
+
+      &-inner {
+        height: 16px !important;
+      }
+    }
+
+    .@{input-number-prefix-cls}-handler-down {
+      top: 19px;
+    }
   }
 
   &-sm {
@@ -123,13 +136,26 @@
       height: @input-height-sm - 2px;
       padding: 0 @control-padding-horizontal-sm - 1px;
     }
+
+    .@{input-number-prefix-cls}-handler-up,
+    .@{input-number-prefix-cls}-handler-down {
+      height: 8px;
+
+      &-inner {
+        height: 8px !important;
+      }
+    }
+
+    .@{input-number-prefix-cls}-handler-down {
+      top: 11px;
+    }
   }
 
   &-handler-wrap {
     position: absolute;
     top: 0;
     right: 0;
-    width: 22px;
+    width: 24px;
     height: 100%;
     background: @input-number-handler-bg;
     border-radius: 0 @control-border-radius @control-border-radius 0;
@@ -147,11 +173,10 @@
         justify-content: center;
         min-width: auto;
         margin-right: 0;
-        font-size: 7px;
-        width: 20px;
+        font-size: 8px;
         height: @font-size-sm;
         color: @text-color;
-        background-color: @color-neutral-bg-2;
+        //background-color: @color-neutral-bg-2;
       }
     }
 
@@ -165,9 +190,23 @@
     opacity: 1;
   }
 
+  &-handler-up,
+  &-handler-down {
+    height: 12px;
+    width: 20px;
+    background: @color-neutral-bg-2;
+  }
+
   &-handler-up {
-    border-top-right-radius: @control-border-radius;
+    position: absolute;
+    top: 3px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
     cursor: pointer;
+
+    &:not(.@{input-number-prefix-cls}-handler-up-disabled):hover {
+      background-color: @grey-4;
+    }
 
     &-inner {
       bottom: 0;
@@ -176,9 +215,15 @@
   }
 
   &-handler-down {
-    top: 0;
-    border-bottom-right-radius: @control-border-radius;
+    position: absolute;
+    top: 15px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
     cursor: pointer;
+
+    &:not(.@{input-number-prefix-cls}-handler-down-disabled):hover {
+      background-color: @grey-4;
+    }
 
     &-inner {
       top: 0;
@@ -193,6 +238,11 @@
   &-handler-up-disabled,
   &-handler-down-disabled {
     cursor: not-allowed;
+
+    .@{input-number-prefix-cls}-handler-up-inner,
+    .@{input-number-prefix-cls}-handler-down-inner {
+      color: @disabled-color !important;
+    }
   }
 
   &-handler-up-disabled:hover &-handler-up-inner,
@@ -212,4 +262,4 @@
   }
 }
 
-@import './rtl';
+@import "./rtl";
