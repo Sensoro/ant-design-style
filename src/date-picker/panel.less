@@ -223,11 +223,19 @@
     }
 
     // >>> Selected
-    &-in-view&-selected .@{cellClassName},
-    &-in-view&-range-start .@{cellClassName},
-    &-in-view&-range-end .@{cellClassName} {
-      color: @text-color-inverse;
-      background: @primary-color;
+    &-in-view&-selected,
+    &-in-view&-range-start,
+    &-in-view&-range-end {
+      .@{cellClassName} {
+        color: @text-color-inverse;
+        background: @primary-color;
+      }
+    }
+
+    &-in-view&-range-start {
+      &::before {
+        //background: @primary-1;
+      }
     }
 
     &-in-view&-range-start:not(&-range-start-single):not(&-disabled),
@@ -258,10 +266,12 @@
         top: 50%;
         z-index: 0;
         height: 24px;
-        border-top: @border-width-base dashed
-          @picker-date-hover-range-border-color;
-        border-bottom: @border-width-base dashed
-          @picker-date-hover-range-border-color;
+        width: 100%;
+        background: @primary-1;
+        //border-top: @border-width-base dashed
+        //  @picker-date-hover-range-border-color;
+        //border-bottom: @border-width-base dashed
+        //  @picker-date-hover-range-border-color;
         transform: translateY(-50%);
         transition: all @animation-duration-slow;
         content: "";
@@ -351,8 +361,8 @@
     &-in-view&-range-hover-edge-start:not(&-range-hover-edge-start-near-range)::after,
     &-in-view&-range-hover-start::after {
       left: 6px;
-      border-left: @border-width-base dashed
-        @picker-date-hover-range-border-color;
+      //border-left: @border-width-base dashed
+      //  @picker-date-hover-range-border-color;
       border-top-left-radius: @border-radius-base;
       border-bottom-left-radius: @border-radius-base;
     }
@@ -364,8 +374,8 @@
     &-in-view&-range-hover-edge-end:not(&-range-hover-edge-end-near-range)::after,
     &-in-view&-range-hover-end::after {
       right: 6px;
-      border-right: @border-width-base dashed
-        @picker-date-hover-range-border-color;
+      //border-right: @border-width-base dashed
+      //  @picker-date-hover-range-border-color;
       border-top-right-radius: @border-radius-base;
       border-bottom-right-radius: @border-radius-base;
     }
@@ -573,7 +583,7 @@
   // ====================== Date Panel ======================
   &-date-panel {
     .@{picker-prefix-cls}-body {
-      padding: @padding-xs @padding-sm;
+      padding: @padding-md @padding-md;
     }
 
     .@{picker-prefix-cls}-content {
