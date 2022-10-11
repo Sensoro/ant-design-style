@@ -1,3 +1,45 @@
+# [1.2.0](https://github.com/sensoro-design/ant-design-style/compare/v1.1.0...v1.2.0) (2022-10-11)
+
+
+### Bug Fixes
+
+* avatar ui ([3e310f8](https://github.com/sensoro-design/ant-design-style/commit/3e310f8bca3dab129a765bf1901b8b86d0456f05))
+* button ui ([6e086bf](https://github.com/sensoro-design/ant-design-style/commit/6e086bfbfeabee325f88a2c862b5182753e7e0f4))
+* cascader ([c36e0fa](https://github.com/sensoro-design/ant-design-style/commit/c36e0fa725e2e15a4bbe82b1e82e6aec804a9a77))
+* datepicker ui ([0b85a38](https://github.com/sensoro-design/ant-design-style/commit/0b85a38b4a4a2c424d73c7e4267966bc561fae47))
+* divider ui ([9760585](https://github.com/sensoro-design/ant-design-style/commit/9760585b8a3ccb2128c9044a2d66f5d4e1c66b9d))
+* drawer ui ([8b9be85](https://github.com/sensoro-design/ant-design-style/commit/8b9be85d0af9bd0b5ec129e099573247a58b6dfb))
+* form ui ([93e0a9c](https://github.com/sensoro-design/ant-design-style/commit/93e0a9c0bcf6ba4efdffbb1235ba6e91228d5aab))
+* input-number ui ([09ecd57](https://github.com/sensoro-design/ant-design-style/commit/09ecd576a31d145aed48ad1e7d8d1625f1572e85))
+* menu ui ([003f2aa](https://github.com/sensoro-design/ant-design-style/commit/003f2aa96b020f323240992e7802fc96a33586aa))
+* message ui ([330ebc0](https://github.com/sensoro-design/ant-design-style/commit/330ebc0cf371450e35fff8c9d081af7cdf4c8b9d))
+* pagination ui ([6883904](https://github.com/sensoro-design/ant-design-style/commit/6883904ee5cb98f51c5e1ace0991348e7eebfc89))
+* **radio:** padding ([73d0dc3](https://github.com/sensoro-design/ant-design-style/commit/73d0dc3a72cbb4e438da2334b0af297dc5c3759e))
+* select ui ([7a1ea3f](https://github.com/sensoro-design/ant-design-style/commit/7a1ea3f7e605906917503d3d17165744d356aa54))
+* slider ui ([4115e5d](https://github.com/sensoro-design/ant-design-style/commit/4115e5d5f0cd4a23b0138e2f0fc389e946b68e34))
+* steps ui ([c9c1495](https://github.com/sensoro-design/ant-design-style/commit/c9c1495733b916198cdce75cad7d494db3b792e2))
+* switch ui ([b8304c0](https://github.com/sensoro-design/ant-design-style/commit/b8304c06fa1b46db59ec5ba83b93b528e6ca4d7f))
+* table ui ([44b81a8](https://github.com/sensoro-design/ant-design-style/commit/44b81a827a1d697bbd96255c5f3b44986aafa872))
+* tag ui ([4f3810d](https://github.com/sensoro-design/ant-design-style/commit/4f3810dd0fbb59517bb791610db19bc69e9b80d7))
+* timeline ui ([646bcfc](https://github.com/sensoro-design/ant-design-style/commit/646bcfcb46109d4ed4034be8f0f6e2777a9940d8))
+* timepicker ui ([9494e7d](https://github.com/sensoro-design/ant-design-style/commit/9494e7d5db48aa7799b8409913e6c428dc8923fa))
+* **tooltip:** remove box-shadow ([0a68641](https://github.com/sensoro-design/ant-design-style/commit/0a68641d43c947e105320ca9ba6b12bfbb88b8ae))
+* tree ui ([5efc282](https://github.com/sensoro-design/ant-design-style/commit/5efc2825d861021a597e21229d60468cfd4aa3b4))
+* tree-select ui ([93e1cb3](https://github.com/sensoro-design/ant-design-style/commit/93e1cb3dc2135c9b1ec2af403742ae64bfee7141))
+* 修复编译报错 ([4ca37d1](https://github.com/sensoro-design/ant-design-style/commit/4ca37d1a18baa690d3090e2fd3e6ff0eb19827de))
+
+
+### Features
+
+* add descriptions demo ([75e6874](https://github.com/sensoro-design/ant-design-style/commit/75e6874f2e67d7d35b98c9052a739ef82e5e57f8))
+* add generate-entry.js ([2cfb117](https://github.com/sensoro-design/ant-design-style/commit/2cfb1171429dc57aafd7a68f7fc9918a975fe63e))
+* add scripts dic ([66a33aa](https://github.com/sensoro-design/ant-design-style/commit/66a33aadb5b7038ad24034b1e2fde46d76873ad8))
+* menu custom icon ([02c23ba](https://github.com/sensoro-design/ant-design-style/commit/02c23ba20b86e8acf9d150043f2fdda9ac5f601c))
+* remove _doc.less ([0eafb94](https://github.com/sensoro-design/ant-design-style/commit/0eafb944a2fa46ac36288c333cb15a984891aaf5))
+* update box-shadow demo ([fb2265c](https://github.com/sensoro-design/ant-design-style/commit/fb2265cfd90e3f6cae310add689d679d21bd4eae))
+* update box-shadow demo ([b75a1ed](https://github.com/sensoro-design/ant-design-style/commit/b75a1ed941e051dab237962c1ef3fea522aa3f7a))
+* update dropdown demo ([0c29c40](https://github.com/sensoro-design/ant-design-style/commit/0c29c40481b334b980bd07adbd4cc3a39d76ee7d))
+
 # [1.1.0](https://github.com/sensoro-design/ant-design-style/compare/v1.0.0...v1.1.0) (2022-09-26)
 
 
