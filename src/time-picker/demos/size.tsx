@@ -30,6 +30,7 @@ const App: FC = () => (
         />
 
         <RangePicker
+          separator="~"
           size="large"
           clearIcon={<CloseOutlined />}
           onChange={onChange}
@@ -48,6 +49,7 @@ const App: FC = () => (
         />
 
         <RangePicker
+          separator="~"
           clearIcon={<CloseOutlined />}
           onChange={onChange}
           defaultValue={[
@@ -67,6 +69,7 @@ const App: FC = () => (
 
         <RangePicker
           size="small"
+          separator="~"
           clearIcon={<CloseOutlined />}
           onChange={onChange}
           defaultValue={[

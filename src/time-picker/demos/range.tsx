@@ -21,6 +21,7 @@ const App: FC = () => (
   <ConfigProvider locale={zhCN}>
     <Space direction="vertical">
       <RangePicker
+        separator="~"
         clearIcon={<CloseOutlined />}
         onChange={onChange}
         defaultValue={[
@@ -29,7 +30,7 @@ const App: FC = () => (
         ]}
       />
 
-      <RangePicker disabled />
+      <RangePicker separator="~" disabled />
     </Space>
   </ConfigProvider>
 );
