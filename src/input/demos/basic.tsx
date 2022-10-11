@@ -6,6 +6,8 @@ export default () => {
       <Input placeholder="请输入" style={{ width: 240 }} />
 
       <Input defaultValue="李四" style={{ width: 240 }} />
+
+      <Input disabled defaultValue="李四" style={{ width: 240 }} />
     </Space>
   );
 };

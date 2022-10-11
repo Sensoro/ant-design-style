@@ -1,5 +1,5 @@
-@import '../../style/themes/index';
-@import '../../style/mixins/index';
+@import "../../style/themes/index";
+@import "../../style/mixins/index";
 
 @input-affix-with-clear-btn-width: 38px;
 
@@ -28,7 +28,8 @@
   }
   & when (@theme = variable) {
     border-color: @hoverBorderColor;
-    box-shadow: @input-outline-offset @outline-blur-size @outline-width @outlineColor;
+    box-shadow: @input-outline-offset @outline-blur-size @outline-width
+      @outlineColor;
   }
   border-right-width: @border-width-base;
   outline: 0;
@@ -102,6 +103,7 @@
 
   // Reset height for `textarea`s
   textarea& {
+    padding: 0 @input-padding-horizontal-base 20px;
     max-width: 100%; // prevent textearea resize from coming out of its container
     height: auto;
     min-height: @input-height-base;
@@ -129,13 +131,13 @@
   border-spacing: 0;
 
   // Undo padding and float of grid classes
-  &[class*='col-'] {
+  &[class*="col-"] {
     float: none;
     padding-right: 0;
     padding-left: 0;
   }
 
-  > [class*='col-'] {
+  > [class*="col-"] {
     padding-right: 8px;
 
     &:last-child {
@@ -411,7 +413,9 @@
 
     .@{ant-prefix}-input-group-wrapper:not(:last-child) {
       &.@{ant-prefix}-input-search > .@{ant-prefix}-input-group {
-        & > .@{ant-prefix}-input-group-addon > .@{ant-prefix}-input-search-button {
+        &
+          > .@{ant-prefix}-input-group-addon
+          > .@{ant-prefix}-input-search-button {
           border-radius: 0;
         }
 

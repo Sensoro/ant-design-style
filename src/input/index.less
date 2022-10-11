@@ -54,18 +54,27 @@
   }
 
   &-textarea-show-count {
+    position: relative;
     // https://github.com/ant-design/ant-design/issues/33049
     > .@{input-prefix-cls} {
       height: 100%;
     }
 
     &::after {
-      float: right;
+      position: absolute;
+      bottom: 1px;
+      right: 12px;
+      display: inline-block;
+      width: calc(100% - 24px);
+      background: @white;
+      height: 19px;
+      line-height: 19px;
       font-size: @font-size-sm;
       color: @text-color-secondary;
       white-space: nowrap;
       content: attr(data-count);
       pointer-events: none;
+      text-align: right;
     }
 
     &.@{input-prefix-cls}-textarea-in-form-item {
