@@ -1,5 +1,6 @@
 import { Cascader, Space } from "antd";
 import type { FC } from "react";
+import { CloseOutlined } from "@ant-design/icons";
 
 export const options = [
   {
@@ -85,6 +86,19 @@ const App: FC = () => {
         <Cascader
           defaultValue={["cloud", "fe", "sj"]}
           placeholder="请选择"
+          clearIcon={<CloseOutlined />}
+          style={{ width: 240 }}
+          options={options}
+          onChange={(value) => console.log(value)}
+        />
+      </Space>
+      <Space>
+        禁用展示
+        <Cascader
+          disabled
+          defaultValue={["cloud", "fe", "sj"]}
+          placeholder="请选择"
+          clearIcon={<CloseOutlined />}
           style={{ width: 240 }}
           options={options}
           onChange={(value) => console.log(value)}
@@ -96,6 +110,7 @@ const App: FC = () => {
           defaultOpen
           defaultValue={["cloud", "fe", "sj"]}
           placeholder="请选择"
+          clearIcon={<CloseOutlined />}
           style={{ width: 240 }}
           options={options}
           onChange={(value) => console.log(value)}
