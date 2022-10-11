@@ -167,6 +167,18 @@
     cursor: pointer;
     user-select: none;
 
+    .@{iconfont-css-prefix} {
+      margin-right: @margin-xs;
+    }
+
+    & when (@custom-tree-prefix-cls = ant-select-tree) {
+      width: 16px;
+
+      .@{iconfont-css-prefix} {
+        margin-right: @margin-xss;
+      }
+    }
+
     &-noop {
       cursor: default;
     }

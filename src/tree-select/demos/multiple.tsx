@@ -21,6 +21,7 @@ const App: FC = () => {
     <Space direction="vertical" size={16}>
       <TreeSelect
         multiple
+        showArrow
         treeDefaultExpandAll
         placeholder="请选择"
         style={{ width: 240 }}
