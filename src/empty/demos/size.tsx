@@ -13,17 +13,15 @@ export default () => {
         justifyContent: "center",
       }}
     >
-      <Space direction="vertical" size={24}>
-        <Empty
-          image={<NoDataPurely />}
-          imageStyle={{ fontSize: 88, lineHeight: "88px" }}
-          description="暂无内容"
-        />
-
+      <Empty
+        image={<NoDataPurely />}
+        imageStyle={{ fontSize: 88, lineHeight: "88px" }}
+        description="暂无内容"
+      >
         <Button type="primary" icon={<PlusOutlined />}>
           绑定设备
         </Button>
-      </Space>
+      </Empty>
     </div>
   );
 };
