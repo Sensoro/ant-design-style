@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/sensoro-design/ant-design-style/compare/v1.2.0...v1.3.0) (2022-10-11)
+
+
+### Bug Fixes
+
+* empty demo ([aebe675](https://github.com/sensoro-design/ant-design-style/commit/aebe675c3a9aea3393e10d8f49f933190a0bd3b9))
+
+
+### Features
+
+* rename [@sensoro](https://github.com/sensoro) => [@sen](https://github.com/sen) ([148f59d](https://github.com/sensoro-design/ant-design-style/commit/148f59db11c3306be72609369e47a8ea6dc07132))
+
 # [1.2.0](https://github.com/sensoro-design/ant-design-style/compare/v1.1.0...v1.2.0) (2022-10-11)
 
 
