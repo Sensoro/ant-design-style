@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/sensoro-design/ant-design-style/compare/v1.3.1...v1.3.2) (2022-10-13)
+
+
+### Bug Fixes
+
+* button click box-shadow ([0e5166e](https://github.com/sensoro-design/ant-design-style/commit/0e5166e6df3095c27f2824454c4cb67b34708578))
+
 ## [1.3.1](https://github.com/sensoro-design/ant-design-style/compare/v1.3.0...v1.3.1) (2022-10-13)
 
 
