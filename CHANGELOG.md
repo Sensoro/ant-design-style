@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/sensoro-design/ant-design-style/compare/v1.3.0...v1.3.1) (2022-10-13)
+
+
+### Bug Fixes
+
+* modal max-height overflow issue ([91560df](https://github.com/sensoro-design/ant-design-style/commit/91560dfc49e813ff06e4ef635f9785d7473b375b))
+
 # [1.3.0](https://github.com/sensoro-design/ant-design-style/compare/v1.2.0...v1.3.0) (2022-10-11)
 
 
