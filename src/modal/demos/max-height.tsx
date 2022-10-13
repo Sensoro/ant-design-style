@@ -16,6 +16,7 @@ const App: React.FC = () => {
       </Space>
       <Modal
         width={480}
+        bodyStyle={{ overflowY: "auto" }}
         title="标题文字"
         open={isModalOpen}
         onOk={() => setIsModalOpen(false)}
