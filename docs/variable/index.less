@@ -1,0 +1,35 @@
+@import "../../style/themes/default";
+
+.styles-variable {
+  .demo {
+    width: 200px;
+    padding: @padding-md 0;
+
+    list-style: none;
+    border-radius: @border-radius-lg;
+
+    li {
+      height: 32px;
+      line-height: 32px;
+      padding: 0 @padding-md;
+
+      &:hover {
+        background: @color-neutral-bg-2;
+
+        .copy-icon {
+          opacity: 1;
+        }
+      }
+
+      .copy-icon {
+        margin-left: @padding-sm;
+        opacity: 0;
+        transition: opacity @animation-duration-base;
+      }
+    }
+  }
+
+  .anticon {
+    cursor: pointer;
+  }
+}
