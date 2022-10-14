@@ -1,10 +1,13 @@
 @import "../../style/themes/default";
 
 .styles-variable {
+  h3 {
+    padding: 0 @padding-md;
+  }
+
   .demo {
     width: 200px;
     padding: @padding-md 0;
-
     list-style: none;
     border-radius: @border-radius-lg;
 
@@ -12,6 +15,7 @@
       height: 32px;
       line-height: 32px;
       padding: 0 @padding-md;
+      transition: background @animation-duration-base;
 
       &:hover {
         background: @color-neutral-bg-2;

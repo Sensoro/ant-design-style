@@ -4,16 +4,17 @@
 
 @segmented-prefix-cls: ~'@{ant-prefix}-segmented';
 
-@segmented-container-padding: 2px;
+@segmented-container-padding: @padding-xss;
 
 .@{segmented-prefix-cls} {
   .reset-component();
   display: inline-block;
   padding: @segmented-container-padding;
-  color: @segmented-label-color;
   background-color: @segmented-bg;
   border-radius: @border-radius-base;
   transition: all 0.3s @ease-in-out;
+  font-size: @font-size-sm;
+  font-weight: 500;
 
   &-group {
     position: relative;
@@ -34,10 +35,11 @@
   }
 
   // hover/focus styles
+  // remove
   &:not(&-disabled) {
     &:hover,
     &:focus {
-      background-color: @segmented-hover-bg;
+      //background-color: @segmented-hover-bg;
     }
   }
 
@@ -48,9 +50,17 @@
     cursor: pointer;
     transition: color 0.3s @ease-in-out;
 
+    &:not(:last-child) {
+      margin-right: @margin-xss;
+    }
+
     &-selected {
       .segmented-item-selected();
       color: @segmented-label-hover-color;
+
+      .@{segmented-prefix-cls}-item-label {
+        color: @primary-color;
+      }
     }
 
     &:hover,
@@ -58,9 +68,32 @@
       color: @segmented-label-hover-color;
     }
 
+    &.@{segmented-prefix-cls}-item-disabled.@{segmented-prefix-cls}-item-selected {
+      .@{segmented-prefix-cls}-item-label {
+        color: @primary-3;
+      }
+    }
+
+    &.@{segmented-prefix-cls}-item-disabled {
+      .@{segmented-prefix-cls}-item-label {
+        color: @segmented-disabled-color;
+      }
+    }
+
+    &:not(.@{segmented-prefix-cls}-item-disabled) {
+      .@{segmented-prefix-cls}-item-label {
+        &:hover {
+          color: @primary-5;
+        }
+        &:active {
+          color: @primary-7;
+        }
+      }
+    }
+
     &-label {
       min-height: @input-height-base - @segmented-container-padding * 2;
-      padding: 0 @input-padding-horizontal-base;
+      padding: 0 @padding-xs;
       line-height: @input-height-base - @segmented-container-padding * 2;
       .segmented-text-ellipsis();
     }
@@ -84,15 +117,15 @@
   // size styles
   &&-lg &-item-label {
     min-height: @input-height-lg - @segmented-container-padding * 2;
-    padding: 0 @input-padding-horizontal-lg;
+    padding: 0 @padding-md;
     font-size: @font-size-lg;
     line-height: @input-height-lg - @segmented-container-padding * 2;
   }
 
   &&-sm &-item-label {
-    min-height: @input-height-sm - @segmented-container-padding * 2;
-    padding: 0 @input-padding-horizontal-sm;
-    line-height: @input-height-sm - @segmented-container-padding * 2;
+    min-height: @input-height-sm - @segmented-container-padding;
+    padding: 0 @padding-xss;
+    line-height: @input-height-sm - @segmented-container-padding;
   }
 
   // disabled styles
