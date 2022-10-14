@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/sensoro-design/ant-design-style/compare/v1.3.2...v1.4.0) (2022-10-14)
+
+
+### Features
+
+* add segmented component ([82a1b64](https://github.com/sensoro-design/ant-design-style/commit/82a1b644f7e4a29d7a72ff0feaff3f071a4775ee))
+
 ## [1.3.2](https://github.com/sensoro-design/ant-design-style/compare/v1.3.1...v1.3.2) (2022-10-13)
 
 
