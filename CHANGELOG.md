@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/sensoro-design/ant-design-style/compare/v1.5.0...v1.6.0) (2022-10-17)
+
+
+### Features
+
+* update avatar bg color ([8cf3c4f](https://github.com/sensoro-design/ant-design-style/commit/8cf3c4f27353c22fe12b17eecaac0c4d76b9583d))
+
 # [1.5.0](https://github.com/sensoro-design/ant-design-style/compare/v1.4.0...v1.5.0) (2022-10-17)
 
 
