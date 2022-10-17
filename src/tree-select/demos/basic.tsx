@@ -1,8 +1,9 @@
 import { Space, TreeSelect } from "antd";
-import { useState } from "react";
+import React, { useState } from "react";
 import type { FC } from "react";
 
 import "../../space/index.less";
+import { CloseOutlined } from "@ant-design/icons";
 
 export const treeData = [
   {
@@ -79,10 +80,12 @@ const App: FC = () => {
   return (
     <Space direction="vertical" size={16}>
       <TreeSelect
+        allowClear
         showSearch
         treeDefaultExpandAll
         placeholder="请选择"
         treeNodeFilterProp="title"
+        clearIcon={<CloseOutlined />}
         style={{ width: 240 }}
         dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
         value={value}
@@ -106,8 +109,10 @@ const App: FC = () => {
         走查专用
         <TreeSelect
           defaultOpen
+          allowClear
           style={{ width: 240 }}
           value={value}
+          clearIcon={<CloseOutlined />}
           dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
           placeholder="请选择"
           treeDefaultExpandedKeys={["fe"]}

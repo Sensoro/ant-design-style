@@ -64,7 +64,7 @@ const App: FC = () => (
       <Space>
         走查专用
         <DatePicker
-          defaultOpen
+          // defaultOpen
           {...datePickerIconProps}
           clearIcon={<CloseOutlined />}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}

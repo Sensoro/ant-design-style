@@ -1,5 +1,12 @@
 @picker-cell-inner-cls: ~"@{picker-prefix-cls}-cell-inner";
 
+.picker-cell-inner-style {
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+}
+
 .@{picker-prefix-cls} {
   @picker-arrow-size: 7px;
   @picker-year-month-cell-width: 60px;
@@ -192,6 +199,7 @@
     &:hover:not(&-in-view),
     &:hover:not(&-selected):not(&-range-start):not(&-range-end):not(&-range-hover-start):not(&-range-hover-end) {
       .@{cellClassName} {
+        //.picker-cell-inner-style();
         background: @picker-basic-cell-hover-color;
       }
     }
@@ -227,6 +235,7 @@
     &-in-view&-range-start,
     &-in-view&-range-end {
       .@{cellClassName} {
+        //.picker-cell-inner-style();
         color: @text-color-inverse;
         background: @primary-color;
       }
@@ -246,10 +255,16 @@
     }
 
     &-in-view&-range-start::before {
+      //border-top-left-radius: 50%;
+      //border-bottom-left-radius: 50%;
+      //overflow: hidden;
       left: 50%;
     }
 
     &-in-view&-range-end::before {
+      //border-top-right-radius: 14px;
+      //border-bottom-right-radius: 14px;
+      //overflow: hidden;
       right: 50%;
     }
 

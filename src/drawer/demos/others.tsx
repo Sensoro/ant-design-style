@@ -1,17 +1,20 @@
 import { Button, Drawer } from "antd";
 import React, { useState } from "react";
 
+import "./demo.less";
+
 const App: React.FC = () => {
   const [open3, setOpen3] = useState(false);
 
   return (
-    <div style={{ background: "#f6f7f8", height: 600, position: "relative" }}>
+    <div style={{ background: "#f6f7f8", height: 600 }}>
       <Button type="primary" onClick={() => setOpen3(true)}>
         非模态抽屉
       </Button>
       <Drawer
         width={640}
         title="非模态抽屉 640px"
+        className="without-mask"
         placement="right"
         getContainer={false}
         onClose={() => setOpen3(false)}

@@ -21,12 +21,13 @@ const App: FC = () => (
   <ConfigProvider locale={zhCN}>
     <Space>
       <RangePicker
+        defaultOpen
         clearIcon={<CloseOutlined />}
         disabledDate={disabledDate}
         separator="~"
         defaultValue={[
+          moment(new Date(), "YYYY-MM-DD"),
           moment(moment(new Date()).add("10", "day"), "YYYY-MM-DD"),
-          moment(moment(new Date()).add("1", "day"), "YYYY-MM-DD"),
         ]}
         onChange={onChange}
       />

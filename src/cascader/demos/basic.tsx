@@ -23,6 +23,10 @@ export const options = [
             value: "sj",
             label: "婧姐",
           },
+          {
+            value: "long",
+            label: "这是11长度测试",
+          },
         ],
       },
       {
@@ -108,7 +112,7 @@ const App: FC = () => {
         走查专用
         <Cascader
           defaultOpen
-          defaultValue={["cloud", "fe", "sj"]}
+          defaultValue={["cloud", "fe", "long"]}
           placeholder="请选择"
           clearIcon={<CloseOutlined />}
           style={{ width: 240 }}
