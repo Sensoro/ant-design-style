@@ -1,3 +1,20 @@
+# [1.5.0](https://github.com/sensoro-design/ant-design-style/compare/v1.4.0...v1.5.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* add input-number size demo ([a59124c](https://github.com/sensoro-design/ant-design-style/commit/a59124c16a2f4fdb541c106f5668f01148bb6661))
+* **drawer/datepicker/treeselect/cascader:** ui issue ([40ab794](https://github.com/sensoro-design/ant-design-style/commit/40ab794218f6d68d7331d0a7ef078858eba90e41))
+* **dropdown/drawer:** ui issue ([af70e16](https://github.com/sensoro-design/ant-design-style/commit/af70e167f8a3c6a63c51df111fe73efd8ce4526f))
+* select ui ([3ab8200](https://github.com/sensoro-design/ant-design-style/commit/3ab8200780551c8ced5ef276fbaa280091cd0a69))
+* switch 去除点击效果 ([77a76b6](https://github.com/sensoro-design/ant-design-style/commit/77a76b6acce13c77faa6c894fdc9d00948384277))
+
+
+### Features
+
+* add sm tag ([efb7a9e](https://github.com/sensoro-design/ant-design-style/commit/efb7a9e2b0f86b3ed22da4e5953bf8c5c5dbef24))
+* select clear icon pos ([6bd5c67](https://github.com/sensoro-design/ant-design-style/commit/6bd5c67f41223abc831c83fc5663ba649e854572))
+
 # [1.4.0](https://github.com/sensoro-design/ant-design-style/compare/v1.3.2...v1.4.0) (2022-10-14)
 
 
