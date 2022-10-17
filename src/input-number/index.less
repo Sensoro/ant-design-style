@@ -111,7 +111,8 @@
     padding: 0;
     font-size: @font-size-lg;
 
-    input {
+    .@{input-number-prefix-cls}-input {
+      padding: 0 @padding-md - 1px;
       height: @input-height-lg - 2px;
     }
 
@@ -132,7 +133,7 @@
   &-sm {
     padding: 0;
 
-    input {
+    .@{input-number-prefix-cls}-input {
       height: @input-height-sm - 2px;
       padding: 0 @control-padding-horizontal-sm - 1px;
     }
@@ -260,6 +261,16 @@
       color: @error-color;
     }
   }
+}
+
+.@{input-number-prefix-cls}-lg + .@{input-number-prefix-cls}-group-addon {
+  padding: 0 @padding-md;
+  font-size: @font-size-lg;
+}
+
+.@{input-number-prefix-cls}-sm + .@{input-number-prefix-cls}-group-addon {
+  padding: 0 @padding-xs;
+  font-size: @font-size-sm;
 }
 
 @import "./rtl";
