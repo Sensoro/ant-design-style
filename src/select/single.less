@@ -57,7 +57,7 @@
 
   &.@{select-prefix-cls}-show-arrow .@{select-prefix-cls}-selection-item,
   &.@{select-prefix-cls}-show-arrow .@{select-prefix-cls}-selection-placeholder {
-    padding-right: @padding-lg;
+    padding-right: @padding-sm + 16px;
   }
 
   // ========================== Input ==========================
@@ -113,6 +113,17 @@
     &.@{merged-cls}:not(.@{select-prefix-cls}-customize-input) {
       .@{select-prefix-cls}-selector {
         height: @input-height;
+
+
+        & when (@suffix = 'lg') {
+          .@{select-prefix-cls}-selection-item {
+            padding-right: @padding-md + 16px;
+          }
+        }
+        & when (@suffix = 'sm') {
+          padding-right: @padding-xs + 12px;
+        }
+
 
         &::after,
         .@{select-prefix-cls}-selection-item,

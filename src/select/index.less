@@ -134,7 +134,7 @@
     height: @font-size-sm;
     margin-top: (-@font-size-sm / 2);
     color: @select-arrow-color;
-    font-size: @font-size-sm;
+    font-size: @font-size-lg;
     line-height: 1;
     text-align: center;
     pointer-events: none;
@@ -266,6 +266,13 @@
     line-height: @select-dropdown-line-height;
   }
 
+  // ========================= Disabled ========================
+  &.@{select-prefix-cls}-disabled {
+    .@{select-prefix-cls}-arrow {
+      color: @select--disabled-arrow-color;
+    }
+  }
+
   &-item-empty {
     .item();
     color: @disabled-color;
@@ -337,10 +344,19 @@
   // ============================================================
   &-lg {
     font-size: @font-size-lg;
+
+    .@{select-prefix-cls}-arrow {
+      right: @padding-md - 1px;
+    }
   }
 
   &-sm {
     font-size: @font-size-sm;
+
+    .@{select-prefix-cls}-arrow {
+      right: @padding-xs - 1px;
+      font-size: @font-size-sm;
+    }
   }
 
   // no border style

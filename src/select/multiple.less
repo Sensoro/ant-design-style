@@ -38,7 +38,7 @@
       flex-wrap: wrap;
       align-items: center;
       // Multiple is little different that horizontal is follow the vertical
-      padding: @select-multiple-padding + 1px @padding-sm;
+      padding: @select-multiple-padding + 1px @padding-sm - 1px;
 
       .@{select-prefix-cls}-show-search& {
         cursor: text;
@@ -60,7 +60,7 @@
 
     &.@{select-prefix-cls}-show-arrow .@{select-prefix-cls}-selector,
     &.@{select-prefix-cls}-allow-clear .@{select-prefix-cls}-selector {
-      padding-right: @font-size-sm + @control-padding-horizontal;
+      padding-right: @padding-sm * 3 - 1px - 4px;
     }
 
     // ======================== Selections ========================
@@ -172,7 +172,14 @@
         @select-height-without-border: @input-height - @border-width-base * 2;
 
         .@{select-prefix-cls}-selector {
-          padding: @select-multiple-padding @selector-padding-horizontal;
+          padding: @select-multiple-padding @selector-padding-horizontal - 1px;
+
+          & when (@suffix = 'lg') {
+            padding-right: @padding-md * 3 - 1px - 4px;
+          }
+          & when (@suffix = 'sm') {
+            padding-right: @padding-xs * 3 - 1px - 4px;
+          }
 
           &::after {
             line-height: @select-selection-height;
@@ -207,11 +214,7 @@
     // Size small need additional set padding
     &.@{select-prefix-cls}-sm {
       .@{select-prefix-cls}-selection-placeholder {
-        left: @input-padding-horizontal-sm;
-      }
-      // https://github.com/ant-design/ant-design/issues/29559
-      .@{select-prefix-cls}-selection-search {
-        margin-inline-start: 3px;
+        left: @padding-xs - 1px;
       }
       .@{select-prefix-cls}-selection-item {
         height: @select-multiple-item-height-sm;
@@ -219,6 +222,10 @@
       }
     }
     &.@{select-prefix-cls}-lg {
+      .@{select-prefix-cls}-selection-placeholder {
+        left: @padding-md - 1px;
+      }
+
       .@{select-prefix-cls}-selection-item {
         height: @select-multiple-item-height-lg;
         line-height: @select-multiple-item-height-lg;

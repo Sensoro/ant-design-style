@@ -16,36 +16,81 @@ const handleChange = (value: string[]) => {
 };
 
 const App = () => (
-  <Space wrap>
-    <Select
-      style={{ width: 240 }}
-      showArrow
-      mode="multiple"
-      size="large"
-      placeholder="请选择"
-      onChange={handleChange}
-    >
-      {children}
-    </Select>
-    <Select
-      style={{ width: 240 }}
-      showArrow
-      mode="multiple"
-      placeholder="请选择"
-      onChange={handleChange}
-    >
-      {children}
-    </Select>
-    <Select
-      style={{ width: 240 }}
-      showArrow
-      mode="multiple"
-      size="small"
-      placeholder="请选择"
-      onChange={handleChange}
-    >
-      {children}
-    </Select>
+  <Space>
+    <Space direction="vertical">
+      <Space>
+        大
+        <Select
+          style={{ width: 240 }}
+          showArrow
+          mode="multiple"
+          size="large"
+          placeholder="请选择"
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
+      </Space>
+      <Space>
+        中
+        <Select
+          style={{ width: 240 }}
+          showArrow
+          mode="multiple"
+          placeholder="请选择"
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
+      </Space>
+      <Space>
+        小
+        <Select
+          style={{ width: 240 }}
+          showArrow
+          mode="multiple"
+          size="small"
+          placeholder="请选择"
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
+      </Space>
+    </Space>
+    <Space direction="vertical">
+      <Space>
+        <Select
+          style={{ width: 240 }}
+          showArrow
+          size="large"
+          placeholder="请选择"
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
+      </Space>
+      <Space>
+        <Select
+          style={{ width: 240 }}
+          showArrow
+          placeholder="请选择"
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
+      </Space>
+      <Space>
+        <Select
+          style={{ width: 240 }}
+          showArrow
+          size="small"
+          placeholder="请选择"
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
+      </Space>
+    </Space>
   </Space>
 );
 
