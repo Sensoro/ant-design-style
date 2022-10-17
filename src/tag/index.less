@@ -1,9 +1,9 @@
-@import '../../style/index';
-@import '../../style/mixins/index';
+@import "../../style/index";
+@import "../../style/mixins/index";
 
-@tag-prefix-cls: ~'@{ant-prefix}-tag';
+@tag-prefix-cls: ~"@{ant-prefix}-tag";
 
-@tag-input-cls: ~'@{ant-prefix}-tag-input';
+@tag-input-cls: ~"@{ant-prefix}-tag-input";
 
 .@{tag-prefix-cls} {
   .reset-component();
@@ -103,14 +103,25 @@
     display: none;
   }
 
+  // sm
+  &.@{tag-prefix-cls}-sm {
+    border-radius: @border-radius-base;
+    padding: 0 @tag-padding-sm;
+
+    .@{tag-prefix-cls}-close-icon {
+      border-radius: 1px;
+      margin: 0 (4px - @tag-padding-sm) 0 4px;
+    }
+  }
+
   // mixin to iterate over colors and create CSS class for each one
   .make-color-classes(@i: length(@preset-colors)) when (@i > 0) {
     .make-color-classes(@i - 1);
     @color: extract(@preset-colors, @i);
-    @lightColor: '@{color}-1';
-    @lightBorderColor: '@{color}-3';
-    @darkColor: '@{color}-6';
-    @textColor: '@{color}-7';
+    @lightColor: "@{color}-1";
+    @lightBorderColor: "@{color}-3";
+    @darkColor: "@{color}-6";
+    @textColor: "@{color}-7";
     &-@{color} {
       color: @@textColor;
       background: @@lightColor;
@@ -124,9 +135,9 @@
   }
 
   .make-status-color-classes(@status, @cssVariableType) {
-    @bgColor: '@{cssVariableType}-color-deprecated-bg';
-    @borderColor: '@{cssVariableType}-color-deprecated-border';
-    @textColor: '@{cssVariableType}-color';
+    @bgColor: "@{cssVariableType}-color-deprecated-bg";
+    @borderColor: "@{cssVariableType}-color-deprecated-border";
+    @textColor: "@{cssVariableType}-color";
     &-@{status} {
       color: @@textColor;
       background: @@bgColor;
@@ -156,4 +167,4 @@
   border-radius: @height-sm / 2;
 }
 
-@import './rtl';
+@import "./rtl";

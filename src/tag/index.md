@@ -16,7 +16,15 @@ nav:
 
 ### 基本用法
 
+默认大圆角
+
 <code src="./demos/basic.tsx" />
+
+### 小圆角
+
+Antd 没有支持这类型，所以手动添加类名 `ant-tag-sm` 进行支持
+
+<code src="./demos/size.tsx" />
 
 ### 可选择标签
 

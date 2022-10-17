@@ -3,9 +3,9 @@ import { Tag } from "antd";
 export default () => {
   return (
     <>
-      <Tag>标签</Tag>
+      <Tag>标签名称</Tag>
 
-      <Tag closable>标签</Tag>
+      <Tag closable>标签名称</Tag>
     </>
   );
 };
