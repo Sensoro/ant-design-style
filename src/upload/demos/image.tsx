@@ -25,24 +25,21 @@ const App = () => {
       uid: "-1",
       name: "image.png",
       status: "done",
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
     {
       uid: "-xxx",
       percent: 50,
       name: "image.png",
       status: "uploading",
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
     {
       uid: "-xxx",
       percent: 100,
       name: "image.png",
       status: "uploading",
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
     {
       uid: "-5",
@@ -53,14 +50,16 @@ const App = () => {
       uid: "-6",
       name: "image.png",
       status: "error",
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
   ]);
 
   const handleCancel = () => setPreviewOpen(false);
 
   const handlePreview = async (file: any) => {
+    if (file.status === "error") {
+      return;
+    }
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj);
     }
@@ -115,6 +114,7 @@ const App = () => {
         open={previewOpen}
         title={previewTitle}
         footer={null}
+        bodyStyle={{ overflowY: "auto" }}
         onCancel={handleCancel}
       >
         <img

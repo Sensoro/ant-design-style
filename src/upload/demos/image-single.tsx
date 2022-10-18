@@ -23,8 +23,7 @@ const App = () => {
       uid: "-1",
       name: "image.png",
       status: "done",
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
   ]);
 
@@ -79,6 +78,7 @@ const App = () => {
         open={previewOpen}
         title={previewTitle}
         footer={null}
+        bodyStyle={{ overflowY: "auto" }}
         onCancel={handleCancel}
       >
         <img
