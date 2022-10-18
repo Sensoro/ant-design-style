@@ -27,8 +27,7 @@ const App: React.FC = () => {
       name: "上传中状态.xlsx",
       status: "uploading",
       size: 212986,
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
     {
       uid: "1",
@@ -36,8 +35,15 @@ const App: React.FC = () => {
       size: 999999,
       name: "我是超出一行文件的名称的文件我是超出一行文件的名称的文件.xlsx",
       status: "uploading",
-      url:
-        "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "4",
+      percent: 100,
+      size: 999999,
+      name: "校验状态.xlsx",
+      status: "uploading",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
     },
     {
       uid: "2",
