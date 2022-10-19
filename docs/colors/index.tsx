@@ -224,7 +224,11 @@ export default () => (
                   <div
                     className={`${color}-${idx + 1} color-box`}
                     style={{ color: idx > 4 ? "#fff" : "#000" }}
-                    onClick={() => onCopy(`${color}-${idx + 1}`)}
+                    onClick={() =>
+                      onCopy(
+                        `@${color === "blue" ? "primary" : color}-${idx + 1}`
+                      )
+                    }
                   >
                     {colors[idx]}
                   </div>
