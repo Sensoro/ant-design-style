@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/sensoro-design/ant-design-style/compare/v1.6.0...v1.7.0) (2022-10-18)
+
+
+### Bug Fixes
+
+* upload-image component ([882eb49](https://github.com/sensoro-design/ant-design-style/commit/882eb498815093158295340e9126a4a17cdd08b7))
+
+
+### Features
+
+* tree remove selected status ([79bb0eb](https://github.com/sensoro-design/ant-design-style/commit/79bb0eb25ebac4ade49f40701ec81df078df1f3a))
+
 # [1.6.0](https://github.com/sensoro-design/ant-design-style/compare/v1.5.0...v1.6.0) (2022-10-17)
 
 
