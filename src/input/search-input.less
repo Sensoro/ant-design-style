@@ -32,10 +32,13 @@
 
   .@{ant-prefix}-input-wrapper {
     box-sizing: border-box;
-    height: @height-base;
     border-radius: @border-radius-base;
     border: @border-width-base @border-style-base @input-border-color;
     transition: all 0.3s;
+
+    .@{ant-prefix}-group-addon {
+      background: @component-background;
+    }
 
     &:hover {
       border-color: @input-hover-border-color;
