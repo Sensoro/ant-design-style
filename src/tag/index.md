@@ -24,7 +24,11 @@ nav:
 
 Antd 没有支持这类型，所以手动添加类名 `ant-tag-sm` 进行支持
 
-<code src="./demos/size.tsx" />
+### 文字过长省略
+
+注意，`closable` 无法配合省略一起使用
+
+<code src="./demos/length.tsx" />
 
 ### 可选择标签
 
@@ -39,3 +43,7 @@ Antd 没有支持这类型，所以手动添加类名 `ant-tag-sm` 进行支持
 ### 多彩标签
 
 <code src="./demos/colors.tsx" />
+
+### 超出省略
+
+[物料实现地址](https://frontend.sensoro.com/material/components/data-display/tag-list)

@@ -1,9 +1,11 @@
 import { Space, Tag } from "antd";
 
+import "./demo.less";
+
 export default () => {
   return (
-    <Space direction="vertical" size={16}>
-      <Space>
+    <Space className="demo-colors" direction="vertical" size={16}>
+      <Space wrap>
         <label>深色</label>
         <Tag color="#f72231">标签名称</Tag>
         <Tag color="#f98206">标签名称</Tag>

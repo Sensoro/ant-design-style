@@ -8,7 +8,8 @@
 .@{tag-prefix-cls} {
   .reset-component();
 
-  display: inline-flex;
+  display: inline-block;
+  flex: 1;
   align-items: center;
   height: auto;
   margin-right: 8px;
@@ -16,15 +17,23 @@
   font-size: @tag-font-size;
   font-weight: 500;
   line-height: @tag-line-height;
-  white-space: nowrap;
   background: @tag-default-bg;
   border-radius: @tag-border-radius;
   opacity: 1;
   transition: all 0.3s;
 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &.edit-tag, &.@{tag-prefix-cls}-border {
+    display: inline-flex;
+  }
+
   &.@{tag-prefix-cls}-border {
     border: @border-width-base dashed @color-neutral-line;
     color: @primary-color;
+    line-height: @tag-line-height - 2px;
     cursor: pointer;
 
     &:hover {
