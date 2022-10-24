@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/sensoro-design/ant-design-style/compare/v1.8.0...v1.8.1) (2022-10-24)
+
+
+### Bug Fixes
+
+* table border-radius ([fc9927b](https://github.com/sensoro-design/ant-design-style/commit/fc9927be4c15d73c4bcaeaaee4710931c8856e13))
+
 # [1.8.0](https://github.com/sensoro-design/ant-design-style/compare/v1.7.0...v1.8.0) (2022-10-20)
 
 
