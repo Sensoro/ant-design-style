@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': 17.1.0
   '@semantic-release/changelog': ^6.0.1
   '@semantic-release/git': ^10.0.1
-  '@sensoro-design/icons': ^1.46.0
+  '@sensoro-design/icons': ^1.50.0
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
   '@umijs/babel-preset-umi': 3.5.30
@@ -28,7 +28,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.1.0
   '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
-  '@sensoro-design/icons': 1.46.0_biqbaboplfbrettd7655fr4n2y
+  '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@umijs/babel-preset-umi': 3.5.30
@@ -1204,12 +1204,12 @@ packages:
       - supports-color
     dev: true
 
-  /@sensoro-design/icons-svg/1.48.0:
-    resolution: {integrity: sha512-2HeFb9DPUkQQHEmLnSJL4JMm6a2puA1oxr6qeGuGmTJZ/rhpDvKr4/uZtF4lI9pi/J1XUgVx/SPUdSwVUTOrFQ==}
+  /@sensoro-design/icons-svg/1.52.0:
+    resolution: {integrity: sha512-Xm5y9Grup5wfoMA5NfTnNXVupVKycWRFsha3mE5h1Xq65Pt4A6H6dXYRm1ZqkySiJTFczkiyIFXeE1yMElDKpQ==}
     dev: true
 
-  /@sensoro-design/icons/1.46.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-BAN78+v/HlNMCeMiH2xxtum2Y8N2fW0ur8T0rAF3NpJPldn5qhdpQHQDqvwmeqZi3QnOx1W8NRoK0n3u1aXXUA==}
+  /@sensoro-design/icons/1.50.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-/Eblrj6Ogjbekq4p5i/U4hjiSt+3hC7ImcP3U7n7B/Ege+TbTf9ChcTGDQlVyG4u7pZ/IFvIQorrm7Et6cQBbw==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -1217,7 +1217,7 @@ packages:
       '@ant-design/colors': 6.0.0
       '@babel/runtime': 7.19.0
       '@pansy/classnames': 1.0.1
-      '@sensoro-design/icons-svg': 1.48.0
+      '@sensoro-design/icons-svg': 1.52.0
       rc-util: 5.24.2_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0

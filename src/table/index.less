@@ -111,6 +111,14 @@
         &[colspan]:not([colspan="1"]) {
           text-align: center;
         }
+
+        &:first-child {
+          border-bottom-left-radius: @table-border-radius-base;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: @table-border-radius-base;
+        }
       }
     }
 
