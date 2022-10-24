@@ -1,3 +1,17 @@
+# [1.9.0](https://github.com/sensoro-design/ant-design-style/compare/v1.8.1...v1.9.0) (2022-10-24)
+
+
+### Bug Fixes
+
+* table、modal ui issue ([2688e7f](https://github.com/sensoro-design/ant-design-style/commit/2688e7fd0eea9f7e45cc3c861a15df43b87b183b))
+* **tag:** 实现省略展示单个 多个 ([d7862ba](https://github.com/sensoro-design/ant-design-style/commit/d7862ba0e56c2a4a4f88b12ef0a72cd5753db781))
+
+
+### Features
+
+* update avatar default image ([a3ce9a4](https://github.com/sensoro-design/ant-design-style/commit/a3ce9a41288ca056adcfaf420abe0e0ae8fe4edf))
+* update nav z-index ([5e10ce3](https://github.com/sensoro-design/ant-design-style/commit/5e10ce374d3d17c3d5d859344bb495b1a4f848c0))
+
 ## [1.8.1](https://github.com/sensoro-design/ant-design-style/compare/v1.8.0...v1.8.1) (2022-10-24)
 
 
