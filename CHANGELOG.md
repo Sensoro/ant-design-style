@@ -1,3 +1,17 @@
+# [1.8.0](https://github.com/sensoro-design/ant-design-style/compare/v1.7.0...v1.8.0) (2022-10-20)
+
+
+### Bug Fixes
+
+* input-sm height issue ([d4a5a9a](https://github.com/sensoro-design/ant-design-style/commit/d4a5a9a5308fe1eca3bc0e6c0f82b9d9e04b1272))
+* **upload:** upload picture add border-color ([9b83030](https://github.com/sensoro-design/ant-design-style/commit/9b83030d84f62e3c846a18aa10f3f07818419d21))
+
+
+### Features
+
+* update blue color copy variable ([5ca04c3](https://github.com/sensoro-design/ant-design-style/commit/5ca04c359188d40815f031c74c6fe08697439792))
+* **upload:** add uploading checking status ([8b71e62](https://github.com/sensoro-design/ant-design-style/commit/8b71e6258e286ba861b89a080d7ae674261938fe))
+
 # [1.7.0](https://github.com/sensoro-design/ant-design-style/compare/v1.6.0...v1.7.0) (2022-10-18)
 
 
