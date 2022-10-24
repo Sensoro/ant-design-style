@@ -1,5 +1,5 @@
 import { PlusOutlined } from "@ant-design/icons";
-import { Input, Tag, Tooltip } from "antd";
+import { Input, Space, Tag, Tooltip } from "antd";
 import React, { useEffect, useRef, useState } from "react";
 
 import "../../input/index.less";
@@ -61,7 +61,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <Space size={0}>
       {tags.map((tag, index) => {
         if (editInputIndex === index) {
           return (
@@ -129,7 +129,7 @@ const App = () => {
           <PlusOutlined style={{ marginRight: 4 }} /> 我要加菜
         </Tag>
       )}
-    </>
+    </Space>
   );
 };
 
