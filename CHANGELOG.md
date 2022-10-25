@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/sensoro-design/ant-design-style/compare/v1.9.0...v1.10.0) (2022-10-25)
+
+
+### Features
+
+* update modal props ([c84a37f](https://github.com/sensoro-design/ant-design-style/commit/c84a37f0ff5061578245a4177a94bda2ad38b478))
+
 # [1.9.0](https://github.com/sensoro-design/ant-design-style/compare/v1.8.1...v1.9.0) (2022-10-24)
 
 
