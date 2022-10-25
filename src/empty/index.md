@@ -18,6 +18,10 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
+### 小尺寸
+
+[Empty - 小尺寸](https://frontend.sensoro.com/material/components/data-display/empty)
+
 ### 表格中的样式
 
 <code src="./demos/table.tsx" />
