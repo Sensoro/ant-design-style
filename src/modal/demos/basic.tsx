@@ -1,6 +1,7 @@
 import { Button, Space, Modal, ConfigProvider } from "antd";
 import React, { useState } from "react";
 import zhCN from "antd/es/locale/zh_CN";
+import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,8 +23,10 @@ const App: React.FC = () => {
       </Space>
       <Modal
         width={480}
+        centered
         title="标题文字"
         open={isModalOpen}
+        closeIcon={<CloseOutlined />}
         onOk={() => setIsModalOpen(false)}
         onCancel={() => setIsModalOpen(false)}
       >
@@ -34,8 +37,10 @@ const App: React.FC = () => {
       </Modal>
       <Modal
         title="标题文字"
+        centered
         width={720}
         open={isModalOpen2}
+        closeIcon={<CloseOutlined />}
         onOk={() => setIsModalOpen2(false)}
         onCancel={() => setIsModalOpen2(false)}
       >
@@ -46,8 +51,10 @@ const App: React.FC = () => {
       </Modal>
       <Modal
         title="标题文字"
+        centered
         width={960}
         open={isModalOpen3}
+        closeIcon={<CloseOutlined />}
         onOk={() => setIsModalOpen3(false)}
         onCancel={() => setIsModalOpen3(false)}
       >

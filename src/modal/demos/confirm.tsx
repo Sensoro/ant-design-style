@@ -18,6 +18,7 @@ export const iconMap: Record<NotificationType, ReactNode> = {
 const confirm = (type: NotificationType) => {
   Modal.confirm({
     width: 480,
+    centered: true,
     title: "确认将房间（房间001）从系统中移除？",
     icon: iconMap[type],
     content:
