@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/sensoro-design/ant-design-style/compare/v1.10.0...v1.10.1) (2022-10-25)
+
+
+### Bug Fixes
+
+* **breadcrumb:** line-height ([045337a](https://github.com/sensoro-design/ant-design-style/commit/045337a8d2e2b50abf3bde964c4abec77d2303ce))
+
 # [1.10.0](https://github.com/sensoro-design/ant-design-style/compare/v1.9.0...v1.10.0) (2022-10-25)
 
 
