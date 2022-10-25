@@ -24,6 +24,8 @@ nav:
 
 Antd 没有支持这类型，所以手动添加类名 `ant-tag-sm` 进行支持
 
+<code src="./demos/size.tsx" />
+
 ### 文字过长省略
 
 注意，`closable` 无法配合省略一起使用

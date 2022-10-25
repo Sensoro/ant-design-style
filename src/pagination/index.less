@@ -55,6 +55,7 @@
       padding: 0 6px;
       color: @text-color-primary;
       transition: none;
+      height: 100%;
 
       &:hover {
         text-decoration: none;
@@ -115,31 +116,26 @@
         left: 0;
         display: block;
         margin: auto;
-        color: @disabled-color;
+        color: @pagination-item-ellipsis-color;
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 2px;
         text-align: center;
         text-indent: 0.13em;
         opacity: 1;
         transition: all 0.2s;
+        border-radius: @border-radius-base;
       }
     }
 
     &:hover {
-      .@{pagination-prefix-cls}-item-link-icon {
-        opacity: 1;
-      }
       .@{pagination-prefix-cls}-item-ellipsis {
-        opacity: 0;
+        background: @pagination-item-ellipsis-hover-bg;
       }
     }
 
     &:focus-visible {
-      .@{pagination-prefix-cls}-item-link-icon {
-        opacity: 1;
-      }
       .@{pagination-prefix-cls}-item-ellipsis {
-        opacity: 0;
+        background: @pagination-item-ellipsis-hover-bg;
       }
     }
   }
@@ -202,7 +198,8 @@
       border-color: @primary-color;
     }
 
-    &:not(.@{pagination-prefix-cls}-disabled):hover .@{pagination-prefix-cls}-item-link {
+    &:not(.@{pagination-prefix-cls}-disabled):hover
+      .@{pagination-prefix-cls}-item-link {
       background-color: @pagination-item-hover-bg;
     }
   }
@@ -340,20 +337,17 @@
     font-size: @font-size-sm;
     min-width: @pagination-item-size-sm;
     height: @pagination-item-size-sm;
-    margin: 0;
     line-height: @pagination-item-size-sm - 2px;
-  }
 
-  &&-mini &-item:not(&-item-active) {
-    background: transparent;
-    border-color: transparent;
+    a {
+      line-height: @pagination-item-size-sm;
+    }
   }
 
   &&-mini &-prev,
   &&-mini &-next {
     min-width: @pagination-item-size-sm;
     height: @pagination-item-size-sm;
-    margin: 0;
     line-height: @pagination-item-size-sm;
   }
 
@@ -370,8 +364,12 @@
   &&-mini &-jump-prev,
   &&-mini &-jump-next {
     height: @pagination-item-size-sm;
-    margin-right: 0;
     line-height: @pagination-item-size-sm;
+
+    .@{pagination-prefix-cls}-item-ellipsis {
+      font-size: @font-size-sm;
+      width: @pagination-item-size-sm;
+    }
   }
 
   &&-mini &-options {

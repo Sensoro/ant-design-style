@@ -83,6 +83,10 @@
     .@{menu-prefix-cls}-submenu-arrow {
       color: @menu-highlight-color;
     }
+
+    .@{menu-prefix-cls}-submenu-title .@{iconfont-css-prefix} {
+      color: @primary-color;
+    }
   }
 
   &-submenu &-sub {
@@ -146,12 +150,19 @@
   }
 
   &-item-selected {
-    font-weight: 500;
     color: @menu-highlight-color;
 
     a,
     a:hover {
       color: @menu-highlight-color;
+    }
+  }
+
+  &-item {
+    font-weight: 400;
+
+    &.@{menu-prefix-cls}-item-selected {
+      font-weight: 500;
     }
   }
 
@@ -220,6 +231,7 @@
     .@{menu-prefix-cls}-item-icon,
     .@{iconfont-css-prefix} {
       min-width: 14px;
+      color: @color-neutral-text-3;
       font-size: @menu-icon-size;
       transition: font-size @menu-animation-duration-normal @ease-out,
         margin @animation-duration-slow @ease-in-out,
@@ -274,6 +286,10 @@
 
         &.@{menu-prefix-cls}-vertical.@{menu-prefix-cls}-sub {
           min-width: 120px;
+        }
+
+        &-item {
+          border-radius: 0 !important;
         }
 
         &-item.@{menu-prefix-cls}-item-only-child {
