@@ -29,19 +29,26 @@ const App = () => (
   <Space wrap size={16}>
     <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button type="primary">
-        下拉菜单 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        <span style={{ display: "inline-flex", alignItems: "center" }}>
+          下拉菜单
+          <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </span>
       </Button>
     </Dropdown>
 
     <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button>
-        下拉菜单 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        <span style={{ display: "inline-flex", alignItems: "center" }}>
+          下拉菜单 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </span>
       </Button>
     </Dropdown>
 
     <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button>
-        下拉菜单等宽 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        <span style={{ display: "inline-flex", alignItems: "center" }}>
+          下拉菜单等宽 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </span>
       </Button>
     </Dropdown>
   </Space>

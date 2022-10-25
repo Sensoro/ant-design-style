@@ -29,7 +29,9 @@ const App = () => (
   <Space wrap size={16}>
     <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
       <Button type="link">
-        创建合同 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        <span style={{ display: "inline-flex", alignItems: "center" }}>
+          创建合同 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </span>
       </Button>
     </Dropdown>
   </Space>
