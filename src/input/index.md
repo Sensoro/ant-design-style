@@ -32,4 +32,6 @@ nav:
 
 ### 文本域
 
+**不支持自定义清除的ICON**
+
 <code src="./demos/textarea.tsx" />
