@@ -1,3 +1,17 @@
+# [1.12.0](https://github.com/sensoro-design/ant-design-style/compare/v1.11.1...v1.12.0) (2022-10-26)
+
+
+### Bug Fixes
+
+* badge count bg ([63acd97](https://github.com/sensoro-design/ant-design-style/commit/63acd9745e334d37c2dfbdbc13591c9f349c2215))
+
+
+### Features
+
+* add badge component ([e5b5f66](https://github.com/sensoro-design/ant-design-style/commit/e5b5f661f8cbf24d7ef14ae33c22d7701ca362ec))
+* add skeleton ([c59917a](https://github.com/sensoro-design/ant-design-style/commit/c59917a02915879787c825a368bc2a52e05288ac))
+* skeletcon add active demo ([6367298](https://github.com/sensoro-design/ant-design-style/commit/636729823d264422d167addd2118e33e4fbeac4e))
+
 ## [1.11.1](https://github.com/sensoro-design/ant-design-style/compare/v1.11.0...v1.11.1) (2022-10-26)
 
 
