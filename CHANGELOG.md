@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/sensoro-design/ant-design-style/compare/v1.11.0...v1.11.1) (2022-10-26)
+
+
+### Bug Fixes
+
+* button align-items ([c22bab1](https://github.com/sensoro-design/ant-design-style/commit/c22bab167f16294f4be91c045113208f87b0294b))
+
 # [1.11.0](https://github.com/sensoro-design/ant-design-style/compare/v1.10.1...v1.11.0) (2022-10-26)
 
 
