@@ -11,10 +11,10 @@ const App: React.FC = () => {
   return (
     <Space direction="vertical">
       <div style={styles}>
-        <Skeleton />
+        <Skeleton active />
       </div>
       <div style={{ ...styles, height: 200 }}>
-        <Skeleton />
+        <Skeleton active />
       </div>
     </Space>
   );
