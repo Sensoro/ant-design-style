@@ -32,7 +32,7 @@
 
     // Title
     .@{skeleton-title-prefix-cls} {
-      width: 100%;
+      width: 50% !important;
       height: @skeleton-title-height;
       background: @skeleton-color;
       border-radius: @skeleton-block-radius;
@@ -45,6 +45,7 @@
     // paragraph
     .@{skeleton-paragraph-prefix-cls} {
       padding: 0;
+      margin: 0;
 
       > li {
         width: 100%;
@@ -54,7 +55,7 @@
         border-radius: @skeleton-block-radius;
 
         &:last-child:not(:first-child):not(:nth-child(2)) {
-          width: 61%;
+          width: 75% !important;
         }
 
         + li {
