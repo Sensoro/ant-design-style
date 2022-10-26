@@ -287,7 +287,9 @@
 // --------------------------------------------------
 .btn() {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-weight: @btn-font-weight;
   white-space: nowrap;
   text-align: center;
@@ -333,6 +335,7 @@
 
   .@{iconfont-css-prefix} {
     font-size: @font-size-lg;
+    height: @font-size-lg;
   }
 
   &-icon-only .@{iconfont-css-prefix} {
@@ -356,6 +359,7 @@
 
     .@{iconfont-css-prefix} {
       font-size: @font-size-sm;
+      height: @font-size-sm;
     }
 
     &.@{btn-prefix-cls}-link.@{btn-prefix-cls}-icon-only .@{iconfont-css-prefix} {
