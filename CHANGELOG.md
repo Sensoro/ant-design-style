@@ -1,3 +1,22 @@
+# [1.11.0](https://github.com/sensoro-design/ant-design-style/compare/v1.10.1...v1.11.0) (2022-10-26)
+
+
+### Bug Fixes
+
+* dropdown demo line-height ([b7d7a79](https://github.com/sensoro-design/ant-design-style/commit/b7d7a7934284c00cd389525798d1d491c81c8439))
+* **menu:** ui issue ([926e334](https://github.com/sensoro-design/ant-design-style/commit/926e3345f75a456e758d21e04eb7cb3ea3e6fb29))
+* pagination hover issue ([d2a959a](https://github.com/sensoro-design/ant-design-style/commit/d2a959a224eda5dde12755559ee06772a5a3d9f0))
+
+
+### Features
+
+* add cascader demo ([cb896d4](https://github.com/sensoro-design/ant-design-style/commit/cb896d49b8522fbef8e4425db2e0f85fe95b3edf))
+* add tree-select demo ([aeec4da](https://github.com/sensoro-design/ant-design-style/commit/aeec4da767c1533ac1206b7fbae0b7b4774ae7bb))
+* **tag:** add sm tag demo ([825b0c6](https://github.com/sensoro-design/ant-design-style/commit/825b0c60b70faaadb899bf9edd10487cedd45bfe))
+* update header z-index ([9f2816a](https://github.com/sensoro-design/ant-design-style/commit/9f2816ac3235100370e36c8b2f765e6c4cc47cd5))
+* update input demo ([bb38588](https://github.com/sensoro-design/ant-design-style/commit/bb385881201c6d616ab8d6f493b3e7b7aac77e31))
+* update modal body overflow attr ([93ebed3](https://github.com/sensoro-design/ant-design-style/commit/93ebed3a9e66c424f6e3f54b84298554dc618a96))
+
 ## [1.10.1](https://github.com/sensoro-design/ant-design-style/compare/v1.10.0...v1.10.1) (2022-10-25)
 
 
