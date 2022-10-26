@@ -32,6 +32,18 @@ const App: FC = () => {
         options={options}
         onChange={(value) => console.log(value)}
       />
+
+      <Cascader
+        multiple
+        showArrow
+        placeholder="请选择"
+        maxTagCount={type}
+        defaultValue={[["len", "l-0", "l-0-0"]]}
+        clearIcon={<CloseOutlined />}
+        style={{ width: 240 }}
+        options={options}
+        onChange={(value) => console.log(value)}
+      />
     </Space>
   );
 };
