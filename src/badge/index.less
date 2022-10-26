@@ -1,8 +1,8 @@
-@import '../../style/themes/index';
-@import '../../style/mixins/index';
+@import "../../style/themes/index";
+@import "../../style/mixins/index";
 
-@badge-prefix-cls: ~'@{ant-prefix}-badge';
-@number-prefix-cls: ~'@{ant-prefix}-scroll-number';
+@badge-prefix-cls: ~"@{ant-prefix}-badge";
+@number-prefix-cls: ~"@{ant-prefix}-scroll-number";
 
 .@{badge-prefix-cls} {
   .reset-component();
@@ -24,7 +24,6 @@
     text-align: center;
     background: @badge-color;
     border-radius: (@badge-height / 2);
-    box-shadow: 0 0 0 1px @shadow-color-inverse;
 
     a,
     a:hover {
@@ -52,7 +51,6 @@
     height: @badge-dot-size;
     background: @highlight-color;
     border-radius: 100%;
-    box-shadow: 0 0 0 1px @shadow-color-inverse;
   }
 
   // Tricky way to resolve https://github.com/ant-design/ant-design/issues/30088
@@ -60,14 +58,34 @@
     transition: background 1.5s;
   }
 
-  &-count,
   &-dot,
+  &-count,
   .@{number-prefix-cls}-custom-component {
     position: absolute;
+
+    &.@{iconfont-css-prefix}-spin {
+      animation: antBadgeLoadingCircle 1s infinite linear;
+    }
+  }
+
+  .@{number-prefix-cls}-custom-component {
     top: 0;
     right: 0;
     transform: translate(50%, -50%);
     transform-origin: 100% 0%;
+  }
+
+  &-dot {
+    top: 0;
+    right: -6px;
+  }
+
+  &-count {
+    top: 6px;
+    left: calc(100% - 16px);
+    transform: translate(0, -50%);
+    transform-origin: 100% 0;
+    font-family: "Helvetica Neue";
 
     &.@{iconfont-css-prefix}-spin {
       animation: antBadgeLoadingCircle 1s infinite linear;
@@ -105,12 +123,12 @@
         border: 1px solid @processing-color;
         border-radius: 50%;
         animation: antStatusProcessing 1.2s infinite ease-in-out;
-        content: '';
+        content: "";
       }
     }
 
     &-default {
-      background-color: @normal-color;
+      background-color: @grey-7;
     }
 
     &-error {
@@ -125,7 +143,7 @@
     .make-color-classes(@i: length(@preset-colors)) when (@i > 0) {
       .make-color-classes(@i - 1);
       @color: extract(@preset-colors, @i);
-      @darkColor: '@{color}-6';
+      @darkColor: "@{color}-6";
       &-@{color} {
         background: @@darkColor;
       }
@@ -277,5 +295,5 @@
   }
 }
 
-@import './ribbon';
-@import './rtl';
+@import "./ribbon";
+@import "./rtl";
