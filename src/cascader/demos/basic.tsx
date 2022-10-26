@@ -80,6 +80,26 @@ export const options = [
       },
     ],
   },
+  {
+    value: "len",
+    label: "长度测试",
+    children: [
+      {
+        value: "l-0",
+        label: "长度一",
+        children: [
+          {
+            value: "l-0-0",
+            label: "这是一个长一点的选项展示嘿嘿嘿嘿嘿",
+          },
+          {
+            value: "l-0-1",
+            label: "嘿嘿",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 const App: FC = () => {

@@ -11,7 +11,7 @@
 
     &:not(&-disabled):hover {
       .hover();
-      z-index: 1;
+      //z-index: 1;
       .@{ant-prefix}-input-search-with-button & {
         z-index: 0;
       }
@@ -42,6 +42,12 @@
       width: 0;
       visibility: hidden;
       content: '\a0';
+    }
+  }
+
+  &-affix-wrapper-sm {
+    .@{input-prefix-cls}-sm {
+      height: @input-height-sm - 2px;
     }
   }
 
