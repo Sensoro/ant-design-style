@@ -18,6 +18,10 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
+### 文本过长
+
+<code src="./demos/length.tsx" />
+
 ### 多选
 
 <code src="./demos/multiple.tsx" />
