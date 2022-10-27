@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/sensoro-design/ant-design-style/compare/v1.12.0...v1.12.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* badge dot bg ([afeb0d4](https://github.com/sensoro-design/ant-design-style/commit/afeb0d42a62bc83082e8a4db4d86a67379e11a51))
+
 # [1.12.0](https://github.com/sensoro-design/ant-design-style/compare/v1.11.1...v1.12.0) (2022-10-26)
 
 
