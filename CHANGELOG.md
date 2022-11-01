@@ -1,3 +1,11 @@
+# [1.13.0](https://github.com/sensoro-design/ant-design-style/compare/v1.12.1...v1.13.0) (2022-11-01)
+
+
+### Features
+
+* update badge demo ([c162732](https://github.com/sensoro-design/ant-design-style/commit/c162732971e92b77152952b5bdf6217597807566))
+* update pagination simple input width ([dbaa111](https://github.com/sensoro-design/ant-design-style/commit/dbaa1118705b9198a8d9807abc274184c5c14ae8))
+
 ## [1.12.1](https://github.com/sensoro-design/ant-design-style/compare/v1.12.0...v1.12.1) (2022-10-27)
 
 
