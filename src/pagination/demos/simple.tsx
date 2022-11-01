@@ -3,7 +3,7 @@ import zhCN from "antd/es/locale/zh_CN";
 
 const App = () => (
   <ConfigProvider locale={zhCN}>
-    <Pagination simple defaultCurrent={1} total={50} />
+    <Pagination simple defaultCurrent={1} total={500} />
   </ConfigProvider>
 );
 
