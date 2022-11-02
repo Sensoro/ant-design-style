@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/sensoro-design/ant-design-style/compare/v1.13.0...v1.13.1) (2022-11-02)
+
+
+### Bug Fixes
+
+* tree selected ui ([44881ae](https://github.com/sensoro-design/ant-design-style/commit/44881ae234e378d7d36f07450697d25c07efee90))
+
 # [1.13.0](https://github.com/sensoro-design/ant-design-style/compare/v1.12.1...v1.13.0) (2022-11-01)
 
 
