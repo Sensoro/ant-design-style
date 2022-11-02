@@ -244,12 +244,12 @@
       background-color: @tree-node-hover-bg;
     }
 
-    & when (@custom-tree-prefix-cls = ~"@{ant-prefix}-select-tree") {
-      &.@{custom-tree-prefix-cls}-node-selected {
-        font-weight: 500;
-        color: @primary-color;
-      }
+    //& when (@custom-tree-prefix-cls = ~"@{ant-prefix}-select-tree") {
+    &.@{custom-tree-prefix-cls}-node-selected {
+      font-weight: 500;
+      color: @primary-color;
     }
+    //}
 
     // Icon
     .@{custom-tree-prefix-cls}-iconEle {
