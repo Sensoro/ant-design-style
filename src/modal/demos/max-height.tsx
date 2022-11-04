@@ -1,7 +1,6 @@
 import { Button, Space, Modal, ConfigProvider } from "antd";
 import React, { useState } from "react";
 import zhCN from "antd/es/locale/zh_CN";
-import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 
 const data = Array(100).fill(0);
 
@@ -16,9 +15,7 @@ const App: React.FC = () => {
           type="primary"
           onClick={() => {
             setIsModalOpen(true);
-            setTimeout(() => {
-              setMock(data);
-            }, 1000);
+            setMock(data);
           }}
         >
           最大高度适配
@@ -28,11 +25,9 @@ const App: React.FC = () => {
         width={480}
         title="标题文字"
         open={isModalOpen}
-        closeIcon={<CloseOutlined />}
         onOk={() => setIsModalOpen(false)}
         onCancel={() => setIsModalOpen(false)}
       >
-        <div style={{ height: 1000, background: "red", width: 1000 }}></div>
         <div style={{ background: "#ffcbc7" }}>
           {mock.map((_, idx) => (
             <div key={idx}>

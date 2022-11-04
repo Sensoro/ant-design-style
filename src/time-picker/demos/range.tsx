@@ -1,11 +1,7 @@
 import type { FC } from "react";
 import { TimePicker, ConfigProvider, Space } from "antd";
-import type {
-  TimePickerProps,
-  TimeRangePickerProps,
-} from "antd/es/time-picker";
+import type { TimeRangePickerProps } from "antd/es/time-picker";
 import moment from "moment";
-import { CloseOutlined } from "@ant-design/icons";
 
 const { RangePicker } = TimePicker;
 
@@ -22,7 +18,6 @@ const App: FC = () => (
     <Space direction="vertical">
       <RangePicker
         separator="~"
-        clearIcon={<CloseOutlined />}
         onChange={onChange}
         defaultValue={[
           moment(moment(new Date()).subtract(10, "minute"), "HH:mm:ss"),

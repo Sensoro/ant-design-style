@@ -2,7 +2,6 @@ import { Cascader, Radio, Space } from "antd";
 import type { FC } from "react";
 
 import { options } from "./basic";
-import { CloseOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
 
 const App: FC = () => {
@@ -27,7 +26,6 @@ const App: FC = () => {
           ["cloud", "be", "rn"],
           ["cloud", "pd", "ll"],
         ]}
-        clearIcon={<CloseOutlined />}
         style={{ width: 240 }}
         options={options}
         onChange={(value) => console.log(value)}
@@ -39,7 +37,6 @@ const App: FC = () => {
         placeholder="请选择"
         maxTagCount={type}
         defaultValue={[["len", "l-0", "l-0-0"]]}
-        clearIcon={<CloseOutlined />}
         style={{ width: 240 }}
         options={options}
         onChange={(value) => console.log(value)}

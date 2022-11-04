@@ -170,11 +170,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: @font-size-sm;
-    height: @font-size-sm;
-    margin-top: (-@font-size-sm / 2);
-    color: @text-color-primary;
-    font-size: @font-size-sm - 4px;
+    width: @font-size-sm + 4px;
+    height: @font-size-sm + 4px;
+    margin-top: (-(@font-size-sm + 4px) / 2);
+    color: @disabled-color;
+    font-size: @font-size-sm;
     font-style: normal;
     text-align: center;
     text-transform: none;
@@ -183,23 +183,9 @@
     opacity: 0;
     transition: color 0.3s ease, opacity 0.15s ease, background @animation-duration-base;
     text-rendering: auto;
-    border-radius: @border-radius-circle;
-    transform-style: preserve-3d;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: -1px;
-      right: 0;
-      width: @font-size-sm + 4px;
-      height: @font-size-sm + 4px;
-      background: @component-background;
-      transform: translateZ(-1px);
-    }
 
     &:hover {
-      background: @select-clear-hover-background;
+      color: @text-color-secondary;
     }
 
     .@{select-prefix-cls}:hover & {

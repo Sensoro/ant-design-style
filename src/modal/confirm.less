@@ -24,7 +24,7 @@
       color: @heading-color;
       font-weight: 500;
       font-size: @modal-confirm-title-font-size;
-      line-height: 1.4;
+      line-height: @height-sm;
     }
 
     .@{confirm-prefix-cls}-content {
@@ -34,9 +34,15 @@
     }
 
     > .@{iconfont-css-prefix} {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       float: left;
+      padding-top: @padding-xss;
       margin-right: @margin-xs;
-      font-size: 20px;
+      font-size: @alert-icon-font-size;
+      width: @alert-icon-size;
+      height: @alert-icon-size;
 
       // `content` after `icon` should set marginLeft
       + .@{confirm-prefix-cls}-title + .@{confirm-prefix-cls}-content {

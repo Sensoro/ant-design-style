@@ -1,7 +1,6 @@
 import type { RangePickerProps, DatePickerProps } from "antd/es/date-picker";
 import { DatePicker, Space, ConfigProvider } from "antd";
 import type { FC } from "react";
-import { CloseOutlined } from "@ant-design/icons";
 import "../../space/index.less";
 import zhCN from "antd/es/locale/zh_CN";
 import moment from "moment";
@@ -19,43 +18,25 @@ const disabledDate: RangePickerProps["disabledDate"] = (current) => {
   return current && current < moment().subtract(1, "day").endOf("day");
 };
 
-export const datePickerIconProps = {
-  nextIcon: <RightOutlined />,
-  prevIcon: <LeftOutlined />,
-  superNextIcon: <DoubleRightOutlined />,
-  superPrevIcon: <DoubleLeftOutlined />,
-};
-
 const App: FC = () => (
   <ConfigProvider locale={zhCN}>
     <Space direction="vertical">
       <Space>
         <DatePicker
-          {...datePickerIconProps}
-          clearIcon={<CloseOutlined />}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />
         <DatePicker
           disabled
-          {...datePickerIconProps}
-          clearIcon={<CloseOutlined />}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />
       </Space>
       <Space>
-        <DatePicker
-          {...datePickerIconProps}
-          disabledDate={disabledDate}
-          clearIcon={<CloseOutlined />}
-          onChange={onChange}
-        />
+        <DatePicker disabledDate={disabledDate} onChange={onChange} />
 
         <DatePicker
           disabled
-          {...datePickerIconProps}
-          clearIcon={<CloseOutlined />}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />
@@ -64,9 +45,7 @@ const App: FC = () => (
       <Space>
         走查专用
         <DatePicker
-          // defaultOpen
-          {...datePickerIconProps}
-          clearIcon={<CloseOutlined />}
+          defaultOpen
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />

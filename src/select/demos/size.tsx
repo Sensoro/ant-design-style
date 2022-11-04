@@ -1,5 +1,4 @@
 import { Select, Space } from "antd";
-import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 const { Option } = Select;
 const children: any[] = [];
 
@@ -61,7 +60,6 @@ const App = () => (
     <Space direction="vertical">
       <Space>
         <Select
-          clearIcon={<CloseOutlined />}
           allowClear
           style={{ width: 240 }}
           showArrow
@@ -74,7 +72,6 @@ const App = () => (
       </Space>
       <Space>
         <Select
-          clearIcon={<CloseOutlined />}
           allowClear
           style={{ width: 240 }}
           showArrow
@@ -86,7 +83,6 @@ const App = () => (
       </Space>
       <Space>
         <Select
-          clearIcon={<CloseOutlined />}
           allowClear
           style={{ width: 240 }}
           showArrow

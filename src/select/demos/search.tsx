@@ -1,5 +1,4 @@
 import { Select, Space } from "antd";
-import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 const { Option } = Select;
 
 const onChange = (value: string) => {
@@ -15,7 +14,6 @@ export default () => {
     <Space>
       <Select
         allowClear
-        clearIcon={<CloseOutlined />}
         showSearch
         placeholder="请选择"
         optionFilterProp="children"

@@ -1,11 +1,7 @@
 import type { FC } from "react";
 import { TimePicker, ConfigProvider, Space } from "antd";
-import type {
-  TimePickerProps,
-  TimeRangePickerProps,
-} from "antd/es/time-picker";
+import type { TimeRangePickerProps } from "antd/es/time-picker";
 import moment from "moment";
-import { CloseOutlined } from "@ant-design/icons";
 
 const { RangePicker } = TimePicker;
 
@@ -24,7 +20,6 @@ const App: FC = () => (
         <TimePicker
           size="large"
           style={{ width: 160 }}
-          clearIcon={<CloseOutlined />}
           placeholder="请选择时间"
           defaultValue={moment(new Date(), "HH:mm:ss")}
         />
@@ -32,7 +27,6 @@ const App: FC = () => (
         <RangePicker
           separator="~"
           size="large"
-          clearIcon={<CloseOutlined />}
           onChange={onChange}
           defaultValue={[
             moment(moment(new Date()).subtract(10, "minute"), "HH:mm:ss"),
@@ -43,14 +37,12 @@ const App: FC = () => (
       <Space size={16}>
         <TimePicker
           style={{ width: 160 }}
-          clearIcon={<CloseOutlined />}
           placeholder="请选择时间"
           defaultValue={moment(new Date(), "HH:mm:ss")}
         />
 
         <RangePicker
           separator="~"
-          clearIcon={<CloseOutlined />}
           onChange={onChange}
           defaultValue={[
             moment(moment(new Date()).subtract(10, "minute"), "HH:mm:ss"),
@@ -62,7 +54,6 @@ const App: FC = () => (
         <TimePicker
           size="small"
           style={{ width: 160 }}
-          clearIcon={<CloseOutlined />}
           placeholder="请选择时间"
           defaultValue={moment(new Date(), "HH:mm:ss")}
         />
@@ -70,7 +61,6 @@ const App: FC = () => (
         <RangePicker
           size="small"
           separator="~"
-          clearIcon={<CloseOutlined />}
           onChange={onChange}
           defaultValue={[
             moment(moment(new Date()).subtract(10, "minute"), "HH:mm:ss"),

@@ -28,8 +28,8 @@ nav:
 
 ### 按钮样式
 
-<code src="./demos/button.tsx" />
+使用分段控制器代替 [分段控制器](https://styles.xingkang.wang/components/segmented)
 
 ### 单选按钮尺寸
 
-<code src="./demos/size.tsx" />
+使用分段控制器代替 [分段控制器](https://styles.xingkang.wang/components/segmented)

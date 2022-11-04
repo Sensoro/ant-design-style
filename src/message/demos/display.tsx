@@ -1,5 +1,5 @@
 import { Button, message, Space } from "antd";
-import React, { useRef } from "react";
+import React from "react";
 import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 
 const contentStyle = {

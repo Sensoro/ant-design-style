@@ -1,5 +1,4 @@
 import { Input, Space, Select } from "antd";
-import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 
 const { Option } = Select;
 
@@ -12,9 +11,7 @@ export default () => {
           <Option value="Jiangsu">Jiangsu</Option>
         </Select>
         <Input
-          allowClear={{
-            clearIcon: <CloseOutlined />,
-          }}
+          allowClear
           style={{ width: 240 }}
           defaultValue="Xihu District, Hangzhou"
         />
@@ -26,9 +23,7 @@ export default () => {
           <Option value="Jiangsu">Jiangsu</Option>
         </Select>
         <Input
-          allowClear={{
-            clearIcon: <CloseOutlined />,
-          }}
+          allowClear
           style={{ width: 240 }}
           defaultValue="Xihu District, Hangzhou"
         />

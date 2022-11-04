@@ -1,5 +1,4 @@
 import { Select, Space } from "antd";
-import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 
 const { Option } = Select;
 
@@ -11,7 +10,6 @@ const App = () => (
   <Space wrap>
     <Select
       allowClear
-      clearIcon={<CloseOutlined />}
       style={{ width: 160 }}
       onChange={handleChange}
       placeholder="请选择"
@@ -29,7 +27,6 @@ const App = () => (
     </Select>
     <Select
       allowClear
-      clearIcon={<CloseOutlined />}
       style={{ width: 160 }}
       onChange={handleChange}
       placeholder="请选择"
@@ -42,20 +39,13 @@ const App = () => (
         海哥
       </Option>
     </Select>
-    <Select
-      allowClear
-      clearIcon={<CloseOutlined />}
-      style={{ width: 160 }}
-      disabled
-      defaultValue="zfh"
-    >
+    <Select allowClear style={{ width: 160 }} disabled defaultValue="zfh">
       <Option value="pxl">亮哥</Option>
       <Option value="wsj">婧姐</Option>
       <Option value="zfh">小张</Option>
     </Select>
     <Select
       allowClear
-      clearIcon={<CloseOutlined />}
       style={{ width: 160 }}
       onChange={handleChange}
       placeholder="请选择"
@@ -68,7 +58,6 @@ const App = () => (
     </Select>
     <Select
       allowClear
-      clearIcon={<CloseOutlined />}
       style={{ width: 160 }}
       defaultOpen
       onChange={handleChange}

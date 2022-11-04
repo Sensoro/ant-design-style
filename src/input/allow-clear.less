@@ -5,22 +5,22 @@
 .@{iconfont-css-prefix}.@{ant-prefix}-input-clear-icon,
 .@{ant-prefix}-input-clear-icon {
   margin: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: @font-size-sm;
-  height: @font-size-sm;
-  color: @text-color-primary;
-  background: @input-clear-background;
-  font-size: 8px;
-  border-radius: @border-radius-circle;
+  font-size: @font-size-sm;
+  height: 100%;
+  color: @disabled-color;
   // https://github.com/ant-design/ant-design/pull/18151
   // https://codesandbox.io/s/wizardly-sun-u10br
   cursor: pointer;
-  transition: all @animation-duration-base;
+  transition: color @animation-duration-slow;
+  display: inline-flex;
+  align-items: center;
 
   &:hover {
-    background: @input-clear-hover-background;
+    color: @text-color-secondary;
+  }
+
+  &:active {
+    color: @text-color;
   }
 
   &-hidden {

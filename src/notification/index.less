@@ -131,9 +131,13 @@
     // https://github.com/ant-design/ant-design/issues/15512
     &-icon {
       position: absolute;
-      padding-top: 2px;
-      font-size: 20px;
-      line-height: 20px;
+      padding-top: @padding-xss;
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      font-size: @alert-icon-font-size;
+      width: @alert-icon-size;
+      height: @alert-icon-size;
     }
 
     .@{iconfont-css-prefix}&-icon {

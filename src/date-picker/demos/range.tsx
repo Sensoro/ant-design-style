@@ -1,7 +1,6 @@
 import type { RangePickerProps } from "antd/es/date-picker";
 import { DatePicker, Space, ConfigProvider } from "antd";
 import type { FC } from "react";
-import { CloseOutlined } from "@ant-design/icons";
 import "../../space/index.less";
 import zhCN from "antd/es/locale/zh_CN";
 import moment from "moment";
@@ -22,7 +21,6 @@ const App: FC = () => (
     <Space>
       <RangePicker
         defaultOpen
-        clearIcon={<CloseOutlined />}
         disabledDate={disabledDate}
         separator="~"
         defaultValue={[
@@ -35,7 +33,6 @@ const App: FC = () => (
       <RangePicker
         disabled
         separator="~"
-        clearIcon={<CloseOutlined />}
         defaultValue={[
           moment(moment(new Date()).add("1", "day"), "YYYY-MM-DD"),
           moment(moment(new Date()).add("10", "day"), "YYYY-MM-DD"),

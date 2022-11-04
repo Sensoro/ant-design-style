@@ -2,7 +2,6 @@ import { Button, notification, Space } from "antd";
 import type { FC } from "react";
 
 import type { NotificationType } from "./basic";
-import { iconMap } from "./basic";
 
 const openNotificationWithIcon = (type: NotificationType) => {
   notification[type]({
@@ -11,7 +10,6 @@ const openNotificationWithIcon = (type: NotificationType) => {
     message: "通知标题",
     description:
       "这是一个需要换行的内容，这是一个需要换行的内容，这是一个需要换行的内容",
-    icon: iconMap[type],
   });
 };
 

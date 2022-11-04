@@ -1,16 +1,7 @@
 import { Button, notification, Space } from "antd";
-import type { FC, ReactNode } from "react";
-import InfoCircleFilled from "@sensoro-design/icons/InfoCircleFilled";
-import CheckCircleFilled from "@sensoro-design/icons/CheckCircleFilled";
-import CloseCircleFilled from "@sensoro-design/icons/CloseCircleFilled";
-export type NotificationType = "success" | "info" | "warning" | "error";
+import type { FC } from "react";
 
-export const iconMap: Record<NotificationType, ReactNode> = {
-  success: <CheckCircleFilled />,
-  error: <CloseCircleFilled />,
-  info: <InfoCircleFilled />,
-  warning: <InfoCircleFilled />,
-};
+export type NotificationType = "success" | "info" | "warning" | "error";
 
 const openNotification = () => {
   notification.open({
@@ -24,7 +15,6 @@ const openNotification = () => {
 
 const openNotificationWithIcon = (type: NotificationType) => {
   notification[type]({
-    icon: iconMap[type],
     duration: 0,
     message: "通知标题",
     description:

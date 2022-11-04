@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import type { FC } from "react";
 
 import "../../space/index.less";
-import { CloseOutlined } from "@ant-design/icons";
 
 export const treeData = [
   {
@@ -85,7 +84,6 @@ const App: FC = () => {
         treeDefaultExpandAll
         placeholder="请选择"
         treeNodeFilterProp="title"
-        clearIcon={<CloseOutlined />}
         style={{ width: 240 }}
         dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
         value={value}
@@ -112,7 +110,6 @@ const App: FC = () => {
           allowClear
           style={{ width: 240 }}
           value={value}
-          clearIcon={<CloseOutlined />}
           dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
           placeholder="请选择"
           treeDefaultExpandedKeys={["fe"]}
