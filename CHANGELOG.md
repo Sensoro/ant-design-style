@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/sensoro-design/ant-design-style/compare/v1.13.1...v1.14.0) (2022-11-04)
+
+
+### Features
+
+* reset custom icons; use antd ([c1b0c6b](https://github.com/sensoro-design/ant-design-style/commit/c1b0c6b7e00c3c3a4543fd0d47445b4d953dbe6d))
+
 ## [1.13.1](https://github.com/sensoro-design/ant-design-style/compare/v1.13.0...v1.13.1) (2022-11-02)
 
 
