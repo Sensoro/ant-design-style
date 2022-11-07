@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/sensoro-design/ant-design-style/compare/v1.14.0...v1.14.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* notification close ui ([a5602b0](https://github.com/sensoro-design/ant-design-style/commit/a5602b0a9be67d642c3b3beeb026c8cfa33b9606))
+
 # [1.14.0](https://github.com/sensoro-design/ant-design-style/compare/v1.13.1...v1.14.0) (2022-11-04)
 
 
