@@ -161,17 +161,9 @@
     &-close {
       position: absolute;
       top: 16px;
-      right: 20px;
-      text-align: center;
-      font-size: @font-size-lg;
+      right: 22px;
       color: @text-color;
       outline: none;
-      cursor: pointer;
-      width: @notification-close-size;
-      height: @notification-close-size;
-      line-height: @notification-close-size;
-      transition: all @animation-duration-base;
-      border-radius: 50%;
 
       &:hover {
         & when (@theme = dark) {
@@ -179,7 +171,6 @@
         }
         & when not (@theme = dark) {
           color: @text-color;
-          background: @notification-close-hover-bg;
         }
       }
     }
