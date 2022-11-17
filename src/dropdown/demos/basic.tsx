@@ -26,25 +26,50 @@ const menu = (
 );
 
 const App = () => (
-  <Space wrap size={16}>
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
-      <Button type="primary">
-        下拉菜单
-        <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
-      </Button>
-    </Dropdown>
-
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
-      <Button>
-        下拉菜单 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
-      </Button>
-    </Dropdown>
-
-    <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
-      <Button>
-        下拉菜单等宽 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
-      </Button>
-    </Dropdown>
+  <Space direction="vertical" size={32}>
+    <Space wrap size={16}>
+      正常状态
+      <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
+        <Button type="primary">
+          下拉菜单
+          <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </Button>
+      </Dropdown>
+      <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
+        <Button>
+          下拉菜单 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </Button>
+      </Dropdown>
+      <Dropdown overlay={menu} trigger={["click"]} placement="bottomLeft">
+        <Button>
+          下拉菜单等宽 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </Button>
+      </Dropdown>
+    </Space>
+    <Space size={16}>
+      禁用状态
+      <Dropdown
+        overlay={menu}
+        disabled
+        trigger={["click"]}
+        placement="bottomLeft"
+      >
+        <Button type="primary">
+          下拉菜单
+          <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </Button>
+      </Dropdown>
+      <Dropdown
+        overlay={menu}
+        disabled
+        trigger={["click"]}
+        placement="bottomLeft"
+      >
+        <Button>
+          下拉菜单 <DownOutlined style={{ fontSize: 16, marginLeft: 4 }} />
+        </Button>
+      </Dropdown>
+    </Space>
   </Space>
 );
 

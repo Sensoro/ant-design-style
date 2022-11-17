@@ -28,7 +28,7 @@ const App: FC = () => {
   );
 
   return (
-    <ConfigProvider locale={zhCN}>
+    <ConfigProvider locale={zhCN} autoInsertSpaceInButton={false}>
       <Table
         size="middle"
         columns={fixedColumns}

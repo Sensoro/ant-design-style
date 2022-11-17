@@ -10,7 +10,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: @zindex-modal;
+  z-index: @zindex-drawer;
   pointer-events: none;
 
   &-inline {
@@ -24,7 +24,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: @zindex-modal;
+    z-index: @zindex-drawer;
     background: @modal-mask-bg;
     pointer-events: auto;
   }
@@ -32,7 +32,7 @@
   // ==================== Content =====================
   &-content-wrapper {
     position: absolute;
-    z-index: @zindex-modal;
+    z-index: @zindex-drawer;
     transition: all @animation-duration-slow;
 
     &-hidden {
