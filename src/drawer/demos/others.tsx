@@ -18,7 +18,7 @@ const App: React.FC = () => {
         placement="right"
         getContainer={false}
         onClose={() => setOpen3(false)}
-        style={{ position: "absolute" }}
+        style={{ position: "fixed" }}
         open={open3}
       >
         <div style={{ background: "#ffcbc7", height: "100vh" }}>
