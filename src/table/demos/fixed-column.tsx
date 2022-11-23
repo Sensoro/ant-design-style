@@ -31,7 +31,7 @@ const fixedColumns: ColumnsType<DataType> = columns.map((column, idx) => {
 });
 
 const App: FC = () => (
-  <ConfigProvider locale={zhCN}>
+  <ConfigProvider locale={zhCN} autoInsertSpaceInButton={false}>
     <Table
       columns={fixedColumns}
       dataSource={data}

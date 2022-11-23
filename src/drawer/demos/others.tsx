@@ -7,7 +7,7 @@ const App: React.FC = () => {
   const [open3, setOpen3] = useState(false);
 
   return (
-    <div style={{ background: "#f6f7f8", height: 600 }}>
+    <div>
       <Button type="primary" onClick={() => setOpen3(true)}>
         非模态抽屉
       </Button>
@@ -18,7 +18,7 @@ const App: React.FC = () => {
         placement="right"
         getContainer={false}
         onClose={() => setOpen3(false)}
-        style={{ position: "absolute" }}
+        style={{ position: "fixed", zIndex: 998 }}
         open={open3}
       >
         <div style={{ background: "#ffcbc7", height: "100vh" }}>

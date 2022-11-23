@@ -39,7 +39,7 @@ const App: FC = () => {
     }),
   };
   return (
-    <ConfigProvider locale={zhCN}>
+    <ConfigProvider locale={zhCN} autoInsertSpaceInButton={false}>
       <Table
         columns={columns}
         dataSource={data}

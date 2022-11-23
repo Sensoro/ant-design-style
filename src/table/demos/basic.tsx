@@ -20,7 +20,7 @@ const data: DataType[] = Array(10)
   }));
 
 const App: FC = () => (
-  <ConfigProvider locale={zhCN}>
+  <ConfigProvider locale={zhCN} autoInsertSpaceInButton={false}>
     <Table
       columns={columns}
       dataSource={data}
