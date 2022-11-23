@@ -1,3 +1,17 @@
+# [1.15.0](https://github.com/sensoro-design/ant-design-style/compare/v1.14.1...v1.15.0) (2022-11-23)
+
+
+### Bug Fixes
+
+* component ui ([a61a520](https://github.com/sensoro-design/ant-design-style/commit/a61a5202161d5238fcc9c47a492529ef39147b35))
+* drawer 阴影问题 & 定位问题 ([3bb00c5](https://github.com/sensoro-design/ant-design-style/commit/3bb00c5e5354c22ef939af22a1ce9bc7ec1f0356))
+
+
+### Features
+
+* merge aicity ([f4f6053](https://github.com/sensoro-design/ant-design-style/commit/f4f6053eba3dbf8e4714245c3212cdb9af1d4db9))
+* merge branch ([e0fc7c2](https://github.com/sensoro-design/ant-design-style/commit/e0fc7c2004c6c8695077a096194a2c4e8b1416d1))
+
 ## [1.14.1](https://github.com/sensoro-design/ant-design-style/compare/v1.14.0...v1.14.1) (2022-11-07)
 
 
