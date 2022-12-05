@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/sensoro-design/ant-design-style/compare/v1.15.2...v1.16.0) (2022-12-05)
+
+
+### Features
+
+* rollback ([8bfee39](https://github.com/sensoro-design/ant-design-style/commit/8bfee39275cc6ee4cb237d7956966863533e0367))
+
 ## [1.15.2](https://github.com/sensoro-design/ant-design-style/compare/v1.15.1...v1.15.2) (2022-12-05)
 
 
