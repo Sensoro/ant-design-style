@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/sensoro-design/ant-design-style/compare/v1.15.1...v1.15.2) (2022-12-05)
+
+
+### Bug Fixes
+
+* 修改select层级 ([3c4f823](https://github.com/sensoro-design/ant-design-style/commit/3c4f823052bb153f8dff4318d45b4856449d136e))
+
 ## [1.15.1](https://github.com/sensoro-design/ant-design-style/compare/v1.15.0...v1.15.1) (2022-11-23)
 
 
