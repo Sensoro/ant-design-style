@@ -24,6 +24,10 @@ icon 需要自定义
 
 <code src="./demos/range.tsx" />
 
+### 日期范围
+
+<code src="./demos/range.tsx" />
+
 ### 日期时间选择
 
 <code src="./demos/date-time.tsx" />

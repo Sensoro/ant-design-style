@@ -11,6 +11,8 @@
   @picker-arrow-size: 7px;
   @picker-year-month-cell-width: 60px;
   @picker-panel-width: @picker-panel-cell-width * 7 + @padding-sm * 2 + 4;
+  @picker-year-month-panel-width: 270px;
+  @picker-week-panel-width: 312px;
 
   &-panel {
     display: inline-flex;
@@ -30,9 +32,7 @@
   // =                     Shared Panel                     =
   // ========================================================
   &-decade-panel,
-  &-year-panel,
   &-quarter-panel,
-  &-month-panel,
   &-week-panel,
   &-date-panel,
   &-time-panel {
@@ -55,7 +55,7 @@
     button {
       padding: 0;
       color: @disabled-color;
-      line-height: @picker-text-height;
+      line-height: @picker-header-text-height;
       background: transparent;
       border: 0;
       cursor: pointer;
@@ -74,7 +74,7 @@
     &-view {
       flex: auto;
       font-weight: 500;
-      line-height: @picker-text-height;
+      line-height: @picker-header-text-height;
 
       button {
         color: inherit;
@@ -181,7 +181,7 @@
       min-width: @picker-panel-cell-height;
       height: @picker-panel-cell-height;
       line-height: @picker-panel-cell-height;
-      border-radius: 50% !important;
+      border-radius: @border-radius-base;
       transition: background @animation-duration-slow,
         border @animation-duration-slow;
     }
@@ -310,13 +310,13 @@
     // range start border-radius
     &-in-view&-range-start:not(&-range-start-single):not(&-range-end)
       .@{cellClassName} {
-      border-radius: @border-radius-base 0 0 @border-radius-base;
+      //border-radius: @border-radius-base 0 0 @border-radius-base;
     }
 
     // range end border-radius
     &-in-view&-range-end:not(&-range-end-single):not(&-range-start)
       .@{cellClassName} {
-      border-radius: 0 @border-radius-base @border-radius-base 0;
+      //border-radius: 0 @border-radius-base @border-radius-base 0;
     }
 
     // DatePanel only
@@ -511,9 +511,9 @@
       padding: 0 @padding-xs;
     }
 
-    .@{picker-cell-inner-cls} {
-      width: @picker-year-month-cell-width;
-    }
+    //.@{picker-cell-inner-cls} {
+    //  width: @picker-year-month-cell-width;
+    //}
 
     .@{picker-prefix-cls}-cell-range-hover-start::after {
       left: @hover-cell-fixed-distance;
@@ -545,6 +545,8 @@
 
   // ====================== Week Panel ======================
   &-week-panel {
+    width: @picker-week-panel-width;
+
     .@{picker-prefix-cls}-body {
       padding: @padding-xs @padding-sm;
     }
@@ -558,18 +560,66 @@
       }
     }
 
+    .@{picker-prefix-cls}-cell {
+      &.@{picker-prefix-cls}-cell-today {
+
+      }
+
+      .@{picker-cell-inner-cls} {
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+
     &-row {
       td {
+        transform-style: preserve-3d;
         transition: background @animation-duration-slow;
+
+        &::before {
+          height: 28px;
+          transform: translate3d(0, -50%, -1px);
+        }
       }
 
       &:hover td {
-        background: @picker-basic-cell-hover-color;
+        background: transparent;
+
+        &::before {
+          background: @primary-1;
+
+        }
+
+        &:first-child {
+          &::before {
+            border-radius: @border-radius-base 0 0 @border-radius-base;
+          }
+        }
+
+        &:last-child {
+          &::before {
+            border-radius: 0 @border-radius-base @border-radius-base 0;
+          }
+        }
       }
 
       &-selected td,
       &-selected:hover td {
-        background: @primary-color;
+        &::before {
+          background: @primary-color;
+        }
+
+        &:first-child {
+          &::before {
+            border-radius: @border-radius-base 0 0 @border-radius-base;
+          }
+        }
+
+        &:last-child {
+          &::before {
+            border-radius: 0 @border-radius-base @border-radius-base 0;
+          }
+        }
 
         &.@{picker-prefix-cls}-cell-week {
           color: fade(@text-color-inverse, 50%);
@@ -586,6 +636,38 @@
     }
   }
 
+  // ====================== Year&Month Panel ======================
+  &-year-panel,
+  &-month-panel {
+    width: @picker-year-month-panel-width;
+
+    .@{picker-prefix-cls}-body {
+      padding: 0 20px;
+    }
+
+    .@{picker-prefix-cls}-cell {
+      &::before {
+        display: none;
+      }
+
+      &.@{picker-prefix-cls}-cell-disabled {
+        .@{picker-cell-inner-cls} {
+          background: @picker-basic-cell-disabled-bg;
+        }
+
+        &.@{picker-prefix-cls}-cell-selected {
+          .@{picker-cell-inner-cls} {
+            background: @primary-3;
+          }
+        }
+      }
+
+      .@{picker-cell-inner-cls} {
+        height: 26px;
+      }
+    }
+  }
+
   // ====================== Date Panel ======================
   &-date-panel {
     .@{picker-prefix-cls}-body {
@@ -598,6 +680,10 @@
       th {
         width: @picker-panel-cell-width;
       }
+    }
+
+    .@{picker-prefix-cls}-cell .@{picker-cell-inner-cls} {
+      border-radius: @border-radius-circle;
     }
   }
 

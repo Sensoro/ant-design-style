@@ -4,10 +4,6 @@ import type { FC } from "react";
 import "../../space/index.less";
 import zhCN from "antd/es/locale/zh_CN";
 import moment from "moment";
-import RightOutlined from "@sensoro-design/icons/RightOutlined";
-import LeftOutlined from "@sensoro-design/icons/LeftOutlined";
-import DoubleRightOutlined from "@sensoro-design/icons/DoubleRightOutlined";
-import DoubleLeftOutlined from "@sensoro-design/icons/DoubleLeftOutlined";
 
 const onChange: DatePickerProps["onChange"] = (date, dateString) => {
   console.log(date, dateString);
@@ -18,26 +14,52 @@ const disabledDate: RangePickerProps["disabledDate"] = (current) => {
   return current && current < moment().subtract(1, "day").endOf("day");
 };
 
+const disabledMonth: RangePickerProps["disabledDate"] = (current) => {
+  // Can not select days before today and today
+  return current && current < moment().subtract(3, "month");
+};
+
 const App: FC = () => (
   <ConfigProvider locale={zhCN}>
-    <Space direction="vertical">
+    <Space direction="vertical" size={32}>
       <Space>
+        基础使用
         <DatePicker
+          style={{ width: 240 }}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />
         <DatePicker
+          style={{ width: 240 }}
           disabled
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />
       </Space>
       <Space>
-        <DatePicker disabledDate={disabledDate} onChange={onChange} />
-
+        带不可选
         <DatePicker
-          disabled
-          defaultValue={moment(new Date(), "YYYY-MM-DD")}
+          style={{ width: 240 }}
+          disabledDate={disabledDate}
+          onChange={onChange}
+        />
+      </Space>
+      <Space>
+        月份选择
+        <DatePicker
+          style={{ width: 240 }}
+          defaultValue={moment("2022-02")}
+          disabledDate={disabledMonth}
+          picker="month"
+          onChange={onChange}
+        />
+      </Space>
+      <Space>
+        按周选择
+        <DatePicker
+          defaultOpen
+          style={{ width: 240 }}
+          picker="week"
           onChange={onChange}
         />
       </Space>
@@ -45,7 +67,8 @@ const App: FC = () => (
       <Space>
         走查专用
         <DatePicker
-          defaultOpen
+          // defaultOpen
+          style={{ width: 240 }}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
         />
