@@ -56,18 +56,13 @@ const App: FC = () => (
       </Space>
       <Space>
         按周选择
-        <DatePicker
-          defaultOpen
-          style={{ width: 240 }}
-          picker="week"
-          onChange={onChange}
-        />
+        <DatePicker style={{ width: 240 }} picker="week" onChange={onChange} />
       </Space>
 
       <Space>
         走查专用
         <DatePicker
-          // defaultOpen
+          defaultOpen
           style={{ width: 240 }}
           defaultValue={moment(new Date(), "YYYY-MM-DD")}
           onChange={onChange}
