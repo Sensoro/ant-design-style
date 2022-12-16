@@ -20,4 +20,6 @@ nav:
 * `ant-timeline-item-content-title`
 * `ant-timeline-item-content-text`
 
+**默认的 `dot` 颜色是主题色 `@primary-color`，需要注意，一般UI设计稿为 `color="gray"`**
+
 <code src="./demos/basic.tsx" />
