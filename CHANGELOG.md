@@ -1,3 +1,18 @@
+# [1.17.0](https://github.com/sensoro-design/ant-design-style/compare/v1.16.0...v1.17.0) (2022-12-29)
+
+
+### Bug Fixes
+
+* update demo ([a6e1869](https://github.com/sensoro-design/ant-design-style/commit/a6e1869a83db61efd20fb1b94757ce7330737433))
+
+
+### Features
+
+* add week & month panel ([f8cbc68](https://github.com/sensoro-design/ant-design-style/commit/f8cbc68ccdae83a462fa0a9a2fde0ed40b37eb3e))
+* update checkbox border color ([9bb54d8](https://github.com/sensoro-design/ant-design-style/commit/9bb54d84a4c975930d9cfd9ba1a3dd03417a3510))
+* update demo ([f392d29](https://github.com/sensoro-design/ant-design-style/commit/f392d295b096ab6982a09df51b38e7b1a2bc5958))
+* update timeline demo ([8742b95](https://github.com/sensoro-design/ant-design-style/commit/8742b95b7f7abb6f4643c29622369e7adb323b71))
+
 # [1.16.0](https://github.com/sensoro-design/ant-design-style/compare/v1.15.2...v1.16.0) (2022-12-05)
 
 
