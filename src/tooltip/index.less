@@ -5,11 +5,10 @@
 
 @tooltip-arrow-shadow-width: 3px;
 
-@tooltip-arrow-rotate-width: sqrt(@tooltip-arrow-width * @tooltip-arrow-width * 2) +
-  @tooltip-arrow-shadow-width * 2;
+@tooltip-arrow-rotate-width: 10px;
 
-@tooltip-arrow-offset-vertical: 5px; // 8 - 3px
-@tooltip-arrow-offset-horizontal: 13px; // 16 - 3px
+@tooltip-arrow-offset-vertical: 8px; // 8 - 3px
+@tooltip-arrow-offset-horizontal: 8px; // 16 - 3px
 
 // Base class
 .@{tooltip-prefix-cls} {
@@ -94,12 +93,15 @@
       bottom: 0;
       left: 0;
       display: block;
-      width: @tooltip-arrow-width;
-      height: @tooltip-arrow-width;
+      width: 0;
+      height: 0;
       margin: auto;
       content: '';
       pointer-events: auto;
-      .roundedArrow(@tooltip-arrow-width, 5px);
+      border-radius: 0;
+      border-color: @text-color;
+      border-style: solid;
+      border-width: 0 @tooltip-arrow-width @tooltip-arrow-width 0;
     }
   }
 
@@ -134,7 +136,7 @@
     transform: translateX(-100%);
 
     &-content {
-      transform: translateX((@tooltip-arrow-rotate-width / 2)) rotate(135deg);
+      transform: translateX((@tooltip-arrow-rotate-width / 2) + 0.5px) rotate(135deg);
     }
   }
 
@@ -182,7 +184,7 @@
     transform: translateY(-100%);
 
     &-content {
-      transform: translateY((@tooltip-arrow-rotate-width / 2)) rotate(225deg);
+      transform: translateY((@tooltip-arrow-rotate-width / 2) + 0.5px) rotate(225deg);
     }
   }
 
