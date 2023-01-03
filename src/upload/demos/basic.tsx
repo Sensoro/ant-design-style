@@ -1,8 +1,7 @@
 import type { UploadProps } from "antd";
-import { Button, Upload, Space, ConfigProvider, Radio } from "antd";
+import { Button, Upload, Space, ConfigProvider } from "antd";
 import React, { useState } from "react";
-import UploadFilled from "@sensoro-design/icons/UploadFilled";
-
+import UploadOutlined from "@sensoro-design/icons/UploadOutlined";
 import type { UploadListProps, UploadFile } from "antd/es/upload";
 
 import { UploadListItem } from "./UploadListItem";
@@ -27,8 +26,6 @@ const App: React.FC = () => {
       size: 1.16 * 1024 * 1024,
     },
   ]);
-
-  const [type, setType] = useState<"default" | "primary">("primary");
 
   const onRemove = (uid: string) => {
     setFileList((prev) => prev.filter((file) => file.uid !== uid));
@@ -66,18 +63,12 @@ const App: React.FC = () => {
 
     // set loading
     setUploading(file.status === "uploading");
-    console.log(file);
-
     setFileList(newFileList);
   };
 
   return (
     <ConfigProvider locale={zhCN}>
       <Space direction="vertical" size={32}>
-        <Radio.Group value={type} onChange={(e) => setType(e.target.value)}>
-          <Radio value="default">默认按钮</Radio>
-          <Radio value="primary">主题按钮</Radio>
-        </Radio.Group>
         <Space direction="vertical" size={32}>
           <Upload
             maxCount={1}
@@ -87,7 +78,10 @@ const App: React.FC = () => {
             itemRender={itemRender}
           >
             <Space>
-              <Button disabled={uploading} type={type} icon={<UploadFilled />}>
+              <Button
+                disabled={uploading || fileList.length >= 1}
+                icon={<UploadOutlined />}
+              >
                 选择文件
               </Button>
               支持 SVG 格式

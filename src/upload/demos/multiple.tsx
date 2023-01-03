@@ -1,7 +1,7 @@
 import type { UploadProps } from "antd";
-import { Button, message, Upload, Space, ConfigProvider } from "antd";
-import React, { useEffect, useState } from "react";
-import UploadFilled from "@sensoro-design/icons/UploadFilled";
+import { Button, Upload, Space, ConfigProvider } from "antd";
+import React, { useState } from "react";
+import UploadOutlined from "@sensoro-design/icons/UploadOutlined";
 import { Clear } from "./UploadListItem/Clear";
 
 import type { UploadListProps, UploadFile } from "antd/es/upload";
@@ -106,7 +106,7 @@ const App: React.FC = () => {
           itemRender={itemRender}
         >
           <Space>
-            <Button disabled={uploading} type="primary" icon={<UploadFilled />}>
+            <Button disabled={uploading} icon={<UploadOutlined />}>
               选择文件
             </Button>
             支持 SVG 格式，可一次上传多个文件
