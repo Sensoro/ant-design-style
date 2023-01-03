@@ -1,3 +1,13 @@
+## [1.17.1](https://github.com/sensoro-design/ant-design-style/compare/v1.17.0...v1.17.1) (2023-01-03)
+
+
+### Bug Fixes
+
+* bottom & right arrow style ([e9617c9](https://github.com/sensoro-design/ant-design-style/commit/e9617c9ef988eacd2a4c9f2d6936ab5519a8dccc))
+* bottom & right triangle ([08999fa](https://github.com/sensoro-design/ant-design-style/commit/08999fab96653c87c86c319ee6bce282ea27d1e8))
+* left & top arrow position ([0f57321](https://github.com/sensoro-design/ant-design-style/commit/0f57321da510f14cf063641987128d5c9001c2ef))
+* tooltip arrow content style ([1c52d3a](https://github.com/sensoro-design/ant-design-style/commit/1c52d3a10516edaacf9a0f4b058e0e43e8e9ea99))
+
 # [1.17.0](https://github.com/sensoro-design/ant-design-style/compare/v1.16.0...v1.17.0) (2022-12-29)
 
 
