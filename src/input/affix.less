@@ -43,6 +43,12 @@
       visibility: hidden;
       content: '\a0';
     }
+
+    &.@{input-prefix-cls}-password {
+      .@{input-prefix-cls}-suffix {
+        margin-left: @margin-sm;
+      }
+    }
   }
 
   &-affix-wrapper-sm {
@@ -75,9 +81,6 @@
   }
 
   &-suffix {
-    //display: inline-flex;
-    //align-items: center;
-    //justify-content: center;
     margin-left: @input-affix-margin;
   }
 }

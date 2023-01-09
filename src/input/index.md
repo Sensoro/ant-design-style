@@ -22,6 +22,10 @@ nav:
 
 <code src="./demos/search.tsx" />
 
+### 密码输入
+
+<code src="./demos/password.tsx" />
+
 ### 组合
 
 <code src="./demos/group.tsx" />
