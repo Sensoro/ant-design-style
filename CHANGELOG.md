@@ -1,3 +1,12 @@
+# [1.19.0](https://github.com/sensoro-design/ant-design-style/compare/v1.18.0...v1.19.0) (2023-01-10)
+
+
+### Features
+
+* add password demo ([fac5106](https://github.com/sensoro-design/ant-design-style/commit/fac51061083ac85b3a6c0ebe825644f598d66967))
+* remove modal body padding value ([5a7b819](https://github.com/sensoro-design/ant-design-style/commit/5a7b8199814c5af0a86499c310f58d0b3fb5f46d))
+* update button demo space ([ef6ba22](https://github.com/sensoro-design/ant-design-style/commit/ef6ba220387d2f19abc59ec2be5f1b6d8eb7059d))
+
 # [1.18.0](https://github.com/sensoro-design/ant-design-style/compare/v1.17.1...v1.18.0) (2023-01-09)
 
 
