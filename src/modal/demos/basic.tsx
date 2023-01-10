@@ -29,8 +29,8 @@ const App: React.FC = () => {
         onCancel={() => setIsModalOpen(false)}
       >
         <div style={{ background: "#ffcbc7" }}>
-          <p>内容区域</p>
-          <p>padding: 24px</p>
+          <div>内容区域</div>
+          <div>padding: 24px</div>
         </div>
       </Modal>
       <Modal
@@ -42,8 +42,8 @@ const App: React.FC = () => {
         onCancel={() => setIsModalOpen2(false)}
       >
         <div style={{ background: "#ffcbc7" }}>
-          <p>内容区域</p>
-          <p>padding: 24px</p>
+          <div>内容区域</div>
+          <div>padding: 24px</div>
         </div>
       </Modal>
       <Modal
@@ -55,8 +55,8 @@ const App: React.FC = () => {
         onCancel={() => setIsModalOpen3(false)}
       >
         <div style={{ background: "#ffcbc7" }}>
-          <p>内容区域</p>
-          <p>padding: 24px</p>
+          <div>内容区域</div>
+          <div>padding: 24px</div>
         </div>
       </Modal>
     </ConfigProvider>
