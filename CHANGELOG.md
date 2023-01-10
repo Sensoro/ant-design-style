@@ -1,3 +1,16 @@
+# [1.18.0](https://github.com/sensoro-design/ant-design-style/compare/v1.17.1...v1.18.0) (2023-01-09)
+
+
+### Bug Fixes
+
+* tree switcher margin value ([ae0f635](https://github.com/sensoro-design/ant-design-style/commit/ae0f6353ba03e65756400909c1f36fadfd6de487))
+* upload pic del btn vertical-align value ([fe38552](https://github.com/sensoro-design/ant-design-style/commit/fe38552b8016a83c4813736f840f377a42bf1d16))
+
+
+### Features
+
+* upload ui ([0376e0c](https://github.com/sensoro-design/ant-design-style/commit/0376e0c978eaebbd5830f7d4550db7fef934fdf2))
+
 ## [1.17.1](https://github.com/sensoro-design/ant-design-style/compare/v1.17.0...v1.17.1) (2023-01-03)
 
 
