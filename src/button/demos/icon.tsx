@@ -1,4 +1,5 @@
-import { PlusOutlined, FormOutlined } from "@ant-design/icons";
+import PlusOutlined from "@sensoro-design/icons/PlusOutlined";
+import FormOutlined from "@sensoro-design/icons/FormOutlined";
 import { Button, Space } from "antd";
 import "../../space/index.less";
 

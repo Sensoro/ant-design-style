@@ -16,12 +16,14 @@ export default () => {
           showCount
           maxLength={20}
           placeholder="请输入"
-          defaultValue="清蒸桂鱼、麻辣小龙虾清蒸桂鱼、123桂鱼"
+          defaultValue="清蒸桂鱼、麻辣小龙虾清蒸桂鱼123桂鱼"
         />
         <Input.TextArea
+          allowClear
           showCount
           style={{ width: 240 }}
           maxLength={100}
+          defaultValue="这是内容这是内容这是内容这是内容这是内容"
           placeholder="请输入"
         />
       </Space>

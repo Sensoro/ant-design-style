@@ -166,6 +166,7 @@
 // vertical padding for all form controls
 @control-padding-horizontal: @padding-sm;
 @control-padding-horizontal-sm: @padding-xs;
+@control-padding-horizontal-lg: @padding-md;
 
 // vertical margins
 @margin-lg: 24px; // containers
@@ -559,7 +560,7 @@
 @input-padding-horizontal: @control-padding-horizontal - 1px;
 @input-padding-horizontal-base: @input-padding-horizontal;
 @input-padding-horizontal-sm: @control-padding-horizontal-sm - 1px;
-@input-padding-horizontal-lg: @input-padding-horizontal;
+@input-padding-horizontal-lg: @control-padding-horizontal-lg - 1px;
 @input-padding-vertical-base: max(
   (
       round(
