@@ -18,6 +18,10 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
+### 带背景色
+
+<code src="./demos/background.tsx" />
+
 ### 搜索框
 
 <code src="./demos/search.tsx" />

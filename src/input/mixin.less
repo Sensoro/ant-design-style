@@ -55,7 +55,7 @@
 }
 
 // Basic style for input
-.input() {
+.input(@background-color: @input-bg) {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -64,7 +64,7 @@
   color: @input-color;
   font-size: @font-size-base;
   line-height: @line-height-base;
-  background-color: @input-bg;
+  background-color: @background-color;
   background-image: none;
   border: @border-width-base @border-style-base @input-border-color;
   border-radius: @control-border-radius;
