@@ -1,5 +1,5 @@
 import { PlusOutlined } from "@ant-design/icons";
-import { Modal, Upload, Space, ConfigProvider, Image } from "antd";
+import { Modal, Upload, Space, ConfigProvider, message } from "antd";
 import React, { useState } from "react";
 import { UploadFile, UploadProps } from "antd/es/upload";
 import zhCN from "antd/es/locale/zh_CN";
@@ -63,6 +63,9 @@ const App = () => {
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj);
     }
+
+    message.info("预览功能请参考物料查看大图组件");
+    return;
 
     setPreviewImage(file.url || file.preview);
     setPreviewOpen(true);
