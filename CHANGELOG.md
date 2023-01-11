@@ -1,3 +1,19 @@
+# [1.20.0](https://github.com/sensoro-design/ant-design-style/compare/v1.19.0...v1.20.0) (2023-01-11)
+
+
+### Bug Fixes
+
+* input-lg padding value ([f6ba3cd](https://github.com/sensoro-design/ant-design-style/commit/f6ba3cd75a11c1ce124f12cf6132be6432317d83))
+* remove selected style with checkbox ([e9141d3](https://github.com/sensoro-design/ant-design-style/commit/e9141d31d0fa2ff521ab924f2c2a0b5f6b843a9a))
+* tree checkbox margin ([86b3d53](https://github.com/sensoro-design/ant-design-style/commit/86b3d53a2c2d60573ee7dccf3f47bf8d9eaa23b3))
+
+
+### Features
+
+* add textarea clear demo ([0229d28](https://github.com/sensoro-design/ant-design-style/commit/0229d28b155a299091b3ff7b5929f1d57389a7c0))
+* hide preview image ([00a902a](https://github.com/sensoro-design/ant-design-style/commit/00a902af981f2566610fbd09c32dbed290e6081e))
+* update btn demo ([21ab1d0](https://github.com/sensoro-design/ant-design-style/commit/21ab1d0a08c5848bee6ee786a655ce83f6aa8466))
+
 # [1.19.0](https://github.com/sensoro-design/ant-design-style/compare/v1.18.0...v1.19.0) (2023-01-10)
 
 
