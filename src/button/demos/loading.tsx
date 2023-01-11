@@ -1,6 +1,6 @@
 import { Button, Space } from "antd";
 import "../../space/index.less";
-import { PlusOutlined } from "@ant-design/icons";
+import PlusOutlined from "@sensoro-design/icons/PlusOutlined";
 
 export default () => {
   return (
