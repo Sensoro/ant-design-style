@@ -224,7 +224,15 @@
   // >>> Checkbox
   &-checkbox {
     top: initial;
-    margin: ((@tree-treenode-height - @checkbox-size) / 2) @margin-xss 0 @margin-xss;
+    margin: ((@tree-treenode-height - @checkbox-size) / 2) @margin-xss 0
+      @margin-xss;
+  }
+
+  &-switcher + &-checkbox + &-node-content-wrapper {
+    &.@{custom-tree-prefix-cls}-node-selected {
+      font-weight: 400;
+      color: @text-color;
+    }
   }
 
   // >>> Title
@@ -244,12 +252,10 @@
       background-color: @tree-node-hover-bg;
     }
 
-    //& when (@custom-tree-prefix-cls = ~"@{ant-prefix}-select-tree") {
     &.@{custom-tree-prefix-cls}-node-selected {
       font-weight: 500;
       color: @primary-color;
     }
-    //}
 
     // Icon
     .@{custom-tree-prefix-cls}-iconEle {
