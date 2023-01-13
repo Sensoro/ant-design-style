@@ -1,0 +1,73 @@
+@import "../../../style/themes/default.less";
+
+@input-number-select-prefix: ~"input-number-multiple";
+@ant-prefix: ~"ant";
+@select-prefix-cls: ~"ant-select";
+@input-number-prefix-cls: ~"ant-input-number";
+
+.@{input-number-select-prefix} {
+  &-select {
+    color: @color-neutral-text-3;
+
+    .@{select-prefix-cls}-arrow .@{iconfont-css-prefix} {
+      font-size: @font-size-base;
+    }
+
+    .@{select-prefix-cls}-selection-item {
+      padding-right: 16px !important;
+    }
+
+    &.@{select-prefix-cls}-sm {
+      .@{select-prefix-cls}-arrow .@{iconfont-css-prefix} {
+        font-size: @font-size-sm;
+      }
+
+      .@{select-prefix-cls}-selection-item {
+        padding-right: 16px !important;
+      }
+    }
+
+    &.@{select-prefix-cls}-lg {
+      .@{select-prefix-cls}-arrow .@{iconfont-css-prefix} {
+        font-size: @font-size-lg;
+      }
+
+      .@{select-prefix-cls}-selection-item {
+        padding-right: 20px !important;
+      }
+    }
+
+    &.@{select-prefix-cls}-single.@{select-prefix-cls}-open
+      .@{select-prefix-cls}-selection-item {
+      color: @color-neutral-text-3;
+    }
+  }
+
+  &-select-popup {
+    .@{select-prefix-cls}-item-option-state {
+      margin: 0;
+    }
+  }
+
+  &-input {
+    .@{input-number-prefix-cls}-group-addon {
+      width: 57px;
+      padding: 0;
+
+      .@{select-prefix-cls}-open,
+      .@{select-prefix-cls}-focused {
+        .@{select-prefix-cls}-selector {
+          color: @color-neutral-text-3;
+        }
+      }
+    }
+
+    .@{input-number-prefix-cls}-sm + .@{input-number-prefix-cls}-group-addon {
+      width: 43px;
+    }
+
+    .@{input-number-prefix-cls}-lg + .@{input-number-prefix-cls}-group-addon {
+      width: 67px;
+    }
+  }
+}

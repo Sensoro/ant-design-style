@@ -18,6 +18,10 @@ nav:
 
 <code src="./demos/basic.tsx" />
 
+### 单位可切换
+
+<code src="./demos/after.tsx" />
+
 ### 尺寸
 
 <code src="./demos/size.tsx" />
