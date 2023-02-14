@@ -1,3 +1,15 @@
+# [1.21.0](https://github.com/sensoro-design/ant-design-style/compare/v1.20.0...v1.21.0) (2023-02-14)
+
+
+### Bug Fixes
+
+* radio set inner bg ([8939363](https://github.com/sensoro-design/ant-design-style/commit/89393630fd174db4d90bb7ad6a50f5cf8be0c335))
+
+
+### Features
+
+* update input number demo ([ebdca70](https://github.com/sensoro-design/ant-design-style/commit/ebdca70be02bce59ddac74b48415fc7debb3f90f))
+
 # [1.20.0](https://github.com/sensoro-design/ant-design-style/compare/v1.19.0...v1.20.0) (2023-01-11)
 
 
