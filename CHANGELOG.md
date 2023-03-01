@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/sensoro-design/ant-design-style/compare/v1.21.0...v1.21.1) (2023-03-01)
+
+
+### Bug Fixes
+
+* **tabs:** remove text-shadow attributes ([31c9c88](https://github.com/sensoro-design/ant-design-style/commit/31c9c88b3a72dff4653041883a73377207658009))
+
 # [1.21.0](https://github.com/sensoro-design/ant-design-style/compare/v1.20.0...v1.21.0) (2023-02-14)
 
 
