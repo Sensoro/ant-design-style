@@ -19,7 +19,7 @@
   }
 
   .@{ant-prefix}-input-disabled {
-    border-color: transparent;
+    border: none;
 
     + .@{ant-prefix}-input-group-addon {
       background-color: transparent;
@@ -36,6 +36,10 @@
     border: @border-width-base @border-style-base @input-border-color;
     transition: all 0.3s;
 
+    .@{ant-prefix}-input-affix-wrapper {
+      border: none;
+    }
+
     .@{ant-prefix}-group-addon {
       background: @component-background;
     }
@@ -47,6 +51,8 @@
     .@{search-prefix}-button {
       border: none;
       background-color: @search-btn-bg;
+      width: @height-base - 2px;
+      height: @height-base - 2px;
     }
   }
 
@@ -100,11 +106,16 @@
     }
   }
 
-  &-large &-button {
-    height: @input-height-lg;
+  &.@{search-prefix}-small
+    .@{ant-prefix}-input-wrapper
+    .@{search-prefix}-button {
+    width: @input-height-sm - 2px;
+    height: @input-height-sm - 2px;
   }
 
-  &-small &-button {
-    height: @input-height-sm;
+  &.@{search-prefix}-large
+    .@{ant-prefix}-input-wrapper
+    .@{search-prefix}-button {
+    height: @input-height-lg - 2px;
   }
 }
