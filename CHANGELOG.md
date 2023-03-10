@@ -1,3 +1,10 @@
+## [1.21.2](https://github.com/sensoro-design/ant-design-style/compare/v1.21.1...v1.21.2) (2023-03-09)
+
+
+### Bug Fixes
+
+* search input style ([d4d5b41](https://github.com/sensoro-design/ant-design-style/commit/d4d5b41930ee6e6e8a9810958c927e6d1395cd33))
+
 ## [1.21.1](https://github.com/sensoro-design/ant-design-style/compare/v1.21.0...v1.21.1) (2023-03-01)
 
 
