@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/sensoro-design/ant-design-style/compare/v1.21.2...v1.22.0) (2023-03-10)
+
+
+### Features
+
+* **pagination:** update prev/next button color ([5cac262](https://github.com/sensoro-design/ant-design-style/commit/5cac2623eabfd3cd739c23b7747c229a8da5d483))
+
 ## [1.21.2](https://github.com/sensoro-design/ant-design-style/compare/v1.21.1...v1.21.2) (2023-03-09)
 
 
