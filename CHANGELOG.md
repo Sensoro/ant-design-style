@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/sensoro-design/ant-design-style/compare/v1.22.0...v1.22.1) (2023-03-14)
+
+
+### Bug Fixes
+
+* input-search width ([548760e](https://github.com/sensoro-design/ant-design-style/commit/548760ee20876bede177adcc353e5d7d00e60e78))
+
 # [1.22.0](https://github.com/sensoro-design/ant-design-style/compare/v1.21.2...v1.22.0) (2023-03-10)
 
 
