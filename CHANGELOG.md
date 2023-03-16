@@ -1,3 +1,10 @@
+## [1.22.2](https://github.com/sensoro-design/ant-design-style/compare/v1.22.1...v1.22.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* button text-shadow ([42a42e5](https://github.com/sensoro-design/ant-design-style/commit/42a42e5aefc40eef5aa0fcaad7047b2aa4948915))
+
 ## [1.22.1](https://github.com/sensoro-design/ant-design-style/compare/v1.22.0...v1.22.1) (2023-03-14)
 
 
