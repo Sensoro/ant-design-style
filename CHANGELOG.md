@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/sensoro-design/ant-design-style/compare/v1.22.2...v1.23.0) (2023-03-17)
+
+
+### Features
+
+* cover box-shadow ([afaa2fc](https://github.com/sensoro-design/ant-design-style/commit/afaa2fcf465d60fc8e3cdf21de61696eba17413b))
+
 ## [1.22.2](https://github.com/sensoro-design/ant-design-style/compare/v1.22.1...v1.22.2) (2023-03-16)
 
 
