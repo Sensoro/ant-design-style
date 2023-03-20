@@ -1,4 +1,5 @@
 @dialog-prefix-cls: ~'@{ant-prefix}-modal';
+@modal-body-min-height: 240px - @modal-header-height;
 
 .@{dialog-prefix-cls} {
   .reset-component();
@@ -83,6 +84,7 @@
   }
 
   &-body {
+    min-height: @modal-body-min-height;
     padding: @modal-body-padding;
     font-size: @font-size-base;
     line-height: @line-height-base;
