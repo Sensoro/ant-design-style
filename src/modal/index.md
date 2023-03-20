@@ -22,7 +22,7 @@ nav:
 
 * `Modal` 最大高度 `100vh - 80px`
 * 内容区域最大高度 = `Modal - @modal-header-height - @modal-footer-height` = `calc(100vh - 76px -80px - 80px)`
-* 内容区域最小高度 = `240px - @modal-header-height` = `240px - 76px`;
+* 内容区域最小高度 = `240px - @modal-header-height - @modal-footer-height` = `240px - 76px - 80px`;
 
 <code src="./demos/max-height.tsx" />
 
