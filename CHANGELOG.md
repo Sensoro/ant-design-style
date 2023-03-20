@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/sensoro-design/ant-design-style/compare/v1.24.0...v1.25.0) (2023-03-20)
+
+
+### Features
+
+* update modal config ([2fdfa8e](https://github.com/sensoro-design/ant-design-style/commit/2fdfa8ecff9907a928119f2a9c99b5e98c8d6adb))
+
 # [1.24.0](https://github.com/sensoro-design/ant-design-style/compare/v1.23.0...v1.24.0) (2023-03-20)
 
 
