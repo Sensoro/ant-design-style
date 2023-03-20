@@ -6,7 +6,9 @@ const data = Array(100).fill(0);
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [mock, setMock] = useState([]);
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [mock, setMock] = useState<any>([]);
 
   return (
     <ConfigProvider locale={zhCN}>
@@ -19,6 +21,22 @@ const App: React.FC = () => {
           }}
         >
           最大高度适配
+        </Button>
+        <Button
+          type="primary"
+          onClick={() => {
+            setOpen1(true);
+          }}
+        >
+          最小高度适配(含footer)
+        </Button>
+        <Button
+          type="primary"
+          onClick={() => {
+            setOpen2(true);
+          }}
+        >
+          最小高度适配(不含footer)
         </Button>
       </Space>
       <Modal
@@ -36,6 +54,26 @@ const App: React.FC = () => {
             </div>
           ))}
         </div>
+      </Modal>
+      <Modal
+        width={480}
+        title="标题文字"
+        open={open1}
+        onOk={() => setOpen1(false)}
+        onCancel={() => setOpen1(false)}
+      >
+        带 footer
+      </Modal>
+      <Modal
+        width={480}
+        title="标题文字"
+        footer={false}
+        open={open2}
+        bodyStyle={{ minHeight: 164 }}
+        onOk={() => setOpen2(false)}
+        onCancel={() => setOpen2(false)}
+      >
+        不带 footer
       </Modal>
     </ConfigProvider>
   );
