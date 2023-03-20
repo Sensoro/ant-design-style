@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/sensoro-design/ant-design-style/compare/v1.23.0...v1.24.0) (2023-03-20)
+
+
+### Features
+
+* update modal min-height ([e4cf8b9](https://github.com/sensoro-design/ant-design-style/commit/e4cf8b9df057fd8e732613e4c7120b41820769dd))
+
 # [1.23.0](https://github.com/sensoro-design/ant-design-style/compare/v1.22.2...v1.23.0) (2023-03-17)
 
 
