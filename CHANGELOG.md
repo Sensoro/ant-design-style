@@ -1,3 +1,71 @@
+# [1.25.0](https://github.com/sensoro-design/ant-design-style/compare/v1.24.0...v1.25.0) (2023-03-20)
+
+
+### Features
+
+* update modal config ([2fdfa8e](https://github.com/sensoro-design/ant-design-style/commit/2fdfa8ecff9907a928119f2a9c99b5e98c8d6adb))
+
+# [1.24.0](https://github.com/sensoro-design/ant-design-style/compare/v1.23.0...v1.24.0) (2023-03-20)
+
+
+### Features
+
+* update modal min-height ([e4cf8b9](https://github.com/sensoro-design/ant-design-style/commit/e4cf8b9df057fd8e732613e4c7120b41820769dd))
+
+# [1.23.0](https://github.com/sensoro-design/ant-design-style/compare/v1.22.2...v1.23.0) (2023-03-17)
+
+
+### Features
+
+* cover box-shadow ([afaa2fc](https://github.com/sensoro-design/ant-design-style/commit/afaa2fcf465d60fc8e3cdf21de61696eba17413b))
+
+## [1.22.2](https://github.com/sensoro-design/ant-design-style/compare/v1.22.1...v1.22.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* button text-shadow ([42a42e5](https://github.com/sensoro-design/ant-design-style/commit/42a42e5aefc40eef5aa0fcaad7047b2aa4948915))
+
+## [1.22.1](https://github.com/sensoro-design/ant-design-style/compare/v1.22.0...v1.22.1) (2023-03-14)
+
+
+### Bug Fixes
+
+* input-search width ([548760e](https://github.com/sensoro-design/ant-design-style/commit/548760ee20876bede177adcc353e5d7d00e60e78))
+
+# [1.22.0](https://github.com/sensoro-design/ant-design-style/compare/v1.21.2...v1.22.0) (2023-03-10)
+
+
+### Features
+
+* **pagination:** update prev/next button color ([5cac262](https://github.com/sensoro-design/ant-design-style/commit/5cac2623eabfd3cd739c23b7747c229a8da5d483))
+
+## [1.21.2](https://github.com/sensoro-design/ant-design-style/compare/v1.21.1...v1.21.2) (2023-03-09)
+
+
+### Bug Fixes
+
+* search input style ([d4d5b41](https://github.com/sensoro-design/ant-design-style/commit/d4d5b41930ee6e6e8a9810958c927e6d1395cd33))
+
+## [1.21.1](https://github.com/sensoro-design/ant-design-style/compare/v1.21.0...v1.21.1) (2023-03-01)
+
+
+### Bug Fixes
+
+* **tabs:** remove text-shadow attributes ([31c9c88](https://github.com/sensoro-design/ant-design-style/commit/31c9c88b3a72dff4653041883a73377207658009))
+
+# [1.21.0](https://github.com/sensoro-design/ant-design-style/compare/v1.20.0...v1.21.0) (2023-02-14)
+
+
+### Bug Fixes
+
+* radio set inner bg ([8939363](https://github.com/sensoro-design/ant-design-style/commit/89393630fd174db4d90bb7ad6a50f5cf8be0c335))
+
+
+### Features
+
+* update input number demo ([ebdca70](https://github.com/sensoro-design/ant-design-style/commit/ebdca70be02bce59ddac74b48415fc7debb3f90f))
+
 # [1.20.0](https://github.com/sensoro-design/ant-design-style/compare/v1.19.0...v1.20.0) (2023-01-11)
 
 
