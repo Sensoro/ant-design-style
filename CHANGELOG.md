@@ -1,3 +1,12 @@
+## [1.25.1](https://github.com/sensoro-design/ant-design-style/compare/v1.25.0...v1.25.1) (2023-04-06)
+
+
+### Bug Fixes
+
+* alert text color ([d6dcff2](https://github.com/sensoro-design/ant-design-style/commit/d6dcff24d1be5a241e2d60f21eea9d0f7c7c8da2))
+* update node version ([5730c45](https://github.com/sensoro-design/ant-design-style/commit/5730c45e4b390069a22a81fd602dd6d6ed288faf))
+* upload error style ([dfaf7f0](https://github.com/sensoro-design/ant-design-style/commit/dfaf7f01a448332fd31f4b893ce971ebe72d6766))
+
 # [1.25.0](https://github.com/sensoro-design/ant-design-style/compare/v1.24.0...v1.25.0) (2023-03-20)
 
 
