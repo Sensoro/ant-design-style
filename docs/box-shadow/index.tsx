@@ -7,134 +7,84 @@ import { onCopy } from "../colors";
 
 export default () => (
   <Row className="box" gutter={[24, 24]}>
-    <Col span={8}>
+    <Col span={12}>
       <div className="shadow">
-        <span>BG-white</span>
-        <br />
-        背景/警告/表单输入
+        <div>
+          <span className="shadow-name">BG-00</span>
+          <br />
+          <span className="shadow-subname">背景/警告/表单输入</span>
+        </div>
+        <span className="shadow-value">0 0 0 #FFFFFF</span>
       </div>
     </Col>
-    <Col span={8}>
-      <div
-        className="shadow shadow-1"
-        onClick={() =>
-          onCopy(
-            "0 0 1px 0 rgba(60, 73, 97, 0.08), 0 1px 2px 0 rgba(109, 119, 137, 0.16);"
-          )
-        }
-      >
+    <Col span={12}>
+      <div className="shadow shadow-1" onClick={() => onCopy("@sen-shadow-01")}>
         <div>
-          <span className="shadow-name">@sen-shadow-1</span>
+          <span className="shadow-name">@sen-shadow-01</span>
           <br />
-          卡片背景1
+          <span className="shadow-subname">一级阴影（默认向下）</span>
+          <br />
+          <span className="shadow-scene">时间选择器/级联选择/表单选择</span>
         </div>
         <div>
           <span className="shadow-value">
-            x，y，blur ( 0，0，1 ) #3C4961，0.08
+            0 1px 2px -2px rgba(10, 27, 57, 0.12)
           </span>
           <br />
           <span className="shadow-value">
-            x，y，blur ( 0，1，2 ) #6D7789，0.16
-          </span>
-        </div>
-      </div>
-    </Col>
-    <Col span={8}>
-      <div
-        className="shadow shadow-2"
-        onClick={() =>
-          onCopy(
-            "0 0 2px 0 rgba(60, 73, 97, 0.08), 0 4px 8px 0 rgba(109, 119, 137, 0.16);"
-          )
-        }
-      >
-        <div>
-          <span className="shadow-name">@sen-shadow-2</span>
-          <br />
-          卡片背景2
-        </div>
-        <div>
-          <span className="shadow-value">
-            x，y，blur ( 0，0，2 ) #3C4961，0.08
+            0 3px 6px 0 rgba(10, 27, 57, 0.08)
           </span>
           <br />
           <span className="shadow-value">
-            x，y，blur ( 0，4，8 ) #6D7789，0.16
+            0 5px 12px 4px rgba(10, 27, 57, 0.06)
           </span>
         </div>
       </div>
     </Col>
-    <Col span={8}>
-      <div
-        className="shadow shadow-3"
-        onClick={() =>
-          onCopy(
-            "0 2px 4px 0 rgba(60, 73, 97, 0.04), 0 8px 16px 0 rgba(109, 119, 137, 0.16);"
-          )
-        }
-      >
+    <Col span={12}>
+      <div className="shadow shadow-2" onClick={() => onCopy("@sen-shadow-02")}>
         <div>
-          <span className="shadow-name">@sen-shadow-3</span>
+          <span className="shadow-name">@sen-shadow-02</span>
           <br />
-          时间选择器/级联选择/表单选择
+          <span className="shadow-subname">二级阴影（默认向下）</span>
+          <br />
+          <span className="shadow-scene">卡片Hover</span>
         </div>
         <div>
           <span className="shadow-value">
-            x，y，blur ( 0，2，4 ) #3C4961，0.04
+            0 3px 6px -4px rgba(10, 27, 57, 0.08)
           </span>
           <br />
           <span className="shadow-value">
-            x，y，blur ( 0，8，16 ) #6D7789，0.16
-          </span>
-        </div>
-      </div>
-    </Col>
-    <Col span={8}>
-      <div
-        className="shadow shadow-4"
-        onClick={() =>
-          onCopy(
-            "0 2px 8px 0 rgba(60, 73, 97, 0.04), 0 16px 24px 0 rgba(109, 119, 137, 0.16);"
-          )
-        }
-      >
-        <div>
-          <span className="shadow-name">@sen-shadow-4</span>
-          <br />
-          卡片hover
-        </div>
-        <div>
-          <span className="shadow-value">
-            x，y，blur ( 0，2，8 ) #3C4961，0.04
+            0 6px 16px 0 rgba(10, 27, 57, 0.06)
           </span>
           <br />
           <span className="shadow-value">
-            x，y，blur ( 0，16，24 ) #6D7789，0.16
+            0 9px 28px 8px rgba(10, 27, 57, 0.04)
           </span>
         </div>
       </div>
     </Col>
-    <Col span={8}>
-      <div
-        className="shadow shadow-5"
-        onClick={() =>
-          onCopy(
-            "0 2px 8px 0 rgba(60, 73, 97, 0.08), 0 20px 32px 0 rgba(109, 119, 137, 0.24);"
-          )
-        }
-      >
+    <Col span={12}>
+      <div className="shadow shadow-3" onClick={() => onCopy("@sen-shadow-03")}>
         <div>
-          <span className="shadow-name">@sen-shadow-5</span>
+          <span className="shadow-name">@sen-shadow-03</span>
           <br />
-          弹窗
+          <span className="shadow-subname">三级阴影（默认向下）</span>
+          <br />
+          <span className="shadow-scene">对话框、抽屉</span>
         </div>
         <div>
           <span className="shadow-value">
-            x，y，blur ( 0，2，8 ) #3C4961，0.08{" "}
+            0 6px 16px -8px rgba(10, 27, 57, 0.08)
           </span>
           <br />
           <span className="shadow-value">
-            x，y，blur ( 0，20，32 ) #6D7789，0.24{" "}
+            0 9px 28px 0 rgba(10, 27, 57, 0.04)
+          </span>
+          <br />
+          <span className="shadow-value">
+            0 12px 48px 16px rgba(10, 27, 57, 0.02)
           </span>
         </div>
       </div>
