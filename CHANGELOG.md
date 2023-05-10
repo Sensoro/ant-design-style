@@ -1,3 +1,18 @@
+# [1.26.0](https://github.com/sensoro-design/ant-design-style/compare/v1.25.1...v1.26.0) (2023-05-10)
+
+
+### Bug Fixes
+
+* checkbox margin ([194caf8](https://github.com/sensoro-design/ant-design-style/commit/194caf8a78f906778295491c7807565d9dbf0bb3))
+* drawer shadow color ([3c71388](https://github.com/sensoro-design/ant-design-style/commit/3c713881f74a64fd7b335a818c3e4573bc4ff178))
+* radio margin ([c38a062](https://github.com/sensoro-design/ant-design-style/commit/c38a062d18bca83ac7fadaed1d7e8f2f6400e92c))
+
+
+### Features
+
+* repleace messgae/notification shadow ([0eebbc2](https://github.com/sensoro-design/ant-design-style/commit/0eebbc2d7ad754f1d5138470078961e8ad7f4fcb))
+* repleace shadow variable ([98c384b](https://github.com/sensoro-design/ant-design-style/commit/98c384b9fa552cb7543aa2d716e8753c582ca847))
+
 ## [1.25.1](https://github.com/sensoro-design/ant-design-style/compare/v1.25.0...v1.25.1) (2023-04-06)
 
 
