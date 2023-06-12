@@ -4,7 +4,7 @@ import { Button, Progress, Tooltip } from "antd";
 
 import { UploadCheck } from "./Check";
 
-import FileTextFilled from "@sensoro-design/icons/FileTextFilled";
+import FileFilled from "@sensoro-design/icons/FileFilled";
 import CloseOutlined from "@sensoro-design/icons/CloseOutlined";
 import ExclamationCircleFilled from "@sensoro-design/icons/ExclamationCircleFilled";
 
@@ -77,7 +77,7 @@ export const UploadListItem: FC<UploadListItemProps> = ({
       }`}
     >
       <span className={`${prefixCls}-icon`}>
-        <FileTextFilled />
+        <FileFilled />
       </span>
       <div className={`${prefixCls}-content`}>
         <div className={`${prefixCls}-content-line`}>

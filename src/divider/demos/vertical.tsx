@@ -1,6 +1,6 @@
 import { Divider, Space } from "antd";
 import IdcardOutlined from "@sensoro-design/icons/IdcardOutlined";
-import PersonCameraOutlined from "@sensoro-design/icons/PersonCameraOutlined";
+import DomeCameraOutlined from "@sensoro-design/icons/DomeCameraOutlined";
 import "../../space/index.less";
 
 const App = () => (
@@ -16,7 +16,7 @@ const App = () => (
         borderRadius: 2,
       }}
     >
-      <PersonCameraOutlined style={{ fontSize: 16 }} />
+      <DomeCameraOutlined style={{ fontSize: 16 }} />
       <Divider type="vertical" />
       <IdcardOutlined style={{ fontSize: 16 }} />
     </div>
@@ -31,7 +31,7 @@ const App = () => (
         borderRadius: 2,
       }}
     >
-      <PersonCameraOutlined style={{ fontSize: 16, color: "#fff" }} />
+      <DomeCameraOutlined style={{ fontSize: 16, color: "#fff" }} />
       <Divider
         type="vertical"
         style={{ borderColor: "rgba(255,255,255, 0.15)" }}
