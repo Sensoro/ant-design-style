@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/sensoro-design/ant-design-style/compare/v1.27.0...v1.27.1) (2023-06-12)
+
+
+### Bug Fixes
+
+* repleace backTop box-shadow ([5668b16](https://github.com/sensoro-design/ant-design-style/commit/5668b1626c2723885d86570512cb47e77727e180))
+
 # [1.27.0](https://github.com/sensoro-design/ant-design-style/compare/v1.26.0...v1.27.0) (2023-06-12)
 
 
