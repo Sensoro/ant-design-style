@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/sensoro-design/ant-design-style/compare/v1.26.0...v1.27.0) (2023-06-12)
+
+
+### Features
+
+* support BackTop ui ([09b26e0](https://github.com/sensoro-design/ant-design-style/commit/09b26e07950a5fab4e0277e4d785673c98f55648))
+
 # [1.26.0](https://github.com/sensoro-design/ant-design-style/compare/v1.25.1...v1.26.0) (2023-05-10)
 
 
