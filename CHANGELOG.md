@@ -1,3 +1,10 @@
+## [1.27.2](https://github.com/sensoro-design/ant-design-style/compare/v1.27.1...v1.27.2) (2023-06-28)
+
+
+### Bug Fixes
+
+* menu expand color & weight ([f36f6c0](https://github.com/sensoro-design/ant-design-style/commit/f36f6c083ea58f4624d584f0752f3225cb304db0))
+
 ## [1.27.1](https://github.com/sensoro-design/ant-design-style/compare/v1.27.0...v1.27.1) (2023-06-12)
 
 
