@@ -6,7 +6,12 @@ const logo =
 
 const SRC_DIR = path.join(__dirname, "src");
 
+const base = '/ant-design-style/';
+
 export default defineConfig({
+  base,
+  publicPath: base,
+  runtimePublicPath: true,
   mode: "site",
   title: "Sensoro Design",
   dynamicImport: {},
@@ -26,7 +31,7 @@ export default defineConfig({
       require.resolve("babel-plugin-import"),
       {
         libraryName: "antd",
-        customStyleName: (name: string, file: object) => {
+        customStyleName: (name: string) => {
           return path.join(SRC_DIR, `${name}/index.less`);
         },
       },
