@@ -1,3 +1,10 @@
+## [1.27.3](https://github.com/Sensoro/ant-design-style/compare/v1.27.2...v1.27.3) (2023-06-30)
+
+
+### Bug Fixes
+
+* menu icon color ([5fe3f72](https://github.com/Sensoro/ant-design-style/commit/5fe3f7218884e731d417f2d90e31877e76f1407e))
+
 ## [1.27.2](https://github.com/sensoro-design/ant-design-style/compare/v1.27.1...v1.27.2) (2023-06-28)
 
 
