@@ -77,17 +77,24 @@
   }
 
   &-submenu-selected {
-    > div > .@{menu-prefix-cls}-title-content {
-      font-weight: 500;
-      color: @menu-highlight-color;
-
-      & + .@{iconfont-css-prefix} {
-          color: @primary-color;
+    > div {
+      > .@{menu-prefix-cls}-title-content {
+        font-weight: 500;
+        color: @menu-highlight-color;
+      }
+      .@{iconfont-css-prefix} {
+        color: @primary-color;
       }
     }
 
     .@{menu-prefix-cls}-submenu-arrow {
       color: @menu-highlight-color;
+    }
+  }
+
+  &-item.@{menu-prefix-cls}-item-selected {
+    .@{menu-prefix-cls}-item-icon {
+      color: @primary-color;
     }
   }
 
