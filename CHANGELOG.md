@@ -1,3 +1,10 @@
+## [1.28.1](https://github.com/Sensoro/ant-design-style/compare/v1.28.0...v1.28.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* datepicker range month ([a123d85](https://github.com/Sensoro/ant-design-style/commit/a123d8539f7b5c87c57e33b5b1a52fda8e9513eb))
+
 # [1.28.0](https://github.com/Sensoro/ant-design-style/compare/v1.27.3...v1.28.0) (2023-10-24)
 
 
