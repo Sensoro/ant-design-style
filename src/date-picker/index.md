@@ -20,7 +20,7 @@ icon 需要自定义
 
 <code src="./demos/basic.tsx" />
 
-### 日期范围
+### 范围选择
 
 <code src="./demos/range.tsx" />
 

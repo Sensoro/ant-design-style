@@ -16,7 +16,12 @@ const disabledDate: RangePickerProps["disabledDate"] = (current) => {
 
 const disabledMonth: RangePickerProps["disabledDate"] = (current) => {
   // Can not select days before today and today
-  return current && current < moment().subtract(3, "month");
+  return current && current < moment().subtract(2, "month");
+};
+
+const disabledYear: RangePickerProps["disabledDate"] = (current) => {
+  // Can not select days before today and today
+  return current && current < moment();
 };
 
 const App: FC = () => (
@@ -48,10 +53,19 @@ const App: FC = () => (
         月份选择
         <DatePicker
           style={{ width: 240 }}
-          defaultValue={moment("2022-02")}
+          defaultValue={moment()}
           disabledDate={disabledMonth}
           picker="month"
           onChange={onChange}
+        />
+      </Space>
+      <Space>
+        年份选择
+        <DatePicker
+          style={{ width: 240 }}
+          defaultValue={moment()}
+          disabledDate={disabledYear}
+          picker="year"
         />
       </Space>
       <Space>
