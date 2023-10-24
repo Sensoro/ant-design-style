@@ -11,7 +11,7 @@
   @picker-arrow-size: 7px;
   @picker-year-month-cell-width: 60px;
   @picker-panel-width: @picker-panel-cell-width * 7 + @padding-sm * 2 + 4;
-  @picker-year-month-panel-width: 270px;
+  @picker-year-month-panel-width: 312px;
   @picker-week-panel-width: 312px;
 
   &-panel {
@@ -234,7 +234,7 @@
 
     &-in-view&-range-start {
       &::before {
-        //background: @primary-1;
+        background: @primary-1;
       }
     }
 
@@ -249,14 +249,14 @@
       //border-top-left-radius: 50%;
       //border-bottom-left-radius: 50%;
       //overflow: hidden;
-      left: 50%;
+      left: 50% !important;
     }
 
     &-in-view&-range-end::before {
       //border-top-right-radius: 14px;
       //border-bottom-right-radius: 14px;
       //overflow: hidden;
-      right: 50%;
+      right: 50% !important;
     }
 
     // >>> Range Hover
@@ -270,9 +270,11 @@
       &::after {
         position: absolute;
         top: 50%;
+        left: 0;
+        right: 0;
         z-index: 0;
         height: 24px;
-        width: 100%;
+        //width: 100%;
         background: @primary-1;
         //border-top: @border-width-base dashed
         //  @picker-date-hover-range-border-color;
@@ -366,7 +368,7 @@
     &-in-view&-start&-range-hover-edge-start&-range-hover-edge-start-near-range::after,
     &-in-view&-range-hover-edge-start:not(&-range-hover-edge-start-near-range)::after,
     &-in-view&-range-hover-start::after {
-      left: 6px;
+      left: 15px !important;
       //border-left: @border-width-base dashed
       //  @picker-date-hover-range-border-color;
       border-top-left-radius: @border-radius-base;
@@ -379,7 +381,7 @@
     &-in-view&-end&-range-hover-edge-end&-range-hover-edge-end-near-range::after,
     &-in-view&-range-hover-edge-end:not(&-range-hover-edge-end-near-range)::after,
     &-in-view&-range-hover-end::after {
-      right: 6px;
+      right: 15px !important;
       //border-right: @border-width-base dashed
       //  @picker-date-hover-range-border-color;
       border-top-right-radius: @border-radius-base;
@@ -426,7 +428,8 @@
     }
 
     .@{picker-cell-inner-cls} {
-      padding: 0 @padding-xs;
+      width: 66px;
+      //padding: 0 @padding-xs;
     }
   }
 
@@ -507,6 +510,8 @@
         ) / 2
     );
 
+    //@hover-cell-fixed-distance: 15px;
+
     .@{picker-prefix-cls}-body {
       padding: 0 @padding-xs;
     }
@@ -517,8 +522,8 @@
 
     .@{picker-prefix-cls}-cell-range-hover-start::after {
       left: @hover-cell-fixed-distance;
-      border-left: @border-width-base dashed
-        @picker-date-hover-range-border-color;
+      //border-left: @border-width-base dashed
+      //  @picker-date-hover-range-border-color;
       border-radius: @border-radius-base 0 0 @border-radius-base;
 
       .@{picker-prefix-cls}-panel-rtl & {
@@ -530,14 +535,14 @@
     }
     .@{picker-prefix-cls}-cell-range-hover-end::after {
       right: @hover-cell-fixed-distance;
-      border-right: @border-width-base dashed
-        @picker-date-hover-range-border-color;
+      //border-right: @border-width-base dashed
+      //  @picker-date-hover-range-border-color;
       border-radius: 0 @border-radius-base @border-radius-base 0;
 
       .@{picker-prefix-cls}-panel-rtl & {
         left: @hover-cell-fixed-distance;
-        border-left: @border-width-base dashed
-          @picker-date-hover-range-border-color;
+        //border-left: @border-width-base dashed
+        //  @picker-date-hover-range-border-color;
         border-radius: @border-radius-base 0 0 @border-radius-base;
       }
     }
@@ -562,7 +567,6 @@
 
     .@{picker-prefix-cls}-cell {
       &.@{picker-prefix-cls}-cell-today {
-
       }
 
       .@{picker-cell-inner-cls} {
@@ -587,7 +591,6 @@
 
         &::before {
           background: @primary-1;
-
         }
 
         &:first-child {
@@ -642,17 +645,25 @@
     width: @picker-year-month-panel-width;
 
     .@{picker-prefix-cls}-body {
-      padding: 0 20px;
+      padding: @padding-sm @padding-sm - 3px;
     }
 
     .@{picker-prefix-cls}-cell {
-      &::before {
-        display: none;
+      &:last-child {
+        &::before {
+          right: 15px;
+        }
+      }
+
+      &:first-child {
+        &::before {
+          left: 15px;
+        }
       }
 
       &.@{picker-prefix-cls}-cell-disabled {
         .@{picker-cell-inner-cls} {
-          background: @picker-basic-cell-disabled-bg;
+           //background: @picker-basic-cell-disabled-bg;
         }
 
         &.@{picker-prefix-cls}-cell-selected {
