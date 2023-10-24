@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/Sensoro/ant-design-style/compare/v1.27.3...v1.28.0) (2023-10-24)
+
+
+### Features
+
+* support month datepicker component ([aeafad1](https://github.com/Sensoro/ant-design-style/commit/aeafad1c4ddb4db93a9fe393b5462c7fba9907c7))
+
 ## [1.27.3](https://github.com/Sensoro/ant-design-style/compare/v1.27.2...v1.27.3) (2023-06-30)
 
 
