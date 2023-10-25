@@ -1,3 +1,10 @@
+## [1.28.2](https://github.com/Sensoro/ant-design-style/compare/v1.28.1...v1.28.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* picker body padding ([e5fee37](https://github.com/Sensoro/ant-design-style/commit/e5fee37507e1e629858a191e47e9618252ca044e))
+
 ## [1.28.1](https://github.com/Sensoro/ant-design-style/compare/v1.28.0...v1.28.1) (2023-10-24)
 
 
