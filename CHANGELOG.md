@@ -1,3 +1,10 @@
+## [1.28.3](https://github.com/Sensoro/ant-design-style/compare/v1.28.2...v1.28.3) (2023-10-25)
+
+
+### Bug Fixes
+
+* picker box position ([c1a2e81](https://github.com/Sensoro/ant-design-style/commit/c1a2e81590515e2f40f340093abafc9bc7ed085c))
+
 ## [1.28.2](https://github.com/Sensoro/ant-design-style/compare/v1.28.1...v1.28.2) (2023-10-25)
 
 
