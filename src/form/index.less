@@ -197,27 +197,14 @@
   &-extra {
     clear: both;
     color: @text-color-secondary;
-    font-size: @font-size-base;
-    line-height: @line-height-base;
+    font-size: @font-size-sm;
+    line-height: @form-item-margin-bottom;
     transition: color 0.3s @ease-out; // sync input color transition
     .explainAndExtraDistance((@form-item-margin-bottom - @form-font-height) / 2);
   }
 
-  &-explain {
-    margin: 2px 0;
-    height: 22px;
-    line-height: 22px;
-  }
-
   &-explain-connected {
     width: 100%;
-  }
-
-  &-extra {
-    font-size: @font-size-sm;
-    min-height: @form-item-margin-bottom - 4px;
-    line-height: @form-item-margin-bottom - 4px;
-    margin: @margin-xss 0;
   }
 
   &-with-help &-explain {
