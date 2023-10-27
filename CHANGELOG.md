@@ -1,3 +1,10 @@
+## [1.28.4](https://github.com/Sensoro/ant-design-style/compare/v1.28.3...v1.28.4) (2023-10-27)
+
+
+### Bug Fixes
+
+* form explain & extra font-size ([0bcf887](https://github.com/Sensoro/ant-design-style/commit/0bcf8876891ed2fc8544a60f8bf09edcae5bf9e8))
+
 ## [1.28.3](https://github.com/Sensoro/ant-design-style/compare/v1.28.2...v1.28.3) (2023-10-25)
 
 

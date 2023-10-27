@@ -1,6 +1,6 @@
 {
   "name": "@sensoro-design/styles",
-  "version": "1.28.3",
+  "version": "1.28.4",
   "description": "Sensoro Design Styles",
   "scripts": {
     "start": "dumi dev",
