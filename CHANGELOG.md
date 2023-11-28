@@ -1,3 +1,10 @@
+## [1.28.5](https://github.com/Sensoro/ant-design-style/compare/v1.28.4...v1.28.5) (2023-11-28)
+
+
+### Bug Fixes
+
+* checkbox hover bg ([2f3ba43](https://github.com/Sensoro/ant-design-style/commit/2f3ba434101ec21c22f1646ad310e5ce766cdc69))
+
 ## [1.28.4](https://github.com/Sensoro/ant-design-style/compare/v1.28.3...v1.28.4) (2023-10-27)
 
 
