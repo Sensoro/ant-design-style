@@ -1,3 +1,10 @@
+## [1.28.6](https://github.com/Sensoro/ant-design-style/compare/v1.28.5...v1.28.6) (2023-12-11)
+
+
+### Bug Fixes
+
+* dropdown & menu disabled text color ([bed6b2c](https://github.com/Sensoro/ant-design-style/commit/bed6b2c6999ea66d72a44f3231d181d0a0959f3e))
+
 ## [1.28.5](https://github.com/Sensoro/ant-design-style/compare/v1.28.4...v1.28.5) (2023-11-28)
 
 
