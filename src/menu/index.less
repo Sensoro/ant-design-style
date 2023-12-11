@@ -704,7 +704,7 @@
   // Disabled state sets text to gray and nukes hover/tab effects
   &-item-disabled,
   &-submenu-disabled {
-    color: @disabled-color !important;
+    color: @disabled-text-color !important;
     background: none;
     cursor: not-allowed;
 
@@ -713,16 +713,16 @@
     }
 
     a {
-      color: @disabled-color !important;
+      color: @disabled-text-color !important;
       pointer-events: none;
     }
     > .@{menu-prefix-cls}-submenu-title {
-      color: @disabled-color !important;
+      color: @disabled-text-color !important;
       cursor: not-allowed;
       > .@{menu-prefix-cls}-submenu-arrow {
         &::before,
         &::after {
-          background: @disabled-color !important;
+          background: @disabled-text-color !important;
         }
       }
     }
