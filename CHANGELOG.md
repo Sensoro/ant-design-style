@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/Sensoro/ant-design-style/compare/v1.28.6...v1.29.0) (2023-12-11)
+
+
+### Features
+
+* add desc ([0160bf9](https://github.com/Sensoro/ant-design-style/commit/0160bf9719a66b81093936f8fab1b7b58714bd20))
+
 ## [1.28.6](https://github.com/Sensoro/ant-design-style/compare/v1.28.5...v1.28.6) (2023-12-11)
 
 
